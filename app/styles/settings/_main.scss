@@ -1,0 +1,98 @@
+/**
+ * settings/_main.scss
+ */
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+// @import "";
+
+
+/* ==========================================================================
+   Code
+   ========================================================================== */
+
+/* New color defaults and personal swatches: */
+  $rgb-black: #333333;
+  $rgb-blue--dark-2: #16174f;
+  $rgb-blue--dark: #22264b;
+  $rgb-blue--light: #98dafc;
+  $rgb-bordaux: #5e0231;
+  $rgb-brown-2: #283018;
+  $rgb-brown-3: #7d4627;
+  $rgb-brown-4: #30231d;
+  $rgb-brown: #463014;
+  $rgb-creme: #ba9077;
+  $rgb-gray--brown: #6a5750;
+  $rgb-gray: #C9C9C9;
+  $rgb-green--desaturated-dark: #3fb0ac;
+  $rgb-green--desaturated: #729f98;
+  $rgb-green: #334431;
+  $rgb-orange--2: #e6af4b;
+  $rgb-orange--3: #e05915;
+  $rgb-orange--4: #FFCC00;
+  $rgb-orange-mud: #97743a;
+  $rgb-orange: #FFBF28;
+  $rgb-pink-2: #9068be;
+  $rgb-pink--light: #dbc3d0;
+  $rgb-pink: #CD679A;
+  $rgb-purple--2: #431c5d;
+  $rgb-purple--dark: #300032;
+  $rgb-purple: #6534ff;
+  $rgb-red--2: #963019;
+  $rgb-red--desaturated: #935347;
+  $rgb-red-light: #e05038;
+  $rgb-red: #c43235;
+  $rgb-sand--saturated: #edd9c0;
+  $rgb-sand: #e3e0cf;
+  $rgb-skin--dark: #b56969;
+  $rgb-skin: #daad86;
+  $rgb-white-dark: #e8edf3;
+  $rgb-white: #f6f1ed;
+  $rgb-yellow--light: #fae596;
+  $rgb-yellow--medium: #e6cf8b;
+  $rgb-yellow: #f2b632;
+  $rgp-yellow--orange: #FFCA28;
+
+
+/* Tailored colors */
+  $rgb-document: #F3F3F3;
+  $rgb-article: #E0E0E0;
+
+
+/* WIP helpers */
+  $wip-rgb: #CBD215;
+
+  .wip-border {
+    border-style: solid;
+    border-width:1px;
+    border-color: black;
+  };
+
+  .wip-border2 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $rgb-yellow;
+  };
+
+  .wip-generic{
+    @extend .wip-border;
+    background: $rgb-white-dark;
+  }
+
+  .wip-header {
+    @extend .wip-border
+  };
+
+  .wip-section {
+    @extend .wip-border
+  };
+
+  .wip-article {
+    @extend .wip-border
+  };
+
+  .wip-footer {
+    @extend .wip-border
+  };

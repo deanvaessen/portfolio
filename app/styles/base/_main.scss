@@ -1,0 +1,80 @@
+/**
+ * base/_main.scss
+ */
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+// @import "";
+
+
+/* ==========================================================================
+   Code
+   ========================================================================== */
+// $icon-font-path: '../fonts/';
+
+    @font-face {
+      font-family: Vollkorn-Regular;
+      src: url("../fonts/Vollkorn-Regular.otf") format("opentype");
+    }
+
+    @font-face {
+      font-family: "Open Sans Condensed Light";
+      src: url("../fonts/OpenSans-CondLight.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Montserrat-Regular";
+      src: url("../fonts/Montserrat-Regular.otf") format("opentype");
+    }
+
+    a {
+      text-decoration: none;
+      color: initial;
+    }
+
+    html, body {
+
+      display: flexbox;
+      flex-direction: column;
+
+      height: 4000px;
+
+      // font-family: "Vollkorn-Regular", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Montserrat-Regular", sans-serif;
+      background: $rgb-document;
+
+    }
+
+    #sections {
+    margin-top:40px;
+    }
+
+    .section {
+      /* @extend .wip-border2; */
+
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+
+    /* Project specific variables */
+    /* I should consider making a "typography document" and a "borders document" or just one big "project specific variables document"*/
+
+      .brdr-groove--bottom{
+        border-bottom-style: groove;
+        border-width: 1px;
+      }
+
+      .typo-subtitle{
+        @include font-size(14px)
+      }
+
+      .fx-vignette {
+        -webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
+        -moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.4);
+        box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.4);
+      }
+

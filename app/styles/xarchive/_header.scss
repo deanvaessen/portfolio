@@ -1,0 +1,58 @@
+//------ Settings
+//        + Global settings (e.g. button looks)
+#nav{
+  display:fixed;
+  
+  height: 200px;
+  width:100%;
+
+  background: $rgb-document;
+}
+//        + Brand colors
+
+
+//------ Tools
+//        + Mixins
+
+
+//        + Helper Functions
+
+
+//------ Elements
+//        + Unclassed generic elements (e.g. links, headers, lists)
+
+
+//------ Objects
+//        + Design patterns using general classes (e.g. .ui-list)
+
+
+//------ Components
+//        + Explicitly named classes (e.g. .product-list)
+.btn {
+ color:white;
+ text-decoration:none;
+ padding:5px 10px;
+ border-radius:3px;
+ font-family: 'Poiret One', cursive;
+ font-size:2em;
+}
+
+.btn-green {
+   @include button-bg(#2ecc71);
+}
+
+.btn-blue {
+   @include button-bg(#3498db);
+}
+
+.btn-yellow{
+   @include button-bg(#f1c40f);
+}
+
+.btn-red {
+   @include button-bg(#e74c3c);
+}
+
+//------ Trumps
+//        + Overrides and explicit helpers
+//        + !important uses if you need them.

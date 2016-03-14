@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="dean, vaessen, dean vaessen, web development, frontend, creative, art, 3D, sculpting, web, wordpress, html, css, design">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dean Vaessen - Maverick Matryoshka</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+  <nav id="nav">
+
+<!--     <div class="fixed"> -->
+      <ul id="nav__menu">
+        <li class="nav__menu__li--l"><a href="#">About</a></li>
+        <li class="nav__menu__li--seperator"></li>
+        <li class="nav__menu__li--r"><a href="#">Contact</a></li>
+      </ul>
+<!--     </div> -->
+
+  </nav>
+
+  
+  <main id="sections" role="main">
+    <section id="cover" class="section section--highlight">
+    
+      <div class="section cover__content" id="cover__content--resize">
+        <img src="images/img_logo_small.png"  alt="Maverick Matryoshka - Logo">
+        <h1>Maverick Matryoshka</h1>
+        <h2 class="typo-subtitle">Dean Vaessen</h2>
+        <h3 class="typo-subtitle">Clean, responsive web solutions</h3>
+
+        <a href="#" class="btn btn--clear">More</a>
+
+      </div>
+
+      <div class="section cover__overlay" id="cover__overlay--resize">
+        
+      </div>
+
+      <div class="section cover__bg" id="cover__bg--resize">
+      </div>
+
+    </section>
+
+    <section id="section-info" class="section section--white">
+      <article>
+    
+        <div class="section-info-description">
+          <p>Info</p>
+        </div>
+    
+      </article>
+    </section>
+
+    <section id="section-portfolio" class="section">
+    
+      <div>
+        <p>Portfolio</p>
+      </div>
+    
+    </section>
+
+
+    <footer id="section-contact" class="section" role="contentinfo">
+      
+      <div>
+        <p>Contact</p>
+      </div>
+
+    </footer>
+  </main>
+
+
+<script>
+
+  function resizeDynamic(){
+    var w = window,
+      d = document,
+      e = d.documentElement,
+      g = d.getElementsByTagName('body')[0],
+      x = w.innerWidth || e.clientWidth || g.clientWidth,
+      y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    
+    if (x > 820) {
+        document.getElementById('cover__content--resize').style.height = y / 2.5 +"px";
+        document.getElementById('cover__overlay--resize').style.height = y / 2.5 +"px";
+        document.getElementById('cover__bg--resize').style.height = y / 2.5 +"px";
+        /*document.getElementById('b').style.height = document.defaultView.getComputedStyle(document.getElementById('a'), "").getPropertyValue("height");*/
+        /*alert(y + 200);*/
+
+        /*document.getElementById('div_register').setAttribute("style","width:500px");*/
+    };
+  };
+
+  //Resize height of the cards to preserve layout when resizing window
+  resizeDynamic(); //On load
+  window.addEventListener('resize', resizeDynamic);  //On window resize
+</script>
+
+<!-- Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37806719-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
+
+
+<!--     <a href="#" class="btn btn-green">Green Button</a>
+    <a href="#" class="btn btn-blue">Blue Button</a>
+    <a href="#" class="btn btn-yellow">Yellow Button</a>
+    <a href="#" class="btn btn-red">Red Button</a> -->

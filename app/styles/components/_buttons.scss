@@ -1,0 +1,33 @@
+.btn {
+ color:white;
+ text-decoration:none;
+ padding:5px 10px;
+ border-radius:3px;
+ font-family: 'Open Sans Condensed Light';
+ @include font-size(25px)
+}
+
+.btn-green {
+   @include button-bg(#2ecc71);
+}
+
+.btn-blue {
+   @include button-bg(#3498db);
+}
+
+.btn-yellow{
+   @include button-bg(#f1c40f);
+}
+
+.btn-red {
+   @include button-bg(#e74c3c);
+}
+
+.btn--clear {
+  @extend .brdr-button--minimal;
+}
+
+.brdr-button--minimal{
+  border-style: solid;
+  border-width: 1px;
+}
