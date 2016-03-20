@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="dean, vaessen, dean vaessen, web development, frontend, creative, art, 3D, sculpting, web, wordpress, html, css, design">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dean Vaessen - Maverick Matryoshka</title>
+    <title>Portfolio | Dean Vaessen</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -21,6 +21,8 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -28,14 +30,29 @@
     <![endif]-->
     
   <nav id="nav">
+    <div id="nav__title">
+      <div id="nav__title__text">
+        <h1>Dean Vaessen</h1>
+        <h2>Maverick Matryoshka</h2>
+    </div>
+      <img src="images/img_logo_small_nav.png"  alt="Maverick Matryoshka - Logo">
+    </div>
 
-<!--     <div class="fixed"> -->
+    <div id="nav__return">
+      <!-- <p id="nav__return__sparkle">*</p> --> <!--I could make this sparkle. A little white dot would appear and grow outwards, like in cartoons when something goes away. One of those white starish thingies that rotate.-->
+      <a id="nav__return__button" class="btn btn--nav--2 btn--size--20" href="#about">RETURN</a> <!---Straks naar #portfolio-->
+<!--       Button above will pop up after loading a portfolio website page and then go away 
+      again once I have clicked this button. The button resets the portfolio section back to "portfolio overview" -->
+    </div>
+    </div>
+
+
       <ul id="nav__menu">
-        <li class="nav__menu__li--l"><a href="#">About</a></li>
+        <li><a href="#about" class="btn btn--nav--2 btn--size--20">ABOUT</a></li>
         <li class="nav__menu__li--seperator"></li>
-        <li class="nav__menu__li--r"><a href="#">Contact</a></li>
+        <li><a href="#contact" class="btn btn--nav--2 btn--size--20">CONTACT</a></li> 
+        <!-- Contact button should open a modal, not scroll down. E-mail at footer is additional and should also mention e-mail address again in modal. -->
       </ul>
-<!--     </div> -->
 
   </nav>
 
@@ -44,56 +61,216 @@
     <section id="cover" class="section section--highlight">
     
       <div class="section cover__content" id="cover__content--resize">
-        <img src="images/img_logo_small.png"  alt="Maverick Matryoshka - Logo">
-        <h1>Maverick Matryoshka</h1>
-        <h2 class="typo-subtitle">Dean Vaessen</h2>
-        <h3 class="typo-subtitle">Clean, responsive web solutions</h3>
+        <div class="cover__logo hvr-float-shadow">
+          
+          <img src="images/img_logo_small_clear3.png"  alt="Maverick Matryoshka - Logo">
+          <a href="#about" class="btn btn--clear btn--size--25 btn--opensans">MORE</a>
+        </div>
 
-        <a href="#" class="btn btn--clear">More</a>
-
+        <h1>Clean, responsive web solutions</h1>
+        <h2>
+          <ul class="cover__products">
+          <li>Company websites</li>
+          <li>Personal websites</li>
+          <li>WordPress blogs</li>
+          </ul>
+        </h2>
       </div>
 
-      <div class="section cover__overlay" id="cover__overlay--resize">
-        
-      </div>
-
-      <div class="section cover__bg" id="cover__bg--resize">
-      </div>
+      <div id="cover__overlay--resize" class="section cover__overlay"></div>
+      <div id="cover__bg--resize" class="section cover__bg"></div>
 
     </section>
+    <a name="about"/> <!--About scroll target -->
+    <section id="section__info" class="section section--white">
+      <article id="article__info">
 
-    <section id="section-info" class="section section--white">
-      <article>
-    
-        <div class="section-info-description">
-          <p>Info</p>
+      <h1 class="typo--headline">PROFILE</h1>
+      
+      <span id="info__tree__vertical"></span>
+
+      <span id="info__tree__horizontal"></span>
+      
+
+
+<!--       <span id="info__tree__vertical--smile"></span> -->
+
+      <div id="info__columns">
+        <div id="section__info__who">
+         
+          <div id="info__smile">
+            
+            <img src="images/img_smile.png"  alt="Dean!">
+<!--             <span id="info__tree__horizontal"></span> -->
+            <!-- <span id="info__tree__horizontal--smilebridge"></span> -->
+            <span id="info__tree__vertical--smile"></span>
+            <!-- <span id="info__tree__horizontal"></span> -->
+            <h2>Hallo!</h2>
+          </div>
+          
+
+          <span class="brdr-orange--top typo--bold msc-block"></span>
+            <br /><br />
+            <p id="info__heading--lead" class="info__heading--lead typo--bold msc-flex-center"><span  id="info__heading--lead">I'm Dean, a Dutch national based in Budapest. <!-- <span class="typo--light typo--temp">[WEGHALEN INDIEN ONZEKERHEID TAXES]</span> --> I have a passion for travel, digital art, and neat technology.</span></p>
+            <br /><br />
+            <p class="typo--light">Maverick Matryoshka is the name under which I provide creative services. I am  currently available for work in the area of frontend development. <br /> <br /> If you would like to speak to me, hit the contact button and I'll get back to you in a jiffy.</p>
+          
+
         </div>
-    
+
+        <div id="section__info__what">
+          <div id="what__imagerow__container">
+            <div id="what__imagerow">
+            <img src="images/img_html.png"  alt="HTML">
+            <img src="images/img_wordpress.png"  alt="Wordpress">
+            </div>
+            <span id="info__tree__vertical--html"></span>
+            <span id="info__tree__vertical--html--l"></span>
+            <span id="info__tree__vertical--html--r"></span>
+            <span id="info__tree__horizontal--html"></span>
+          </div>
+          <span class="brdr-orange--top typo--bold msc-block"></span>
+            <br /><br />
+            <p id="info__heading--child" class="info__heading--lead typo--bold msc-flex-center">Whether you're looking for a personal website, blog or a frontend for your business; I can help.</p>
+            <br /><br />
+            <p class="typo--light"> If there's something you would like to have built, I would love to work with you and provide something tailored to your liking. 
+            <br /> <br />I pay special attention to delivering cleanly written solutions that bring easier maintenance and longer operational capacity to the table. This means less time wasted and a greater audience reached.</p>
+            <br /><br />
+          
+        </div>
+
+        <div id="section__info__how">
+          <div id="how__imagerow__container">
+            <div id="how__imagerow">
+            <img src="images/img_phone.png"  alt="Responsive design">
+            </div>
+            <span id="info__tree__vertical--mobile"></span>
+          </div>
+
+          <span class="brdr-orange--top typo--bold msc-block"></span>
+              <!-- <span class="typo--temp">Hoe bied ik het aan? (clean code, taalvermogen etc)</span> -->
+              <br /><br />
+              <p id="info__heading--child2" class="info__heading--lead typo--bold msc-flex-center">Optimised for every screen.</p>
+              <br /><br />
+              <p class="typo--light">Considering the growing importance of mobile devices I design my work with these devices in mind. Playing into their strenghts and mitigating  the impact of their limitations is key to your message heard to the largest amount of people, most effectively.</p>
+
+        </div>
+      </div>
       </article>
     </section>
+  <a name="portfolio"/> <!-- Portfolio scroll hook -->
+    <section id="section__portfolio" class="section">
+    <!-- Portfolio should have a quick "collapse currently expanded page button" -->
+      <span id="portfolio"></span> <!--hook for border remove-->
+      <iframe id="section__portfolio__iframe"></iframe>
+    <div id="portfolio__loadhook">
 
-    <section id="section-portfolio" class="section">
+       </div>
+    </div>
+     <!-- <iframe id="section__portfolio__iframe"></iframe> -->
+
+    
+    </section>
+
+    <section id="section__blog" class="section">
     
       <div>
-        <p>Portfolio</p>
+
+        <p class="typo--bold">[HIER KOMT BLOG APP]</p>
+        <!-- Blog should have a quick "collapse currently expanded page button" -->
+        
       </div>
     
     </section>
 
-
-    <footer id="section-contact" class="section" role="contentinfo">
+<section id="section__contact">
+    <footer id="footer"  class="section" role="contentinfo">
       
-      <div>
-        <p>Contact</p>
+      <div id="footer__left">
+        <p ><span class="brdr-orange--bottom msc-flex-center">Type away below to contact me</span> <!-- Don't worry about the size, it'll accomodate. --> <br /> <span class="typo--small footer__left__underscore">In one of these languages:</span></p>  
+        <div id="contact__languages">
+          <h2 class="twk-padleftreset"><span title="English" class="flag-icon flag-icon-gb"></span></h2>
+          <h2><span title="Deutsch" class="flag-icon flag-icon-de"></span></h2>
+          <h2><span title="Nederlands" class="flag-icon flag-icon-nl"></span></h2>
+          <h2><span title="Limburgs" class="flag-icon flag-icon-limb"></span></h2>
+        </div>
+        <div id="footer__left__contactform">
+          <div id="form__name__container">
+           <textarea id="footer__form__name"  type="text" name="name" placeholder="What's your name?"></textarea>
+          <br />
+        </div>
+        <div id="form__from__container">
+           <textarea id="footer__form__from" type="text" name="from" placeholder="Please include your e-mail address"></textarea>
+          <br />
+        </div>
+        <div id="form__message__container">
+          <textarea id="footer__form__message" type="text" name="message" placeholder="You can start writing here. The box will keep growing."></textarea>
+        </div>
+
+        <a href="#" class="btn btn--footer" id="footer__left__send">SEND</a>
+
+        <br /><p class="typo--small ">Or the good old fashioned way: <br /><a href="mailto:hello@deanvaessen.com"><span class="typo--bold typo--accent">hello@deanvaessen.com</span></a></p>
+        </div>
       </div>
 
+      <div id="footer__middle">
+        <p class="brdr-orange--bottom footer__middle__header">Networks</p>
+        <div id="footer__social">
+          <p id="scroll-to" class="a"><i class="fa fa-github fa-2x"></i></p>
+          <p id="scroll-to" class="a"><i class="fa fa-twitter fa-2x"></i></p>
+        </div>
+        <div id="footer__copyright">
+          <p class="typo--light typo--tiny">&copy; 2015<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Maverick Matryoshka Ltd.</p> 
+          <p class="typo--light typo--tiny">All rights reserved.</p>
+        </div>
+      </div>
+        
+      <div id="footer__right">
+        <div id="footer__travel">
+          <div id="travel__title">
+            <p class="msc-inline">Travel high-score</p>
+          </div>
+          <div id="contact__flags" class="brdr-orange--top msc-inline">
+            <h2 class="twk-padleftreset contact__flags--margintop"><span title="Limburg" class="flag-icon flag-icon-limb" ></span></h2>
+            <h2 class="contact__flags--margintop"><span title="Nederland" class="flag-icon flag-icon-nl"</span></h2>
+            <h2 class="contact__flags--margintop"><span title="België" class="flag-icon flag-icon-be"></span></h2>
+            <h2 class="contact__flags--margintop"><span title="Österreich" class="flag-icon flag-icon-at"></span></h2>
+            <h2 class="contact__flags--margintop"><span title="Deutschland" class="flag-icon flag-icon-de"></span></h2>
+            <h2 class="contact__flags--margintop"><span title="Great-Britain" class="flag-icon flag-icon-gb"></span></h2>
+            <h2 class="contact__flags--margintop"><span title="Ísland" class="flag-icon flag-icon-is"></span></h2>
+            <h2 class="contact__flags--margintop"><span title="La France" class="flag-icon flag-icon-fr"></span></h2>
+            <h2 class="contact__flags--margintop"><span title="Ελλάδα" class="flag-icon flag-icon-gr"></span></h2>
+            <h2 class="twk-padrightreset contact__flags--margintop"><span title="Magyarország" class="flag-icon flag-icon-hu"></span></h2>
+            <h2 class="twk-padleftreset"><span title="Србија / Srbija"  class="flag-icon flag-icon-rs"></span></h2>
+            <h2><span title="Bosna i Hercegovina / Босна и Херцеговина" class="flag-icon flag-icon-ba"></span></h2>
+            <h2><span title="Hrvatska" class="flag-icon flag-icon-hr"></span></h2>
+            <h2><span title="Црна Гора / Crna Gora" class="flag-icon flag-icon-me"></span></h2>
+            <h2><span title="Shqipëri" class="flag-icon flag-icon-al"></span></h2>
+  <!--           <div> -->
+              <h2><span title="Россия" class="flag-icon flag-icon-ru"></span></h2>
+  <!--             <h2><span class="flag-icon flag-icon-heart flag-icon-heart"></span></h2>
+              <h2><span class="flag-icon flag-icon-heart--bg"></span></h2> -->
+              <!-- werkt niet goed -->
+  <!--           </div> -->
+            <h2><span title="Česká republika" class="flag-icon flag-icon-cz"></span></h2>
+            <h2><span title="República Portuguesa" class="flag-icon flag-icon-pt"></span></h2>
+            <h2><span title="Polska" class="flag-icon flag-icon-pl"></span></h2>
+          </div>
+        </div>
+
+
+        
+        
+        
+      </div>
+<a name="contact" />
     </footer>
+    </section>
   </main>
 
-
 <script>
-
-  function resizeDynamic(){
+//Resize height of the cards to preserve layout when resizing window
+  function resizeDynamicCover(){
     var w = window,
       d = document,
       e = d.documentElement,
@@ -102,9 +279,9 @@
       y = w.innerHeight|| e.clientHeight|| g.clientHeight;
     
     if (x > 820) {
-        document.getElementById('cover__content--resize').style.height = y / 2.5 +"px";
-        document.getElementById('cover__overlay--resize').style.height = y / 2.5 +"px";
-        document.getElementById('cover__bg--resize').style.height = y / 2.5 +"px";
+        document.getElementById('cover__content--resize').style.height = y / 1.9 +"px";
+        document.getElementById('cover__overlay--resize').style.height = y / 1.9 +"px";
+        document.getElementById('cover__bg--resize').style.height = y / 1.9 +"px";
         /*document.getElementById('b').style.height = document.defaultView.getComputedStyle(document.getElementById('a'), "").getPropertyValue("height");*/
         /*alert(y + 200);*/
 
@@ -112,9 +289,465 @@
     };
   };
 
-  //Resize height of the cards to preserve layout when resizing window
-  resizeDynamic(); //On load
-  window.addEventListener('resize', resizeDynamic);  //On window resize
+  //Resize height of the heading span to ensure equal vertical spacing across all info heading-child elements
+    function resizeDynamicHeadings(){
+      var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        x = w.innerWidth || e.clientWidth || g.clientWidth,
+        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+      
+      if (x > 820) {
+          document.getElementById('info__heading--child').style.height = document.defaultView.getComputedStyle(document.getElementById('info__heading--lead'), "").getPropertyValue("height");
+      };
+
+      if (x > 820) {
+          document.getElementById('info__heading--child2').style.height = document.defaultView.getComputedStyle(document.getElementById('info__heading--lead'), "").getPropertyValue("height");
+      };
+    };
+
+  
+  resizeDynamicCover(); //On load
+  resizeDynamicHeadings(); //On load
+  window.addEventListener('resize', resizeDynamicCover);  //On window resize
+  window.addEventListener('resize', resizeDynamicHeadings);  //On window resize
+
+//Form scripts
+//I still need to set a larger height for the message box. Edit: Actually...I think it's fine now.
+
+  //Expand forms on keydown
+    $('#form__name__container').delegate( 'textarea', 'keydown', function (){
+        $(this).height( 0 );
+        $(this).height( this.scrollHeight );
+    });
+    $('#form__name__container').find( 'textarea' ).keydown();
+
+    $('#form__from__container').delegate( 'textarea', 'keydown', function (){
+        $(this).height( "0" );
+        $(this).height( this.scrollHeight );
+    });
+    $('#form__from__container').find( 'textarea' ).keydown();
+
+    $('#form__message__container').delegate( 'textarea', 'keydown', function (){
+
+
+        if(window.ContentFormActive){ // To fix a jumping page on load of page
+          window.scrollTo(0,document.body.scrollHeight);
+          $(this).height( "100px" );
+          $(this).height( this.scrollHeight );
+        } else{
+          $(this).height( "100px" );
+          $(this).height( this.scrollHeight );
+        }
+        
+    });
+    $('#form__message__container').find( 'textarea' ).keydown();
+
+    //Set initial height
+
+    function formResizeInitial(){  
+      document.getElementById('footer__form__name').style.height = "15px"; //20
+      document.getElementById('footer__form__from').style.height = "15px";
+      document.getElementById('footer__form__message').style.height = "50px";
+    };
+
+    formResizeInitial(); //On load
+
+    //Expand to larger area on click
+      
+      function formResizeOnClick() {
+          document.getElementById("footer__form__name").onclick = function() {
+            document.getElementById('footer__form__name').style.height = "20px"; //20
+            document.getElementById("footer__form__name").style.paddingTop = "1.1em";
+            document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
+            document.getElementById('footer__form__from').style.height = "20px";
+            document.getElementById("footer__form__from").style.paddingTop = "1.1em";
+            document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
+            document.getElementById('footer__form__message').style.height = "100px";
+            window.scrollTo(0,document.body.scrollHeight);
+            window.ContentFormActive = true; 
+          }
+
+          document.getElementById("footer__form__from").onclick = function() {
+            document.getElementById('footer__form__name').style.height = "20px"; //20
+            document.getElementById("footer__form__name").style.paddingTop = "1.1em";
+            document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
+            document.getElementById('footer__form__from').style.height = "20px";
+            document.getElementById("footer__form__from").style.paddingTop = "1.1em";
+            document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
+            document.getElementById('footer__form__message').style.height = "100px";
+            window.scrollTo(0,document.body.scrollHeight);
+            window.ContentFormActive = true;
+          }
+
+          document.getElementById("footer__form__message").onclick = function() {
+            document.getElementById('footer__form__name').style.height = "20px"; //20
+            document.getElementById("footer__form__name").style.paddingTop = "1.1em";
+            document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
+            document.getElementById('footer__form__from').style.height = "20px";
+            document.getElementById("footer__form__from").style.paddingTop = "1.1em";
+            document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
+            document.getElementById('footer__form__message').style.height = "100px";
+            window.scrollTo(0,document.body.scrollHeight);
+            window.ContentFormActive = true;
+           // loadPortfolioItem1();
+           // console.log(window.testpage);
+          }
+    };
+
+
+//windows.onload Combinatrix
+    function myPluginLoadEvent(func) {
+        // assign any pre-defined functions on 'window.onload' to a variable
+        var oldOnLoad = window.onload;
+        // if there is not any function hooked to it
+        if (typeof window.onload != 'function') {
+            // you can hook your function with it
+            window.onload = func
+        } else { // someone already hooked a function
+            window.onload = function () {
+                // call the function hooked already
+                oldOnLoad();
+                // call your awesome function
+                func();
+            }
+        }
+    }
+     
+    // pass the function you want to call at 'window.onload', in the function defined above
+    window.ContentFormActive = false;
+    formResizeOnClick();
+    // loadDivclear();
+    loadPortfolioOverview();
+    returnToPortfolio();
+    // loadPortfolioItems();
+    $( document ).ready(function() {
+         console.log( "Page ready!" );
+     });
+    myPluginLoadEvent(function defaultVars(){
+        // window.portfolioItem1Content   = 'testpage.htm';
+        // console.log ("I have defined portfolioItem1Content as " + window.portfolioItem1Content);
+    });
+
+
+//Border shenaniganz
+  //Add border
+      $(window).scroll(function() {
+         var nav = document.getElementById("nav"); //Define
+             navclasses = document.getElementById("nav").className; //Save classes
+             borderadded = navclasses.indexOf("nav--border") > -1; // Borderadded becomes "false"
+             hT = $('#scroll-to').offset().top,
+             hH = $('#scroll-to').outerHeight(),
+             wH = $(window).height(),
+             wS = $(this).scrollTop();
+          // console.log((hT-wH) , wS);
+         if (wS > (hT+hH-wH) && borderadded === false){
+            nav.className += " nav--border";}
+      });
+
+  //Remove border
+      $(window).scroll(function() {
+         var nav = document.getElementById("nav");
+             navclasses = document.getElementById("nav").className;
+             borderadded = navclasses.indexOf("nav--border") > -1;
+             hT = $('#portfolio').offset().top,
+             hH = $('#portfolio').outerHeight(),
+             wH = $(window).height(),
+             wS = $(this).scrollTop();
+          // console.log((hT-wH) , wS);
+         if (wS < (hT+hH-wH)){
+            nav.classList.remove("nav--border");}
+      });
+
+
+//Load Portfolio items
+  //Load portfolio overview into div
+    function loadPortfolioOverview(){
+          console.log("Loading your portfolio overview");
+          content_div = document.getElementById('portfolio__loadhook');
+          portfoliooverview = "portfolio.htm";
+
+          console.log("DIV load called! The item being loaded is " + portfoliooverview + " in " + content_div);
+         
+         //load the page
+          var xmlHttp = new XMLHttpRequest();
+
+          xmlHttp.onreadystatechange = function() {
+               if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+               {
+                  content_div.innerHTML = xmlHttp.responseText;
+                  // alert(new Date().getTime() - start);
+               }
+           };
+
+           start = new Date().getTime();
+
+           xmlHttp.open("GET", portfoliooverview, true); // true for asynchronous
+           xmlHttp.send(null);
+
+           //debug
+           console.log("I am now done loading " + portfoliooverview + " in " + content_div);
+           
+           // $( document ).ready(function() {
+           //     console.log( "Portfolio overview ready. Page ready!" );
+           //     loadDivclear();
+           // });
+           
+
+           if(window.navButtonReturnClicked){
+            function hideNavReturnAnimation() { //add a shrink animation 
+              var a = document.getElementById('nav__return__button');
+              a.classList ? a.classList.add('nav__return__button--shrink') : a.className += ' nav__return__button--shrink';
+              a.classList ? a.classList.add('nav__return__button--shrink--active') : a.className += ' nav__return__button--shrink--active';
+
+              setTimeout(fadeNavReturn, 500);
+              }
+
+             function fadeNavReturn() {
+              var a = document.getElementById('nav__return__button'), c = ' nav__return__button--shrink', d = ' nav__return__button--shrink--active';
+              $(a).fadeOut();
+              setTimeout(hideNavReturn, 500);
+              function hideNavReturn() {
+                var a = document.getElementById('nav__return__button'), c = ' nav__return__button--shrink', d = ' nav__return__button--shrink--active';
+
+               // document.getElementById('nav__return__button').style.display = "none"; //hide the button, legacy
+               window.navButtonReturnClicked = false;
+               $(a).removeClass(c);
+               $(a).removeClass(d);
+               loadDivclear();
+               }
+             }
+
+             var a = document.getElementById('nav__return__button'), c = ' nav__return__button--glow--active';
+             $(a).removeClass(c);
+             setTimeout(hideNavReturnAnimation, 250);
+             
+
+             
+           } else {
+              loadDivclear();
+            }
+        }
+
+//Return to Portfolio onClick. Clear the iframe and then load the div with PortfolioOverview onClick.
+
+function returnToPortfolio(){
+  console.log("You have now entered returnToPortfolio. I will clear the iframe and then reload the portfolio overview");
+  
+    document.getElementById("nav__return__button").onclick = function() {
+
+      //roll up the iframe
+        content_iframe = document.getElementById("section__portfolio__iframe");
+        document.getElementById('section__portfolio__iframe').style.width = "0px;";
+        document.getElementById('section__portfolio__iframe').style.height = "0px";
+        // document.getElementById('section__portfolio__iframe').style.display = "none";
+      // Remove the page
+        portfolioItem1Content = "none"; 
+        content_iframe.src = portfolioItem1Content;
+
+      window.navButtonReturnClicked = true;
+      loadPortfolioOverview();
+    }
+  };
+
+//Load divclear into div onClick to clear space and then load the iframe
+  //Hij kan de code in chrome niet loaden. Kan ik misschien een button in de portfolio.htm zetten die een script uitvoert?
+        function loadDivclear(){
+          console.log("You have now entered loadDivclear. I will clear the div once I have a keydown pressed and then continue on to the iFrame load");
+          
+
+          document.addEventListener("DOMContentLoaded", function(event) { 
+            console.log("Page is ready, I am going to start listening for hook1 now");
+            document.getElementById("loadhook__columns__hook1").onclick = function() {
+             //debug
+              console.log("You are clicking the iframe gate trigger!");
+              content_div = document.getElementById('portfolio__loadhook');
+              divclear = "clear.htm";
+
+              console.log("DIV load called! The item being loaded is " + divclear + " in " + content_div);
+             
+             //load the page
+              var xmlHttp = new XMLHttpRequest();
+
+              xmlHttp.onreadystatechange = function() {
+                   if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                   {
+                      content_div.innerHTML = xmlHttp.responseText;
+                      // alert(new Date().getTime() - start);
+                   }
+               };
+
+               start = new Date().getTime();
+
+               xmlHttp.open("GET", divclear, true); // true for asynchronous
+               xmlHttp.send(null);
+
+               //debug
+               console.log("I am now done loading " + divclear + " in " + content_div);
+               console.log("Continuing to loadPortfolioItems");
+               
+               loadPortfolioItems();
+            }
+          });
+
+          }
+
+  //Load item (currently: #1) into iframe //I need to change this to a combination of all the load events and have loadDivclear load the right frame for the right moment
+     function loadPortfolioItems(){
+     // document.getElementById("footer__form__from").onclick = function() {
+      //debug
+         console.log("You are accessing the load portfolio item #1 event!");
+      //set the styling
+         content_iframe = document.getElementById("section__portfolio__iframe");
+         // document.getElementById('section__portfolio__iframe').style.display = "block";
+         document.getElementById('section__portfolio__iframe').style.width = "100%";
+         document.getElementById('section__portfolio__iframe').style.height = "1000px";
+      //define the page
+         portfolioItem1Content = "testpage.htm"; 
+         console.log("iframe load called! The item being loaded is " + window.portfolioItem1Content + " in " + content_iframe);
+      //load the page
+        content_iframe.src = portfolioItem1Content; // assign url to src property
+
+      //debug
+        console.log("I am now done loading " + window.portfolioItem1Content + " in " + content_div)
+
+      //Show the return button
+        document.getElementById('nav__return__button').style.display = "inline-block";
+        
+        //Give it effects - [N] Dit moet netter, met een korte loop van een paar keer zodat ie glowt, stopt, glowt, stopt. Hij moet ook nog growen
+         window.returnbutton = document.getElementById('nav__return__button');
+
+         // window.returnbutton.classList ? window.returnbutton.classList.add('nav__return__button--glow') : window.returnbutton.className += ' nav__return__button--glow'; //add a loaded animation to the button
+         // 
+         // window.returnbutton.classList ? window.returnbutton.classList.add('nav__return__button--glow--active') : window.returnbutton.className += ' nav__return__button--glow--active'; //add a loaded animation to the button
+         
+         window.returnbutton.classList ? window.returnbutton.classList.add('nav__return__button--grow') : window.returnbutton.className += ' nav__return__button--grow'; //add a loaded animation to the button
+         
+
+
+//Return button
+        navAddCount=0;
+        navGrowCount=0;
+        navGrowNotAdded = true;
+        navGrowActiveNotRemoved = true;
+        setTimeout(toggleNavButtonEffect, 500);
+      //Let's make it blink
+        function toggleNavButtonEffect() { 
+          if(navGrowNotAdded){ //First make it bigger
+            window.returnbutton.classList ? window.returnbutton.classList.add('nav__return__button--grow--active') : window.returnbutton.className += ' nav__return__button--grow--active'; //add a loaded animation to the button
+            navGrowNotAdded = false;
+            setTimeout(toggleNavButtonEffect, 1200);
+          } else{ 
+            if(navGrowActiveNotRemoved){ //Then make it smaller
+              var b = ' nav__return__button--grow--active';
+              $(window.returnbutton).removeClass(b);
+              navGrowActiveNotRemoved = false;
+              setTimeout(addNavButtonEffect, 500); //Then jump to adding a glow
+
+            } else{ //Now we come back the second time 
+
+              var e = ' nav__return__button--glow--active'; //remove glow
+              $(window.returnbutton).removeClass(e);
+              setTimeout(addNavButtonEffect, 1000); //
+              }
+            }
+            
+
+        }
+
+        function addNavButtonEffect() {
+        console.log("Adding nav button effect")
+        
+        if(navGrowCount < 1){
+          console.log("Adding glow base")
+              var c = ' nav__return__button--grow';
+              $(window.returnbutton).removeClass(c);
+              window.returnbutton.classList ? window.returnbutton.classList.add('nav__return__button--glow') : window.returnbutton.className += ' nav__return__button--glow'; //add a loaded animation to the button
+              navGrowCount++;
+
+               addNavButtonEffect();
+                
+        } else{
+
+               window.returnbutton.classList ? window.returnbutton.classList.add('nav__return__button--glow--active') : window.returnbutton.className += ' nav__return__button--glow--active'; //add a loaded animation to the button
+              console.log("Added nav button effect")
+              navAddCount++; // increment the times this has happened
+              
+              
+                if (navAddCount < 2 ){
+                  setTimeout(toggleNavButtonEffect, 1000);}
+                }
+
+          }
+      }
+
+         //   document.getElementById("footer__form__message").onclick = function() {
+         //    //debug
+         //       console.log("You are clicking the load portfolio item #1 trigger!");
+         //       content_iframe = document.getElementById("section__portfolio__iframe");
+         //       portfolioItem1Content = "testpage.htm"
+         //       console.log("Div load called! The item being loaded is " + window.portfolioItem1Content + " in " + content_div);
+         //    //load the page
+         //      content_iframe.src = portfolioItem1Content; // assign url to src property
+
+         //    //debug
+         //      console.log("I am now done loading " + window.portfolioItem1Content + " in " + content_div)
+         //   // }
+         // }
+
+
+
+//Slow scrolls
+  $(function() {
+
+   // scroll handler
+   var scrollToAnchor = function( id ) {
+
+     // grab the element to scroll to based on the name
+     var elem = $("a[name='"+ id +"']");
+
+     // if that didn't work, look for an element with our ID
+     if ( typeof( elem.offset() ) === "undefined" ) {
+       elem = $("#"+id);
+     }
+
+     // if the destination element exists
+     if ( typeof( elem.offset() ) !== "undefined" ) {
+
+       // do the scroll
+       $('html, body').animate({
+               scrollTop: elem.offset().top
+       }, 1000 );
+
+     }
+   };
+
+   // bind to click event
+   $("a").click(function( event ) {
+
+     // only do this if it's an anchor link
+     if ( $(this).attr("href").match("#") ) {
+
+       // cancel default event propagation
+       event.preventDefault();
+
+       // scroll to the location
+       var href = $(this).attr('href').replace('#', '')
+       scrollToAnchor( href );
+
+     }
+
+   });
+
+  });
+
+
+
+     //More
+
+
+
 </script>
 
 <!-- Google Analytics-->
@@ -128,7 +761,7 @@
   ga('send', 'pageview');
 
 </script>
-
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <!-- endbower -->

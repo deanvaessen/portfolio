@@ -24,18 +24,22 @@
   $rgb-brown-4: #30231d;
   $rgb-brown: #463014;
   $rgb-creme: #ba9077;
-  $rgb-gray--brown: #6a5750;
-  $rgb-gray: #C9C9C9;
   $rgb-green--desaturated-dark: #3fb0ac;
   $rgb-green--desaturated: #729f98;
   $rgb-green: #334431;
+  $rgb-grey--2: #A3A3A3;
+  $rgb-grey--3: #939393;
+  $rgb-grey--brown: #6a5750;
+  $rgb-grey--light: #EDEDED;
+  $rgb-grey: #C9C9C9;
   $rgb-orange--2: #e6af4b;
   $rgb-orange--3: #e05915;
   $rgb-orange--4: #FFCC00;
+  $rgb-orange--5: #f2b632;
   $rgb-orange-mud: #97743a;
   $rgb-orange: #FFBF28;
-  $rgb-pink-2: #9068be;
   $rgb-pink--light: #dbc3d0;
+  $rgb-pink-2: #9068be;
   $rgb-pink: #CD679A;
   $rgb-purple--2: #431c5d;
   $rgb-purple--dark: #300032;
@@ -48,17 +52,19 @@
   $rgb-sand: #e3e0cf;
   $rgb-skin--dark: #b56969;
   $rgb-skin: #daad86;
-  $rgb-white-dark: #e8edf3;
-  $rgb-white: #f6f1ed;
+  $rgb-white--2: #f6f1ed;
+  $rgb-white--dark: #e8edf3;
+  $rgb-white: #DFDDDD;
   $rgb-yellow--light: #fae596;
   $rgb-yellow--medium: #e6cf8b;
-  $rgb-yellow: #f2b632;
+  $rgb-yellow: #F2DE32;
   $rgp-yellow--orange: #FFCA28;
 
 
 /* Tailored colors */
   $rgb-document: #F3F3F3;
   $rgb-article: #E0E0E0;
+  $rgb-footer: #272727;
 
 
 /* WIP helpers */
@@ -78,7 +84,7 @@
 
   .wip-generic{
     @extend .wip-border;
-    background: $rgb-white-dark;
+    background: $rgb-white--dark;
   }
 
   .wip-header {

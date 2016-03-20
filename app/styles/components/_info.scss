@@ -1,9 +1,396 @@
-#section-info{
-  background: $rgb-article;
+#section__info{
+  height:800px;
+
+  // background: $rgb-article;
+
+    .typo--light{
+      @include font-size(12px)
+      font-weight: initial;
+    }
+
+
+  img{
+    margin-bottom: 10px;
+    
+  }
+
+  h1{
+    // display: flex;
+    // position: relative;
+    //   // top:10%;
+    // left:50%;
+
+    // margin-left:-100px;
+    // width:200px;
+    // height:50px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top:200px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 1;
+    @include font-size(50px);
+  }
+
+
+    #info__tree__vertical{
+    width:5px;
+    height:140px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:35px;
+   
+    
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    line-height: 1em;
+  }
+
+    #info__tree__vertical--smile{
+    height:45px;
+    width:5px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:160%;
+
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block; //In order for this to work, they have to be display: block;
+    line-height: 1em;
+  }
+
+  #info__tree__vertical--html{
+    height:45px;
+    width:5px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:160px;
+
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block; //In order for this to work, they have to be display: block;
+    line-height: 1em;
+  }
+
+
+  #info__tree__vertical--html--l{
+    width:5px;
+    height:10px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:160px;
+    right: 64px;
+   
+    
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    line-height: 1em;
+  }
+
+  #info__tree__vertical--html--r{
+    width:5px;
+    height:10px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:170px;
+    left: 64px;
+   
+    
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    line-height: 1em;
+  }
+
+  #info__tree__vertical--mobile{
+    height:45px;
+    width:5px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:160%;
+
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block; //In order for this to work, they have to be display: block;
+    line-height: 1em;
+  }
+
+  #info__tree__horizontal{
+    width:59.2%; //55.2%
+    height:5px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:39px;
+   
+    
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    line-height: 1em;
+  }
+
+
+  #info__tree__horizontal--html{
+    width:65%;
+    height:5px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:180px;
+   
+    
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    line-height: 1em;
+  }
+
+  // #info__tree__vertical--smile{
+  //   margin-left: auto;
+  //   margin-right:auto;
+
+  //   width:5px;
+  //   position: relative;
+  //   right: 27.55%;
+  //   height:45px;
+  //   bottom: 0px;
+  //   background: black;
+  //   background-position: 50% center;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   display: block;
+  //   line-height: 1em;
+  //   position: relative;
+  // }
+
+  // #info__tree__horizontal{
+  //   width:200%;
+  //   height:5px;
+
+  //   margin-left: auto; //Center first
+  //   margin-right:auto;
+    
+  //   position: relative; //Then start moving, neat
+    
+  //   bottom:161%;
+   
+    
+  //   background: black;
+  //   background-position: 50% center;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   display: block;
+  //   line-height: 1em;
+  // }
+
+
+  // #info__tree__horizontal--smile{
+  //   width:20px;
+  //   height:5px;
+
+  //   margin-left: auto; //Center first
+  //   margin-right:auto;
+    
+  //   position: relative; //Then start moving, neat
+    
+  //   bottom:160%;
+   
+    
+  //   background: black;
+  //   background-position: 50% center;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   display: block;
+  //   line-height: 1em;
+
+  // }
+
+  // #info__tree__horizontal--smilebridge{
+  //   position: absolute;
+  //   left:39%;
+  //   bottom:145%;
+
+  //   width:20px;
+  //   height:5px;
+  //   background: black;
+  //   background-position: 50% center;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+
+  //   line-height: 1em;
+
+  //   display: block;
+  // }
+
+
+  // #info__tree__horizontal--smile--2?{
+  //   position: absolute;
+  //   left:39%;
+  //   bottom:145%;
+
+  //   width:200%;
+  //   height:5px;
+  //   background: black;
+  //   background-position: 50% center;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+
+  //   line-height: 1em;
+
+  //   display: block;
+  // }
+
 }
 
-.section-info-description{
-  width:50%;
+#info__columns{
 
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #F3F3F3;
 }
+
+
+
+#section__info__who{
+  height: 100%;
+  width: 27%;
+
+  // margin-top: 25%;
+
+
+  #info__smile{
+    width:90px;
+    height: 90px;
+    position:relative;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    img{
+      display:block;
+      position:relative;
+      // width:90px;
+    }
+
+      h2{
+      position:absolute;
+      top: 0%;
+      left: 90%;
+    }
+  }
+}
+
+#section__info__what{
+  height: 100%;
+  width: 27%;
+
+  // margin-top: 25%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+
+  #what__imagerow__container{
+    width:200px;
+    height: 90px;
+    position:relative;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #what__imagerow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img:last-child{
+    height:80px;
+    width:80px;
+    }
+
+
+  }
+}
+
+#section__info__how{
+  height: 100%;
+  width: 27%;
+
+  // margin-top: 25%;
+  //
+
+  #how__imagerow__container{
+    width:200px;
+    height: 90px;
+    position:relative;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img{
+    display:block;
+    // width:90px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 

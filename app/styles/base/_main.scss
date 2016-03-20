@@ -20,6 +20,11 @@
     }
 
     @font-face {
+      font-family: Vollkorn-Bold;
+      src: url("../fonts/Vollkorn-Bold.otf") format("opentype");
+    }
+
+    @font-face {
       font-family: "Open Sans Condensed Light";
       src: url("../fonts/OpenSans-CondLight.ttf") format("truetype");
     }
@@ -28,6 +33,18 @@
       font-family: "Montserrat-Regular";
       src: url("../fonts/Montserrat-Regular.otf") format("opentype");
     }
+
+    @font-face {
+      font-family: "Montserrat-Light";
+      src: url("../fonts/Montserrat-Light.otf") format("opentype");
+    }
+
+    @font-face {
+      font-family: "BebasNue Regular";
+      src: url("../fonts/BebasNeue Regular.otf") format("opentype");
+    }
+
+    
 
     a {
       text-decoration: none;
@@ -38,17 +55,27 @@
 
       display: flexbox;
       flex-direction: column;
+      // position:relative;
 
-      height: 4000px;
+      // height: 5000px;
 
       // font-family: "Vollkorn-Regular", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-family: "Montserrat-Regular", sans-serif;
       background: $rgb-document;
 
+      p{
+        font-family: "Montserrat-Light";
+        letter-spacing: 0.5px;
+        line-height:18px;
+      }
     }
 
     #sections {
-    margin-top:40px;
+    margin-top:70px;
+    }
+
+    article{
+      width:100%;
     }
 
     .section {
@@ -68,13 +95,99 @@
         border-width: 1px;
       }
 
-      .typo-subtitle{
-        @include font-size(14px)
+      .brdr-minimal{
+        border-style: solid;
+        border-width: 1px;
       }
+
+      .brdr-minimal--bottom{
+        border-bottom-style: solid;
+        border-width: 1px;
+      }
+
+      .brdr-orange--top{
+        border-top:2px solid $rgb-orange;
+      }
+
+      .brdr-orange--bottom{
+        border-bottom:2px solid $rgb-orange;
+      }
+
+      .msc-inline{
+        display: inline-block;
+      }
+
+
+      .msc-center{
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+        //You still need to set a width per element for this to work!
+      }
+
+      .msc-block{
+        display: block;
+      }
+
+      .msc-flex-center{
+        display:flex;
+        justify-content: center;
+        //You still need to set a width per element for this to work!
+      }
+
+      .typo-subtitle{
+        //something
+      }
+
+      .typo--temp{
+        text-decoration: line-through;
+      }
+
+      .typo--light{
+        color: $rgb-grey--3;
+        font-weight:initial;
+      }
+
+      .typo--bold{
+        font-weight: bold;
+      }
+
+      .typo--small{
+        @include font-size(13px)
+      }
+
+      .typo--tiny{
+        @include font-size(8px)
+      }
+
+      .typo--accent{
+        color: $rgb-orange;
+        // @include font-size(15px)
+        
+
+        // font-family: "Vollkorn-Regular";
+      }
+
+      .typo--headline{
+        // font-family: "BebasNue Regular";
+        font-family: "Montserrat-Light";
+      }
+
 
       .fx-vignette {
         -webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
         -moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.4);
         box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.4);
+      }
+
+
+      .fx-vignette-bottom {
+
+      }
+
+      .fx-shadow-bottom {
+        -webkit-box-shadow: 0 0 0 4px white, 0 6px 4px black;
+           -moz-box-shadow: 0 0 0 4px white, 0 6px 4px black;
+                box-shadow: 0 0 0 4px white, 0 6px 4px black;
       }
 

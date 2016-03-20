@@ -4,16 +4,44 @@
 		"selected_items":
 		[
 			[
+				"curre",
+				"currentmessageheightintegers"
+			],
+			[
+				"current",
+				"currentmessageheight"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"line-",
+				"line-through"
+			],
+			[
+				"Mont",
+				"Montserrat-Light"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
 				"align",
 				"align-content"
 			],
 			[
 				"flex-",
 				"flex-direction"
-			],
-			[
-				"Mont",
-				"Montserrat-Regular"
 			],
 			[
 				"rg",
@@ -56,18 +84,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/index.html",
+			"file": "app/styles/settings/_main.scss",
 			"settings":
 			{
-				"buffer_size": 4320,
+				"buffer_size": 2247,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/settings/_main.scss",
+			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 2089,
+				"buffer_size": 27347,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,39 +103,15 @@
 			"file": "app/styles/base/_main.scss",
 			"settings":
 			{
-				"buffer_size": 1735,
+				"buffer_size": 4166,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/components/_portfolio.scss",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_nav.scss",
-			"settings":
-			{
-				"buffer_size": 861,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "app/styles/components/_cover.scss",
 			"settings":
 			{
-				"buffer_size": 472,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
-			"settings":
-			{
-				"buffer_size": 25762,
+				"buffer_size": 2210,
 				"line_ending": "Windows"
 			}
 		},
@@ -115,15 +119,7 @@
 			"file": "app/styles/components/_info.scss",
 			"settings":
 			{
-				"buffer_size": 90,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_buttons.scss",
-			"settings":
-			{
-				"buffer_size": 327,
+				"buffer_size": 7112,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +127,31 @@
 			"file": "app/styles/components/_footer.scss",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 6401,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/components/_nav.scss",
+			"settings":
+			{
+				"buffer_size": 1822,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/components/_portfolio.scss",
+			"settings":
+			{
+				"buffer_size": 43,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/components/_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 3284,
 				"line_ending": "Windows"
 			}
 		},
@@ -147,7 +167,7 @@
 			"file": "app/styles/tools/tools.mixins.scss",
 			"settings":
 			{
-				"buffer_size": 4219,
+				"buffer_size": 4273,
 				"line_ending": "Windows"
 			}
 		},
@@ -160,10 +180,82 @@
 			}
 		},
 		{
+			"file": "app/styles/vendor/fontawesome/scss/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 19859,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/styles/main.scss",
 			"settings":
 			{
 				"buffer_size": 2772,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
+			"settings":
+			{
+				"buffer_size": 25762,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/vendor/_main.scss",
+			"settings":
+			{
+				"buffer_size": 351,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/vendor/fontawesome/scss/font-awesome.scss",
+			"settings":
+			{
+				"buffer_size": 405,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/vendor/fontawesome/scss/_icons.scss",
+			"settings":
+			{
+				"buffer_size": 44553,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/vendor/flagicon/sass/flag-icon-more.scss",
+			"settings":
+			{
+				"buffer_size": 108,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/vendor/flagicon/sass/variables.scss",
+			"settings":
+			{
+				"buffer_size": 130,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/vendor/flagicon/sass/flag-icon.scss",
+			"settings":
+			{
+				"buffer_size": 99,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/vendor/flagicon/sass/flag-icon-list.scss",
+			"settings":
+			{
+				"buffer_size": 6030,
 				"line_ending": "Unix"
 			}
 		}
@@ -176,7 +268,7 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "sass",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -269,8 +361,18 @@
 	},
 	"file_history":
 	[
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/index.htm",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/css/flag-icon.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-base.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-list.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-more.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/_flag-icon.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/variables.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/hover/hover.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/hover/effects/shadow-and-glow-transitions/_float-shadow.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/index.html",
+		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/index.htm",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/generic/_main.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/base/_main.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/_main_old.scss",
@@ -330,7 +432,6 @@
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/320up.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/1200up.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/320up.sass",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/app/styles/main.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/app/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/bower_components/leanmodal/jquery.leanModal.js",
@@ -374,6 +475,54 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"message",
+			"input",
+			"messageneveractive",
+			"about",
+			"name=",
+			"SEND",
+			"info__tree_horizo",
+			"width: 28%;",
+			"width:28%;",
+			"width:28%",
+			"width:25%",
+			"width:25%;",
+			"width: 25%;",
+			"initial",
+			"justify",
+			"msc-center-flex",
+			"form__from__container",
+			"textarea",
+			"te",
+			"textarea",
+			"input",
+			"256",
+			"name",
+			"__right",
+			"social",
+			"languages",
+			"p--temp",
+			"p--light",
+			"</br>",
+			"p--bold",
+			"limb",
+			"mobile",
+			"z-index",
+			"\"\";\n",
+			"gray",
+			"border",
+			";\n",
+			"#E0E0E0",
+			"more",
+			"id=",
+			"hvr",
+			"dark",
+			"$rgb-white",
+			"clear",
+			"typo-subtitle--name",
+			"cover-content",
+			"section-cover",
+			"section-cover-bg",
 			"background",
 			"font",
 			".wip-border2;",
@@ -453,55 +602,7 @@
 			"rcs/videojs/video.js",
 			"video.js",
 			"soyuzlaunch",
-			"test",
-			"lan-smart-image",
-			"video-js",
-			"soyuzlaunch",
-			"vid",
-			"video",
-			"soyuzlaunch",
-			"video",
-			"modal",
-			"min-height",
-			"pricing-media-content",
-			"hover",
-			".plan",
-			"yellow",
-			"#yellow",
-			"#000;",
-			"text-shadow: 0 1px 0 #000;",
-			"text-shadow: 0 1px",
-			"text-shadow: 0 1px 0",
-			"plan-pro-sticker",
-			"features-icon-info",
-			".li",
-			"text-shadow",
-			"hover",
-			"borderli-a",
-			".li",
-			".borderli-b",
-			"borderli-c",
-			"min-width",
-			"568",
-			"container-alpha",
-			"pure-g container-alpha",
-			"pure-u-1-24 pure-u-md-1-4 pure-u-lg-7-24 pure-u-xl-1-4",
-			"pure-u-1-4 container-pricing",
-			"    min-width: 300px;",
-			"7-24",
-			"apha",
-			"alpha",
-			"container-plan-icon-straddle-right",
-			"container-plan-icon-straddle-right\"",
-			"margin-right",
-			"media",
-			"image",
-			"right",
-			"top",
-			"plan-icon-straddle-left",
-			"overflow:auto;",
-			"span",
-			"container-plan-icon"
+			"test"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -509,6 +610,18 @@
 		"regex": false,
 		"replace_history":
 		[
+			"width: 27%;",
+			"width: 28%;",
+			"width: 30%;",
+			"msc-flex-center",
+			"typo--temp",
+			"typo--light",
+			"<br />",
+			"typo--bold",
+			"grey",
+			"cover__content",
+			"cover",
+			"cover__bg",
 			"//",
 			"// /*",
 			"//",
@@ -540,24 +653,53 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/index.html",
+					"file": "app/styles/settings/_main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4320,
+						"buffer_size": 2247,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1596,
-								1596
+								892,
+								898
+							]
+						],
+						"settings":
+						{
+							"dfw_is_in_fs": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15629,
+								15629
 							]
 						],
 						"settings":
@@ -567,38 +709,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4808.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/styles/settings/_main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2089,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1168,
-								1168
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 315.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -613,139 +727,144 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1735,
+						"buffer_size": 4166,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1692,
-								1692
+								3239,
+								3154
 							]
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 1775.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/styles/components/_cover.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2210,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"dfw_is_in_fs": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/styles/components/_portfolio.scss",
+					"buffer": 4,
+					"file": "app/styles/components/_info.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 7112,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3220,
+								3220
 							]
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5082.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/styles/components/_nav.scss",
+					"buffer": 5,
+					"file": "app/styles/components/_footer.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 861,
+						"buffer_size": 6401,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								186,
-								186
+								3359,
+								3359
 							]
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2555.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/styles/components/_cover.scss",
+					"buffer": 6,
+					"file": "app/styles/components/_nav.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 472,
+						"buffer_size": 1822,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								336,
-								336
+								1040,
+								1040
 							]
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25762,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6066,
-								6076
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6350.0,
+						"translation.y": 585.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -753,67 +872,46 @@
 				},
 				{
 					"buffer": 7,
-					"file": "app/styles/components/_info.scss",
+					"file": "app/styles/components/_portfolio.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 90,
+						"buffer_size": 43,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13,
-								13
+								20,
+								20
 							]
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 8,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 8,
 					"file": "app/styles/components/_buttons.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								327,
-								327
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/styles/components/_footer.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
+						"buffer_size": 3284,
 						"regions":
 						{
 						},
@@ -821,28 +919,23 @@
 						[
 							[
 								0,
-								0
+								3284
 							]
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2930.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 7,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "app/styles/components/_main.scss",
 					"semi_transient": false,
 					"settings":
@@ -860,47 +953,49 @@
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 10,
 					"file": "app/styles/tools/tools.mixins.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4219,
+						"buffer_size": 4273,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								376,
-								376
+								3712,
+								3465
 							]
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 2655.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 11,
 					"file": "app/styles/tools/_main.scss",
 					"semi_transient": false,
 					"settings":
@@ -912,8 +1007,37 @@
 						"selection":
 						[
 							[
-								243,
-								243
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"dfw_is_in_fs": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/styles/vendor/fontawesome/scss/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19859,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1747,
+								1747
 							]
 						],
 						"settings":
@@ -921,10 +1045,10 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 635.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -946,15 +1070,243 @@
 						],
 						"settings":
 						{
+							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 675.0,
+						"translation.y": 1047.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6066,
+								6076
+							]
+						],
+						"settings":
+						{
+							"dfw_is_in_fs": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6350.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/styles/vendor/_main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/styles/vendor/fontawesome/scss/font-awesome.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/styles/vendor/fontawesome/scss/_icons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 44553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/styles/vendor/flagicon/sass/flag-icon-more.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/styles/vendor/flagicon/sass/variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "app/styles/vendor/flagicon/sass/flag-icon.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "app/styles/vendor/flagicon/sass/flag-icon-list.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5823,
+								5847
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3575.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
 					"type": "text"
 				}
 			]
@@ -1000,7 +1352,7 @@
 		"rows":
 		[
 			0.0,
-			0.712221327648,
+			0.675724977283,
 			1.0
 		]
 	},
@@ -1043,7 +1395,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
