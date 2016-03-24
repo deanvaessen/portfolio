@@ -329,11 +329,26 @@
       // width:90px;
     }
 
-      h2{
+      #info__smile__dutch{
       position:absolute;
+
       top: 0%;
       left: 90%;
     }
+      #info__smile__english{
+      position:absolute;
+      font-weight: bold;
+      top: 25%;
+      right: 105%;
+    }
+      #info__smile__russian{
+      position:absolute;
+      font-weight: normal;
+      top: 80%;
+
+      left: 105%;
+    }
+
   }
 }
 

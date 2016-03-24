@@ -121,7 +121,7 @@
       .msc-center{
         margin-left: auto;
         margin-right: auto;
-        display:block;
+        display:block; // ? - Not inline-block? That would fix it I think
         //You still need to set a width per element for this to work!
       }
 
@@ -132,7 +132,7 @@
       .msc-flex-center{
         display:flex;
         justify-content: center;
-        //You still need to set a width per element for this to work!
+        //You still need to set a width per element for this to work! (? - In case of element residing flex parent)
       }
 
       .typo-subtitle{
@@ -189,5 +189,35 @@
         -webkit-box-shadow: 0 0 0 4px white, 0 6px 4px black;
            -moz-box-shadow: 0 0 0 4px white, 0 6px 4px black;
                 box-shadow: 0 0 0 4px white, 0 6px 4px black;
+      }
+
+      .fx-underline--orange {
+
+        position: relative;
+
+        text-decoration: none;
+        border-radius: initial;
+      }
+
+      .fx-underline--orange:before{
+        content: "";
+        position: absolute;
+        width: 100%; //was 100%
+        height: 3px; 
+        bottom: 0px;
+        top: 20px; //was 34px
+        left: 0; //was 0
+        background-color: $rgb-orange;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.2s ease-in-out 0s; //was 0.3
+        transition: all 0.2s ease-in-out 0s;
+      }
+
+      .fx-underline--orange:hover:before{
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
       }
 

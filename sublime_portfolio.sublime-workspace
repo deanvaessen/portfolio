@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"rgb-blue",
+				"rgb-blue--light"
+			],
+			[
+				"rgb",
+				"rgb-white--2"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"navRetu",
+				"navButtonReturnClicked"
+			],
+			[
+				"navRet",
+				"navButtonReturnClicked"
+			],
+			[
+				"portfolio",
+				"portfoliooverview"
+			],
+			[
+				"navGrow",
+				"navGrowActiveNotRemoved"
+			],
+			[
+				"navgrow",
+				"navGrowNotAdded"
+			],
+			[
+				"nav__return",
+				"nav__return__button"
+			],
+			[
+				"section__port",
+				"section__portfolio__div"
+			],
+			[
 				"curre",
 				"currentmessageheightintegers"
 			],
@@ -34,10 +74,6 @@
 			[
 				"class",
 				"className"
-			],
-			[
-				"align",
-				"align-content"
 			],
 			[
 				"flex-",
@@ -87,7 +123,7 @@
 			"file": "app/styles/settings/_main.scss",
 			"settings":
 			{
-				"buffer_size": 2247,
+				"buffer_size": 2273,
 				"line_ending": "Unix"
 			}
 		},
@@ -95,16 +131,43 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 27347,
+				"buffer_size": 34929,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/portfolio.html",
+			"settings":
+			{
+				"buffer_size": 844,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n	<title>Dean Vaessen</title>\n	<!--<style>\n	p { line-height: 1.5;\n    margin: 0 0 1em;    }\n\n    body{ background-color: lightgray;}\n    </style>-->\n\n        <style>\n      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */\n      body {\n  font-family: 'Open Sans Condensed', sans-serif;\n  font-size: 85pt;\n  background-color: #e8e3c7;\n  text-align: center;\n  line-height: 1.2em;\n  padding-top: 70px;\n}\n\n  a {\n      text-decoration:none;\n      color: rgb(138, 99, 88);\n   }\n\n.dashed-shadow {\n  position: relative;\n  top: 8px;\n  left: 8px;\n  display: inline-block;\n  color: #ba9186;\n}\n\n.dashed-noshadow {\n  position: relative;\n  top: 0px;\n  left: 8px;\n  display: inline-block;\n  color: rgb(138, 99, 88);\n  font-size:0.2em; \n}\n\n@keyframes dash-animation {\n  0% {\n    background-position: 0 0;\n  }\n  100% {\n    background-position: 100% 0;\n  }\n}\n.dashed-shadow:before {\n  content: \" \";\n  display: block;\n  position: absolute;\n  top: -8px;\n  left: -8px;\n  bottom: -2px;\n  right: -2px;\n  z-index: 1;\n  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIxMi41JSIgc3RvcC1jb2xvcj0iI2U4ZTNjNyIvPjxzdG9wIG9mZnNldD0iMTIuNSUiIHN0b3AtY29sb3I9IiNlOGUzYzciIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIzNy41JSIgc3RvcC1jb2xvcj0iI2U4ZTNjNyIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjM3LjUlIiBzdG9wLWNvbG9yPSIjZThlM2M3Ii8+PHN0b3Agb2Zmc2V0PSI2Mi41JSIgc3RvcC1jb2xvcj0iI2U4ZTNjNyIvPjxzdG9wIG9mZnNldD0iNjIuNSUiIHN0b3AtY29sb3I9IiNlOGUzYzciIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI4Ny41JSIgc3RvcC1jb2xvcj0iI2U4ZTNjNyIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9Ijg3LjUlIiBzdG9wLWNvbG9yPSIjZThlM2M3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');\n  background-size: 100%;\n  background-image: -moz-linear-gradient(45deg, #e8e3c7 12.5%, rgba(232, 227, 199, 0) 12.5%, rgba(232, 227, 199, 0) 37.5%, #e8e3c7 37.5%, #e8e3c7 62.5%, rgba(232, 227, 199, 0) 62.5%, rgba(232, 227, 199, 0) 87.5%, #e8e3c7 87.5%);\n  background-image: -webkit-linear-gradient(45deg, #e8e3c7 12.5%, rgba(232, 227, 199, 0) 12.5%, rgba(232, 227, 199, 0) 37.5%, #e8e3c7 37.5%, #e8e3c7 62.5%, rgba(232, 227, 199, 0) 62.5%, rgba(232, 227, 199, 0) 87.5%, #e8e3c7 87.5%);\n  background-image: linear-gradient(45deg, #e8e3c7 12.5%, rgba(232, 227, 199, 0) 12.5%, rgba(232, 227, 199, 0) 37.5%, #e8e3c7 37.5%, #e8e3c7 62.5%, rgba(232, 227, 199, 0) 62.5%, rgba(232, 227, 199, 0) 87.5%, #e8e3c7 87.5%);\n  background-size: 6px 6px;\n}\n\n.dashed-shadow:hover:before {\n  animation: dash-animation 30s infinite linear;\n}\n\n.dashed-shadow:after {\n  z-index: 2;\n  content: attr(data-text);\n  position: absolute;\n  left: -8px;\n  top: -8px;\n  color: #b85b3f;\n  text-shadow: 3px 3px #e8e3c7;\n}\n\n.hello {\n  font-family: 'Cookie',cursive;\n  font-size: 140pt;\n}\n\n.sorta-block {\n  font-size: 50pt;\n  line-height: 1.1em;\n  -moz-transform: skew(0, -5deg);\n  -ms-transform: skew(0, -5deg);\n  -webkit-transform: skew(0, -5deg);\n  transform: skew(0, -5deg);\n  z-index: 3;\n  position: relative;\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\n\n.sorta {\n  border-top: 4px solid #b85b3f;\n  border-bottom: 4px solid #b85b3f;\n  text-transform: uppercase;\n  z-index: 3;\n  font-style: italic;\n}\n\n.hipsterish {\n  font-family: 'Sancreek', cursive;\n  font-size: 70pt;\n}\n\n.dashed-shadow-text {\n  font-size: 140pt;\n  line-height: 0.7em;\n}\n\n.shadow {\n  font-size: 120pt;\n  line-height: 0.8em;\n}\n\n    </style>\n\n<script>\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\n  ga('create', 'UA-37806719-1', 'auto');\n  ga('send', 'pageview');\n\n</script>\n\n</head>\n<body>\n\n    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>\n<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>\n<link href='http://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>\n\n<div class=\"sorta-block\">\n  <div data-text=\"BRB!\"class=\"dashed-shadow sorta\">BRB!</div> \n</div>\n\n\n	<div data-text=\"contact@deanvaessen.com\" class=\"dashed-noshadow\" style=\"\">\n	<a href=\"mailto:contact@deanvaessen.com\" title=\"Contact\">\n	contact@deanvaessen.com</a>\n</div>\n\n</body>\n</html>",
+			"file": "app/testpage.htm",
+			"file_size": 4963,
+			"file_write_time": 131023387206068380,
+			"settings":
+			{
+				"buffer_size": 4808,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "app/styles/base/_main.scss",
 			"settings":
 			{
-				"buffer_size": 4166,
+				"buffer_size": 5010,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/components/_blog.scss",
+			"settings":
+			{
+				"buffer_size": 115,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -119,7 +182,7 @@
 			"file": "app/styles/components/_info.scss",
 			"settings":
 			{
-				"buffer_size": 7112,
+				"buffer_size": 7373,
 				"line_ending": "Windows"
 			}
 		},
@@ -127,7 +190,7 @@
 			"file": "app/styles/components/_footer.scss",
 			"settings":
 			{
-				"buffer_size": 6401,
+				"buffer_size": 7730,
 				"line_ending": "Windows"
 			}
 		},
@@ -135,15 +198,23 @@
 			"file": "app/styles/components/_nav.scss",
 			"settings":
 			{
-				"buffer_size": 1822,
+				"buffer_size": 4225,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/vendor/hover/effects/shadow-and-glow-transitions/_glow.scss",
+			"settings":
+			{
+				"buffer_size": 229,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "app/styles/components/_portfolio.scss",
 			"settings":
 			{
-				"buffer_size": 43,
+				"buffer_size": 701,
 				"line_ending": "Windows"
 			}
 		},
@@ -159,7 +230,7 @@
 			"file": "app/styles/components/_main.scss",
 			"settings":
 			{
-				"buffer_size": 343,
+				"buffer_size": 359,
 				"line_ending": "Unix"
 			}
 		},
@@ -361,6 +432,13 @@
 	},
 	"file_history":
 	[
+		"//192.168.0.19/webstore/dev/public_html/styles/main.css",
+		"//192.168.0.19/webstore/dev/public_html/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/portfolio.htm",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Sandbox/test/app/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/Archive/1903/2/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/hover/hover.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/css/flag-icon.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-base.scss",
@@ -368,9 +446,7 @@
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-more.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/_flag-icon.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/variables.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/hover/hover.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/hover/effects/shadow-and-glow-transitions/_float-shadow.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/index.html",
 		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/index.htm",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/generic/_main.scss",
@@ -444,7 +520,6 @@
 		"//192.168.0.19/webstore/dev/public_html/graveyard.htm",
 		"//192.168.0.19/webstore/dev/public_html/index.htm",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/Temp/ytmodal_old/src/sass/main.css",
-		"//192.168.0.19/webstore/dev/public_html/index.html",
 		"//192.168.0.19/webstore/dev/public_html/rcs/pure/pure.css",
 		"//192.168.0.19/webstore/dev/public_html/.htaccess",
 		"//192.168.0.19/webstore/dev/public_html/test.htaccess",
@@ -475,6 +550,108 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"smile",
+			"blue",
+			"send",
+			"blue",
+			"left",
+			"loadhook",
+			"Adding nav button effect",
+			"nav__returnEffectDirector",
+			"returnEffectDirector",
+			"navButtonReturnClicked",
+			"loadPortfolioOverview",
+			"returnToPortfolio",
+			"loadPortfolioOverview",
+			"divclear",
+			"shrink",
+			"nav__return__button",
+			"nav__returnEffectDirector",
+			"shrink",
+			"return",
+			"nav__return",
+			"loaddivclear",
+			"nav__return__button",
+			"bg--res",
+			"cover__over",
+			"coveer__overlay",
+			"cover__content",
+			"cover",
+			"çover",
+			"cover",
+			"nav",
+			"height",
+			"min-height",
+			"nav",
+			"clear",
+			"loadhook",
+			"oud",
+			"$rgb-white--2",
+			"portfolio.htm",
+			"div load",
+			"ready",
+			"opacity",
+			"scroll-to",
+			"font-size: 12px;",
+			"font-size:12px;",
+			"size",
+			"#f6f1ed",
+			"loadhook",
+			"Return",
+			"return",
+			"navGrowCount",
+			"navGrowRemoveCount",
+			"addNavButtonEffect",
+			"return",
+			"testpage.htm",
+			"portfolio.htm",
+			"--active",
+			"glow",
+			"ContentFormActive",
+			"return",
+			"keydow",
+			"hideNavReturn",
+			"navButtonReturnClicked",
+			"loadport",
+			"display = ",
+			"display:",
+			"section__portfolio__iframe",
+			"'section__portfolio__iframe'",
+			"section__portfolio__iframe",
+			"'section__portfolio__iframe'",
+			"#portfolio",
+			"loadPortfolioItems",
+			"window.scrollTo",
+			"window.scrollTo(0,document.body.scrollHeight);",
+			"removeNavButtonEffect",
+			"return",
+			"window.returnbutton",
+			"nav__return__button",
+			"class",
+			"content_iframe",
+			"loaddivclear",
+			"iframeclear",
+			"about",
+			"#about",
+			"loadIFrameClear",
+			"you have now entere",
+			"loadhook_columns__hook1",
+			"loadIframeClear",
+			"Allo!",
+			"loadIframeClear",
+			"load portfolio",
+			"loadIframeGate",
+			"trigger",
+			"iframegate.htm",
+			"loadPortfolioItems",
+			"blog",
+			"section__portfolio__loadhook",
+			"section__portfolio__div",
+			"portfolio",
+			"alert",
+			"window.onload",
+			"onload",
+			"console.log",
 			"message",
 			"input",
 			"messageneveractive",
@@ -500,109 +677,7 @@
 			"name",
 			"__right",
 			"social",
-			"languages",
-			"p--temp",
-			"p--light",
-			"</br>",
-			"p--bold",
-			"limb",
-			"mobile",
-			"z-index",
-			"\"\";\n",
-			"gray",
-			"border",
-			";\n",
-			"#E0E0E0",
-			"more",
-			"id=",
-			"hvr",
-			"dark",
-			"$rgb-white",
-			"clear",
-			"typo-subtitle--name",
-			"cover-content",
-			"section-cover",
-			"section-cover-bg",
-			"background",
-			"font",
-			".wip-border2;",
-			"\n  ",
-			"scss",
-			".scss",
-			"sync",
-			"//*",
-			"/*",
-			"/**",
-			"/**\n * \n */",
-			"/**",
-			"*",
-			"/*",
-			"/**",
-			"* ",
-			"/*",
-			".scss",
-			".png",
-			"onderschrift",
-			"card",
-			"footer",
-			"card",
-			"header",
-			"positio",
-			"expand",
-			"expand0",
-			"crios",
-			"  margin-right:25px;",
-			"horse",
-			"features-header-onderschrift",
-			"featureh",
-			"onderscrift-features",
-			"onderschrift-features",
-			"bovenschrift-features",
-			"lorem ipsum dolar",
-			"position",
-			".header",
-			"header",
-			"horse-header-underscore-positioning",
-			"beta-horse",
-			"header",
-			"pisition",
-			"horse",
-			"border",
-			"height",
-			"#go",
-			"trigger",
-			"contact",
-			"play",
-			"paused",
-			"video.js",
-			"pausetest",
-			"video.js",
-			"this.techCall_('pause');",
-			"pause() {",
-			"pause()",
-			"pause",
-			"pausetestFunction",
-			"myplayer",
-			"document.getelement",
-			"function pause",
-			"statusvanmo",
-			"video",
-			"video.js",
-			"soyuzlaunc",
-			"soyuzlaunch",
-			".js",
-			"pause",
-			"pausetest",
-			"pausetestFunc",
-			"t",
-			"pausetestfunc",
-			"pause",
-			"hoi3",
-			"video.js",
-			"rcs/videojs/video.js",
-			"video.js",
-			"soyuzlaunch",
-			"test"
+			"languages"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -610,6 +685,21 @@
 		"regex": false,
 		"replace_history":
 		[
+			"white",
+			"@include font-size(12px);",
+			"navGrowRemoveCount",
+			"addNavButtonGlow",
+			"testpage.html",
+			"portfolio.html",
+			"toggleNavButtonEffect",
+			"loadDivclear",
+			"divclear",
+			"loadhook__columns__hook1",
+			"loadIFrameClear",
+			"loadIframeClear",
+			"clear.htm",
+			"portfolio__loadhook",
+			"section__portfolio__loadhook",
 			"width: 27%;",
 			"width: 28%;",
 			"width: 30%;",
@@ -662,15 +752,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2247,
+						"buffer_size": 2273,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								892,
-								898
+								396,
+								397
 							]
 						],
 						"settings":
@@ -679,10 +769,10 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -691,15 +781,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27347,
+						"buffer_size": 34929,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15629,
-								15629
+								7826,
+								7872
 							]
 						],
 						"settings":
@@ -709,10 +799,70 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4808.0,
+						"translation.y": 2336.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/portfolio.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 844,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								844,
+								844
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/testpage.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								94
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -722,20 +872,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "app/styles/base/_main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4166,
+						"buffer_size": 5010,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3239,
-								3154
+								4393,
+								4393
 							]
 						],
 						"settings":
@@ -746,14 +896,44 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1775.0,
+						"translation.y": 2386.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
+					"file": "app/styles/components/_blog.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "app/styles/components/_cover.scss",
 					"semi_transient": false,
 					"settings":
@@ -780,24 +960,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "app/styles/components/_info.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7112,
+						"buffer_size": 7373,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3220,
-								3220
+								6566,
+								6566
 							]
 						],
 						"settings":
@@ -806,56 +986,27 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5082.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/styles/components/_footer.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6401,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3359,
-								3359
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2555.0,
+						"translation.y": 4171.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/styles/components/_nav.scss",
+					"buffer": 8,
+					"file": "app/styles/components/_footer.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1822,
+						"buffer_size": 7730,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1040,
-								1040
+								1253,
+								1253
 							]
 						],
 						"settings":
@@ -864,27 +1015,27 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 585.0,
+						"translation.y": 1006.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/styles/components/_portfolio.scss",
+					"buffer": 9,
+					"file": "app/styles/components/_nav.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 43,
+						"buffer_size": 4225,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20,
-								20
+								438,
+								442
 							]
 						],
 						"settings":
@@ -896,7 +1047,64 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/styles/vendor/hover/effects/shadow-and-glow-transitions/_glow.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								190
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/styles/components/_portfolio.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								323,
+								323
+							]
+						],
+						"settings":
+						{
+							"dfw_is_in_fs": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
 					"type": "text"
 				}
 			]
@@ -906,7 +1114,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 8,
+					"buffer": 12,
 					"file": "app/styles/components/_buttons.scss",
 					"semi_transient": false,
 					"settings":
@@ -918,8 +1126,8 @@
 						"selection":
 						[
 							[
-								0,
-								3284
+								2073,
+								1429
 							]
 						],
 						"settings":
@@ -928,27 +1136,27 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2930.0,
+						"translation.y": 1808.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 13,
 					"file": "app/styles/components/_main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 343,
+						"buffer_size": 359,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								74,
-								74
+								359,
+								359
 							]
 						],
 						"settings":
@@ -960,11 +1168,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 14,
 					"file": "app/styles/tools/tools.mixins.scss",
 					"semi_transient": false,
 					"settings":
@@ -976,8 +1184,8 @@
 						"selection":
 						[
 							[
-								3712,
-								3465
+								2419,
+								2397
 							]
 						],
 						"settings":
@@ -988,14 +1196,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2655.0,
+						"translation.y": 1742.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 15,
 					"file": "app/styles/tools/_main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1020,11 +1228,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 16,
 					"file": "app/styles/vendor/fontawesome/scss/_variables.scss",
 					"semi_transient": false,
 					"settings":
@@ -1048,11 +1256,11 @@
 						"translation.y": 635.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 17,
 					"file": "app/styles/main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1079,11 +1287,11 @@
 						"translation.y": 1047.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 18,
 					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
 					"semi_transient": false,
 					"settings":
@@ -1110,11 +1318,11 @@
 						"translation.y": 6350.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 19,
 					"file": "app/styles/vendor/_main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1138,11 +1346,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 20,
 					"file": "app/styles/vendor/fontawesome/scss/font-awesome.scss",
 					"semi_transient": false,
 					"settings":
@@ -1166,11 +1374,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 21,
 					"file": "app/styles/vendor/fontawesome/scss/_icons.scss",
 					"semi_transient": false,
 					"settings":
@@ -1194,11 +1402,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 22,
 					"file": "app/styles/vendor/flagicon/sass/flag-icon-more.scss",
 					"semi_transient": false,
 					"settings":
@@ -1222,11 +1430,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 23,
 					"file": "app/styles/vendor/flagicon/sass/variables.scss",
 					"semi_transient": false,
 					"settings":
@@ -1250,11 +1458,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 24,
 					"file": "app/styles/vendor/flagicon/sass/flag-icon.scss",
 					"semi_transient": false,
 					"settings":
@@ -1278,11 +1486,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 25,
 					"file": "app/styles/vendor/flagicon/sass/flag-icon-list.scss",
 					"semi_transient": false,
 					"settings":
@@ -1306,7 +1514,7 @@
 						"translation.y": 3575.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 20,
 					"type": "text"
 				}
 			]
@@ -1352,7 +1560,7 @@
 		"rows":
 		[
 			0.0,
-			0.675724977283,
+			0.946603699142,
 			1.0
 		]
 	},
