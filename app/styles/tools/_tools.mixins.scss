@@ -22,8 +22,9 @@
   }
 
     // Usage:
-        // p
-        //   +font-size(14px)
+      //    p {
+      //  @include font-size(14px)
+      //  } 
 
 
   //Breakpoints
@@ -129,8 +130,9 @@
     //IE8
 
     // Usage
-        // .faded-text
-        //   +opacity(0.8)
+        // .faded-text {
+        //   @include opacity(0.8);
+        // }
 
 
   // Clearfix
@@ -146,8 +148,9 @@
   }
 
     // Usage
-      // .container-with-floated-children
-      //   @extend %clearfix
+      // .container-with-floated-children {
+      //   @extend %clearfix;
+      // }
 
   // Visually hide an element
   %visuallyhidden {
@@ -168,8 +171,9 @@
         //   <img src="img/mobile-navigation-icon.svg">
         // </button>
       // CSS
-        // .visually-hidden
-        //   @extend %visuallyhidden
+        // .visually-hidden {
+        //   @extend %visuallyhidden;
+        //  }
 
   // Buttons
   @mixin button-bg($bg) {

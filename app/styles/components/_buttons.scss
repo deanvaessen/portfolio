@@ -2,7 +2,7 @@
  color:white;
  text-decoration:none;
  padding:5px 10px;
- border-radius:3px;
+ // border-radius:3px;
  
 }
 
@@ -48,12 +48,12 @@
 
 .btn--clear {
   @extend .brdr-minimal;
-  border-color: $rgb-white;
+  border-color: white;
 }
 
 .btn--clear--plain {
   @extend .brdr-minimal;
-  border-color: $rgb-white;
+  border-color: white;
 }
 
 .btn--clear:hover {

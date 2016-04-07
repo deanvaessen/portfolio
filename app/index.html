@@ -2,7 +2,9 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="dean, vaessen, dean vaessen, web development, frontend, creative, art, 3D, sculpting, web, wordpress, html, css, design">
+    <meta name="description" content="Portfolio and blog of Dean Vaessen">
+    <meta name="keywords" content="dean, vaessen, dean vaessen, web development, frontend, creative, art, 3D, sculpting, web, wordpress, html, css, design">
+    <meta name="author" content="Dean Vaessen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Dean Vaessen</title>
 
@@ -23,6 +25,9 @@
     <!-- endbuild -->
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+  
+
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -33,13 +38,13 @@
     <div id="nav__title">
       <div id="nav__title__text">
         <h1>Dean Vaessen</h1>
-        <h2>Maverick Matryoshka</h2>
+        <h2>MaverickMatryoshka</h2>
     </div>
-      <img src="images/img_logo_small_nav.png"  alt="Maverick Matryoshka - Logo">
+      <img id="nav__matryoshka" src="images/img_logo_small_nav.png"  alt="MaverickMatryoshka - Logo">
     </div>
 
     <div id="nav__return">
-      <a id="nav__return__button" class="btn btn--nav--2 btn--size--20" href="#about">RETURN</a> <!---Straks naar #portfolio-->
+      <a id="nav__return__button" class="btn btn--nav--2 btn--size--20" >RETURN</a> <!---Straks naar #portfolio-->
 <!--       Button above will pop up after loading a portfolio website page and then go away 
       again once I have clicked this button. The button resets the portfolio section back to "portfolio overview" -->
     </div>
@@ -66,12 +71,13 @@
       <div class="section cover__content" id="cover__content--resize">
         <div class="cover__logo hvr-float-shadow">
           
-          <img src="images/img_logo_small_clear3.png"  alt="Maverick Matryoshka - Logo">
-          <a href="#about" class="btn btn--clear btn--size--25 btn--opensans">MORE</a>
+          <img id="cover__matryoshka" src="images/img_logo_small_clear3.png"  alt="MaverickMatryoshka - Logo">
+          <a id="cover__more" href="#about" class="btn btn--clear btn--size--25 btn--opensans">MORE</a>
         </div>
 
-        <h1>Clean, responsive web solutions</h1>
-        <h2>
+
+        <h1 class="cover__headers">Clean, responsive web solutions</h1>
+        <h2 class="cover__headers">
           <ul class="cover__products">
           <li>Company websites</li>
           <li>Personal websites</li>
@@ -84,15 +90,17 @@
       <div id="cover__bg--resize" class="section cover__bg"></div>
 
     </section>
-    <a name="about"/> <!--About scroll target -->
-    <section id="section__info" class="section section--white">
+    <a name="about"></a><!--About scroll target -->
+    </main> 
+    <section id="section__info" class="section section--white" >
       <article id="article__info">
 
-      <h1 class="typo--headline">PROFILE</h1>
+      <h1 id="info__profileHeader" class="typo--headline">PROFILE</h1>
       
       <span id="info__tree__vertical"></span>
 
-      <span id="info__tree__horizontal"></span>
+      <span id="info__tree__horizontal--l"></span>
+      <span id="info__tree__horizontal--r"></span>
       
 
 
@@ -118,7 +126,7 @@
             <br /><br />
             <p id="info__heading--lead" class="info__heading--lead typo--bold msc-flex-center"><span  id="info__heading--lead">I'm Dean, a Dutch national based in Budapest.  <!-- <span class="typo--light typo--temp">[WEGHALEN INDIEN ONZEKERHEID TAXES]</span> --> I have a passion for digital art and neat technology.</span></p>
             <br /><br />
-            <p class="typo--light">Maverick Matryoshka is the name under which I provide creative services. I am  currently available for work in the area of frontend development. <br /> <br /> If you would like to speak to me, hit the contact button and I'll get back to you in a jiffy.</p>
+            <p class="typo--light">MaverickMatryoshka is the name under which I provide creative services. I am  currently available for work in the area of frontend development. <br /> <br /> If you would like to speak to me, hit the contact button and I'll get back to you in a jiffy.</p>
           
 
         </div>
@@ -163,11 +171,11 @@
       </div>
       </article>
     </section>
-  <a name="portfolio"/> <!-- Portfolio scroll hook -->
+
     <section id="section__portfolio" class="section">
     <!-- Portfolio should have a quick "collapse currently expanded page button" -->
       <span id="portfolio"></span> <!--hook for border remove-->
-      <iframe id="section__portfolio__iframe"></iframe>
+      <iframe id="section__portfolio__iframe" onload="iframeLoaded()"></iframe>
     <div id="portfolio__loadhook">
 
 
@@ -178,153 +186,139 @@
     
     </section>
 
-    <section id="section__blog" class="section">
-    
-      <div>
 
-        <!-- <p class="typo--bold">[HIER KOMT BLOG APP]</p> -->
-        <!-- Blog should have a quick "collapse currently expanded page button" -->
-        
-      <!-- </div> -->
-    
-    </section>
 
 <section id="section__contact">
     <footer id="footer"  class="section" role="contentinfo">
       
-      <div id="footer__left">
-        <p ><span class="brdr-orange--bottom msc-flex-center">Type away below to contact me</span> <!-- Don't worry about the size, it'll accomodate. --> <br /> <span class="typo--small footer__left__underscore">In one of these languages:</span></p>  
-        <div id="contact__languages">
-          <h2 class="twk-padleftreset"><span title="English" class="flag-icon flag-icon-gb"></span></h2>
-          <h2><span title="Deutsch" class="flag-icon flag-icon-de"></span></h2>
-          <h2><span title="Nederlands" class="flag-icon flag-icon-nl"></span></h2>
-          <h2><span title="Limburgs" class="flag-icon flag-icon-limb"></span></h2>
-        </div>
-        <div id="footer__left__contactform">
-          <div id="form__name__container">
+      <div id="footer__flexcontactform">
+
+        <div id="flexcontactform__forminner">
+          <div id="forminner__namecontainer">
            <textarea id="footer__form__name"  type="text" name="name" placeholder="What's your name?"></textarea>
           <br />
-        </div>
-        <div id="form__from__container">
-           <textarea id="footer__form__from" type="text" name="from" placeholder="Please include your e-mail address"></textarea>
-          <br />
-        </div>
-        <div id="form__message__container">
-          <textarea id="footer__form__message" type="text" name="message" placeholder="You can start writing here. The box will keep growing."></textarea>
-        </div>
+          </div>
 
-        <a href="#" class="btn btn--footer" id="footer__left__send">SEND</a>
 
-        <br /><p class="typo--small ">Or the good old fashioned way: <br /><a id="footer__mailto"><span class="typo--bold typo--accent fx-underline--orange">hello@deanvaessen.com</span></a></p>
-        </div>
+          <div id="forminner__fromcontainer">
+             <textarea id="footer__form__from" type="text" name="from" placeholder="Please include your e-mail address"></textarea>
+            <br />
+          </div>
+
+          <div id="forminner__messagecontainer">
+            <textarea id="footer__form__message" type="text" name="message" placeholder="You can start writing here. The box will keep growing."></textarea>
+          </div>
+
+          <a href="#" class="btn btn--footer" id="footer__left__send">SEND</a>
+
+          <div id="contact__languages">
+            <h2 class="twk-padleftreset"><span title="Say hi!" alt="" class="flag-icon flag-icon-gb"></span></h2>
+            <h2><span title="Auf Deutsch reden geht auch" class="flag-icon flag-icon-de"></span></h2>
+            <h2><span title="Nederlands kan natuurlijk ook" class="flag-icon flag-icon-nl"></span></h2>
+            <h2><span title="Ich kal gaer plat" class="flag-icon flag-icon-limb"></span></h2>
+          </div>
+
+
+          <br /><p class="typo--small ">Or the good old fashioned way: <br /><a id="footer__mailto"><span class="typo--bold typo--accent fx-underline--orange">hello@deanvaessen.com</span></a></p>
+          </div>
       </div>
 
-      <div id="footer__middle">
-        <p class="brdr-orange--bottom footer__middle__header">Networks</p>
+
+
+          <!-- <div id="footer__rocket">
+            <i class="fa fa-rocket fa-2x msc-center"></i>
+          </div> -->
+
+      </div>
+
+    <div id="footer__flexcopyright">
+      <div id="footer__socialcontainer">
+
         <div id="footer__social">
           <a id="scroll-to" class="a" href="https://github.com/dvaessen"><i class="fa fa-github fa-2x"></i></a>
           <a id="scroll-to" class="a" href="https://twitter.com/deanvaessen"><i class="fa fa-twitter fa-2x"></i></a>
         </div>
-          <div id="footer__rocket">
-            <i class="fa fa-rocket fa-2x msc-center"></i>
-          </div>
+        </div>
         <div id="footer__copyright">
-          <p class="typo--light typo--tiny">&copy; 2015<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Maverick Matryoshka Ltd.</p> 
+
+          <p class="typo--light typo--tiny">&copy; 2015<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, MaverickMatryoshka Ltd. unless stated otherwise.</p> 
           <p class="typo--light typo--tiny">All rights reserved.</p>
         </div>
-      </div>
-        
-      <div id="footer__right">
-        <div id="footer__travel">
-          <div id="travel__title">
-            <p class="msc-inline">Travel high-score</p>
-          </div>
-          <div id="contact__flags" class="brdr-orange--top msc-inline">
-            <h2 class="twk-padleftreset contact__flags--margintop"><span title="Limburg" class="flag-icon flag-icon-limb" ></span></h2>
-            <h2 class="contact__flags--margintop"><span title="Nederland" class="flag-icon flag-icon-nl"></span></h2>
-            <h2 class="contact__flags--margintop"><span title="België" class="flag-icon flag-icon-be"></span></h2>
-            <h2 class="contact__flags--margintop"><span title="Österreich" class="flag-icon flag-icon-at"></span></h2>
-            <h2 class="contact__flags--margintop"><span title="Deutschland" class="flag-icon flag-icon-de"></span></h2>
-            <h2 class="contact__flags--margintop"><span title="Great-Britain" class="flag-icon flag-icon-gb"></span></h2>
-            <h2 class="contact__flags--margintop"><span title="Ísland" class="flag-icon flag-icon-is"></span></h2>
-            <h2 class="contact__flags--margintop"><span title="La France" class="flag-icon flag-icon-fr"></span></h2>
-            <h2 class="contact__flags--margintop"><span title="Ελλάδα" class="flag-icon flag-icon-gr"></span></h2>
-            <h2 class="twk-padrightreset contact__flags--margintop"><span title="Magyarország" class="flag-icon flag-icon-hu"></span></h2>
-            <h2 class="twk-padleftreset"><span title="Србија / Srbija"  class="flag-icon flag-icon-rs"></span></h2>
-            <h2><span title="Bosna i Hercegovina / Босна и Херцеговина" class="flag-icon flag-icon-ba"></span></h2>
-            <h2><span title="Hrvatska" class="flag-icon flag-icon-hr"></span></h2>
-            <h2><span title="Црна Гора / Crna Gora" class="flag-icon flag-icon-me"></span></h2>
-            <h2><span title="Shqipëri" class="flag-icon flag-icon-al"></span></h2>
-  <!--           <div> -->
-              <h2><span title="Россия" class="flag-icon flag-icon-ru"></span></h2>
-  <!--             <h2><span class="flag-icon flag-icon-heart flag-icon-heart"></span></h2>
-              <h2><span class="flag-icon flag-icon-heart--bg"></span></h2> -->
-              <!-- werkt niet goed -->
-  <!--           </div> -->
-            <h2><span title="Česká republika" class="flag-icon flag-icon-cz"></span></h2>
-            <h2><span title="República Portuguesa" class="flag-icon flag-icon-pt"></span></h2>
-            <h2><span title="Polska" class="flag-icon flag-icon-pl"></span></h2>
-          </div>
-        </div>
-        
-        <div id="footer__shoutout">
-          <div id="shoutout__title">
-            <p class="brdr-orange--bottom msc-flex-center">Shoutout</p>
-          </div>
-          <div id="shoutout__links">
-            <ul>
-              <li><a href="http://www.sriramatrix.com">Sri Ram Chandra <br /> (Character Art)</a></li>
-                <br />
-            </ul>
-        </div>        
-        
-      </div>
-<a name="contact" /> <!-- Anchor -->
+    </div>
+<a name="contact"></a> <!-- Anchor -->
     </footer>
     </section>
   </main>
 
 <script>
 
-//Pre-flight checks
+//Pre-flight checks and system setup
   // $( document ).ready(function() {
   //         console.log( "Page ready!" );
   //     });
 
-  //windows.onload combinatron
-  function myPluginLoadEvent(func) {
-      // assign any pre-defined functions on 'window.onload' to a variable
-      var oldOnLoad = window.onload;
-      // if there is not any function hooked to it
-      if (typeof window.onload != 'function') {
-          // you can hook your function with it
-          window.onload = func
-      } else { // someone already hooked a function
-          window.onload = function () {
-              // call the function hooked already
-              oldOnLoad();
-              // call your awesome function
-              func();
-          }
-      }
-  }
-   
-  // pass the function you want to call at 'window.onload', in the function defined above
-  window.ContentFormActive = false;
-  formResizeOnClick();
-  loadPortfolioOverview();
-  // returnToPortfolio();
 
-  myPluginLoadEvent(function defaultVars(){
+function myPluginLoadEvent(func) {
+    // assign any pre-defined functions on 'window.onload' to a variable
+    var oldOnLoad = window.onload;
+    // if there is not any function hooked to it
+    if (typeof window.onload != 'function') {
+        // you can hook your function with it
+        window.onload = func
+    } else { // someone already hooked a function
+        window.onload = function () {
+            // call the function hooked already
+            oldOnLoad();
+            // call your awesome function
+            func();
+        }
+    }
+}
+ 
+// pass the function you want to call at 'window.onload', in the function defined above
+myPluginLoadEvent(function(){
+    window.instantportfolio = true;
+    window.ContentFormActive = false;
+    listenendslideout = false;
+    returnAnimationVirgin = true;
+    animationProfilePathDone = true;
+    animationProfilePathInitiated = false;
+    formResizeOnClick();
+    loadPortfolioOverview();
+    section__portfolio__iframe = document.getElementById('section__portfolio__iframe');
 
-  });
+});
 
 //Styling
   //Add the mailto link back, but now without a hover popup :) 
   //Low risk to do it here and fixes styling, will not implement on other locations to prevent breaking page functionality
   $("#footer__mailto").on('click', function() {
-  window.location = "mailto:hello@deanvaessen.com";
-});
+    window.location = "mailto:hello@deanvaessen.com";
+  });
+
+  //Fade in the covermatryoshka and button
+    $( document ).ready(function() {
+            var cover__matryoshka = document.getElementById('cover__matryoshka'),
+                cover__headers = document.getElementsByClassName('cover__headers'),
+                cover__more = document.getElementById('cover__more');
+            
+            $(cover__headers).css({ visibility: "visible" }); //Make the headers visible
+
+            setTimeout(function(){ 
+            $(cover__more).fadeIn(400);
+            $(cover__more).css({ display: "block" }); //Make the more button visible
+            $(cover__matryoshka).fadeIn(1350);
+            $(cover__matryoshka).css({ display: "block" }); //Make the maryoshka visible);
+            }, 600);
+        });
+
+  //Tada the Matryoshka on mouseover
+    $("#nav__matryoshka").hover(function() {
+     $("#nav__matryoshka").addClass('animated tada');
+    }, function () {
+      // on mouseout
+      $("#nav__matryoshka").removeClass('animated tada');
+    });
 
   //Resize height of the cards to preserve layout when resizing window
     function resizeDynamicCover(){
@@ -346,7 +340,25 @@
       };
     };
 
-  //Resize height of the heading span to ensure equal vertical spacing across all info heading-child elements
+  //Add a nice border when I pass the cover
+    $(window).scroll(function() {
+        var nav = document.getElementById("nav"); //Define
+            navclasses = document.getElementById("nav").className; //Save classes
+            y_scroll_pos = window.pageYOffset;
+            scroll_pos_trigger = document.getElementById('cover').offsetHeight; //triggerpoint is height cover
+            borderadded = navclasses.indexOf("nav--border") > -1; 
+
+        if(y_scroll_pos > scroll_pos_trigger && borderadded === false) {
+         nav.className += " nav--border";
+        }
+      else if (y_scroll_pos < scroll_pos_trigger && borderadded === true)
+      {
+        nav.classList.remove("nav--border");
+        
+      }
+    });
+
+  //Resize height of the profile heading spans to ensure equal vertical spacing across all info heading-child elements
       function resizeDynamicHeadings(){
         var w = window,
           d = document,
@@ -370,34 +382,113 @@
     window.addEventListener('resize', resizeDynamicCover);  //On window resize
     window.addEventListener('resize', resizeDynamicHeadings);  //On window resize
 
-  //Add a nice border when I pass the cover
-    //Add border
-    $(window).scroll(function() {
-       var nav = document.getElementById("nav"); //Define
-           navclasses = document.getElementById("nav").className; //Save classes
-           borderadded = navclasses.indexOf("nav--border") > -1; // Borderadded becomes "false"
-           hT = $('#scroll-to').offset().top,
-           hH = $('#scroll-to').outerHeight(),
-           wH = $(window).height(),
-           wS = $(this).scrollTop();
-        // console.log((hT-wH) , wS);
-       if (wS > (hT+hH-wH) && borderadded === false){
-          nav.className += " nav--border";}
-    });
+  //Light up the lines and the header leading to a profile section on hover
+  //[N] - This is still a bit messy. It fucks up if you hover/unhover multiple boxes quickly. I think I need to create an array or something? To store the value of the "previously highlighted" lines and then clear those out as well. So the unhover should look at what is in the array to determine on what lines it should remove the effect.
+  
+  // $( document ).ready(function() {
+  //       var verticalParent = "#info__tree__vertical",
+  //           verticalHTML = "#info__tree__vertical--html",
+  //           horizontalHTML = "#info__tree__horizontal--html",
+  //           verticalHTMLLeft = "#info__tree__vertical--html--l",
+  //           verticalHTMLRight = "#info__tree__vertical--html--r",
+  //           profileWhatPathlines = verticalParent + ',' + verticalHTML + ',' + horizontalHTML + ',' + verticalHTMLLeft + ',' + verticalHTMLRight,
+  //           verticalSmile = "#info__tree__vertical--smile",
+  //           horizontalLeft = "#info__tree__horizontal--l",
+  //           profileWhoPathlines = verticalParent + ',' + verticalSmile + ',' + horizontalLeft,
+  //           verticalMobile = "#info__tree__vertical--mobile",
+  //           horizontalRight = "#info__tree__horizontal--r",
+  //           profileHowPathlines = verticalParent + ',' + verticalMobile + ',' + horizontalRight;
 
-  //Remove border
-    $(window).scroll(function() {
-       var nav = document.getElementById("nav");
-           navclasses = document.getElementById("nav").className;
-           borderadded = navclasses.indexOf("nav--border") > -1;
-           hT = $('#portfolio').offset().top,
-           hH = $('#portfolio').outerHeight(),
-           wH = $(window).height(),
-           wS = $(this).scrollTop();
-        // console.log((hT-wH) , wS);
-       if (wS < (hT+hH-wH)){
-          nav.classList.remove("nav--border");}
-    });
+
+  //   //Define the functions
+  //   function mouseInProfilePath() {
+  //     $("#info__profileHeader").animate({
+  //       color: "#FFBF28"
+  //     }, 300 );
+
+  //     setTimeout(function(){ 
+  //       $(profilePathLinesActive).animate({
+  //         backgroundColor: "#FFBF28"
+  //       }, 500 );
+  //                          }, 350);
+
+  //     setTimeout(function(){ 
+  //     animationProfilePathInitiated = true;
+  //     animationProfilePathDone = false;
+  //                          }, 1050);
+  //   }
+
+  //   function mouseOutProfilePath() {
+  //     $("#info__profileHeader").animate({
+  //     color: "black"
+  //     }, 300 );
+
+  //     $(profilePathLinesActive).animate({
+  //       backgroundColor: "black"
+  //     }, 300 );
+
+  //     setTimeout(function(){ 
+  //     animationProfilePathInitiated = false;
+  //     animationProfilePathDone = true;
+  //                        }, 300);
+  //   }
+
+  //   //Listen for hover section "what"
+  //   $("#section__info__what").hover(function profileWhatHover() {
+  //     if(animationProfilePathDone){
+  //       profilePathLinesActive = profileWhatPathlines; //Which do I light?
+  //       mouseInProfilePath();
+  //     } else{
+  //       setTimeout(profileWhatHover, 50); //Otherwise wait for it to finish, please keep checking
+  //     }
+      
+  //   }, function profileWhatUnHover() {
+  //     // on mouseout, reset the background colour
+  //     if(animationProfilePathInitiated){ //Only immediately if the animation has finished
+  //       mouseOutProfilePath();
+  //     } else{ 
+  //       setTimeout(profileWhatUnHover, 50); //Otherwise wait for it to finish, please keep checking
+  //     }
+  //   });
+
+
+  //   //Listen for hover section "who"
+  //   $("#section__info__who").hover(function profileWhoHover() {
+  //     if(animationProfilePathDone){
+  //       profilePathLinesActive = profileWhoPathlines; //Which do I light?
+  //       mouseInProfilePath();
+  //     } else{
+  //       setTimeout(profileWhoHover, 50); //Otherwise wait for it to finish, please keep checking
+  //     }
+      
+  //   }, function profileWhoUnHover() {
+  //     // on mouseout, reset the background colour
+  //     if(animationProfilePathInitiated){ //Only immediately if the animation has finished
+  //       mouseOutProfilePath();
+  //     } else{ 
+  //       setTimeout(profileWhoUnHover, 50); //Otherwise wait for it to finish, please keep checking
+  //     }
+  //   });
+
+
+  //   //Listen for hover section "how"
+  //   $("#section__info__how").hover(function profileHowHover() {
+  //     if(animationProfilePathDone){
+  //       profilePathLinesActive = profileHowPathlines; //Which do I light?
+  //       mouseInProfilePath();
+  //     } else{
+  //       setTimeout(profileHowHover, 50); //Otherwise wait for it to finish, please keep checking
+  //     }
+      
+  //   }, function profileHowUnHover() {
+  //     // on mouseout, reset the background colour
+  //     if(animationProfilePathInitiated){ //Only immediately if the animation has finished
+  //       mouseOutProfilePath();
+  //     } else{ 
+  //       setTimeout(profileHowUnHover, 50); //Otherwise wait for it to finish, please keep checking
+  //     }
+  //   });
+  // });
 
   //Slow scrolling
     $(function() {
@@ -443,7 +534,7 @@
 
     });
 
-//Porfolio section. My trusted 343 Guilty Spark will handle this
+//Porfolio section. 
   //Return button handler
       //The code is a quite expansive but the reason behind this is that I want to retain a high degree of control and make this nice and modular. I can swap things in and out easily so in effect I now have a sort of framework.
 
@@ -461,8 +552,8 @@
         else if (nav__return_directorcount == 2){ //If not run before
           $(nav__return).fadeIn(300);
           $(nav__return).css({ display: "flex" }); //Make the button visible
-          console.log("Continuing with grow effect");
           nav__return_directorcount++;
+          console.log("Continuing with grow effect");
           setTimeout(nav__returnGrow, 0);
         }
         
@@ -527,17 +618,30 @@
       
     //These are the actual effect functions of the return button
       function nav__returnGrow(){
-        console.log("I am now growing the return button");
-        $(nav__return).addClass(nav__return_growclass + nav__return_growclass_active);  //Add the effect
-        nav__return_growcount++; //Count it
-        setTimeout(nav__returnEffectDirector, 1000); //Move back up to the director
+        if(returnAnimationVirgin){
+          console.log("I am now growing the return button");
+          $(nav__return).addClass(nav__return_growclass + nav__return_growclass_active);  //Add the effect
+          nav__return_growcount++; //Count it
+          setTimeout(nav__returnEffectDirector, 1000); //Move back up to the director
+        }
+        else{
+          nav__return_growcount++; //Count it
+          nav__returnEffectDirector();
+        }
       };
       
       function nav__returnGlow(){
-        console.log("I am now glowing the return button");
-        $(nav__return).addClass(nav__return_glowclass + nav__return_glowclass_active); //Add the effect
-        nav__return_glowcount++;
-        setTimeout(nav__returnEffectDirector, 2000); //Move back up to the director
+        if(returnAnimationVirgin){
+          console.log("I am now glowing the return button");
+          $(nav__return).addClass(nav__return_glowclass + nav__return_glowclass_active); //Add the effect
+          nav__return_glowcount++;
+          returnAnimationVirgin = false;
+          setTimeout(nav__returnEffectDirector, 2000); //Move back up to the director
+        }
+        else{
+          nav__return_glowcount++;
+          nav__returnEffectDirector();
+        }
       };
 
       function nav__returnShrink(){
@@ -578,14 +682,26 @@
         //Set some function variables
         nav__return_shrinkcount = 0;
         nav__return_clicked = 1;
+        returnAnimationVirgin = false;
         
         //Define the variables for the effects 
         nav__return = document.getElementById('nav__return__button');
         nav__return_shrinkclass = ' nav__return__button--shrink ';
         nav__return_shrinkclass_active = ' nav__return__button--shrink--active '; 
+        //Slide out the portfolio item
+        
+        $(section__portfolio__iframe).addClass('animated slideOutLeft'); //Slide out the page
+        
+
+
+        setTimeout(function(){ 
+          $(section__portfolio__iframe).removeClass('animated slideOutLeft'); //cleanup
+        }, 1500);
         
         //Tell the director to start playing
         nav__returnEffectDirector();
+
+
       }); 
       
     });
@@ -594,28 +710,57 @@
     //Load portfolio overview into div
     function loadPortfolioOverview(){
           console.log("Loading your portfolio overview");
-          var content_div = document.getElementById('portfolio__loadhook');
-          portfoliooverview = "portfolio.html";
+          var content_div = document.getElementById('portfolio__loadhook'),
+              portfoliooverview = "portfolio.html",
+              content_iframe = document.getElementById("section__portfolio__iframe"),
+              section__portfolio = document.getElementById('section__portfolio'),
+              fadediv = document.getElementById('portfolio__loadhook'),
+              slideOutLeft = ' slideOutLeft ';
 
+
+          console.log("Listening for switch@@@@@@@@@@@@@@@@@@@@@@? " + listenendslideout);
+
+          //Move the iframe
+            // $(section__portfolio__iframe).addClass(slideOutLeft); //Slide out the page
+
+        console.log(window.instantportfolio);
+        if(window.instantportfolio){ //Don't do this if I still have a portfolio item loaded
           console.log("DIV load called! The item being loaded is " + portfoliooverview + " in " + content_div);
-
           //roll up the iframe
             content_iframe = document.getElementById("section__portfolio__iframe");
-            document.getElementById('section__portfolio__iframe').style.width = "0px;";
-            document.getElementById('section__portfolio__iframe').style.height = "0px";
+            document.getElementById('section__portfolio__iframe').width = "0px;";
+            document.getElementById('section__portfolio__iframe').height = "0px";
             // document.getElementById('section__portfolio__iframe').style.display = "none";
-          
+
           // Remove the page
             portfolioItem1Content = "clear.html"; 
             content_iframe.src = portfolioItem1Content;
 
          //load the portfolio page
-           $(content_div).load(portfoliooverview);
+          $(content_div).load(portfoliooverview);
+          $(section__portfolio).fadeIn(1350);
+          $(section__portfolio).css({ display: "flex" }); //Make the overview visible
+          $(fadediv).fadeIn(700);
+          
 
            //debug
            console.log("I am now done loading " + portfoliooverview + " in " + content_div);
-           loadDivclear();
-        }
+           
+           loadDivclear();}
+
+           else{ //Wait for the animation to play out and then load the portfolio overview
+            
+            $(section__portfolio__iframe).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+              function(e) {
+                if(listenendslideout){console.log("Slideout done!");
+              document.getElementById('section__portfolio__iframe').height = "0px";
+              window.instantportfolio = true;
+              listenendslideout = false;
+              loadPortfolioOverview();}
+              });
+           }
+
+        }; 
 
     //Load divclear into div onClick to clear space and then load the iframe
     function loadDivclear(){
@@ -624,23 +769,41 @@
 
       jQuery( document ).ready( function( $ ) {
         console.log("Page is ready, I am going to start listening for hook1 now");
-  
-        $('#portfolio__loadhook').on('click', '#loadhook__columns__hook1', function()  {
+  console.log("Listening for switch????????????????????????????? " + listenendslideout);
+        $('#portfolio__loadhook').off().on('click', '#loadhook__columns__hook1', function()  {
          //debug
           console.log("You are clicking the iframe gate trigger!");
           var content_div = document.getElementById('portfolio__loadhook');
+
+          //Scroll to the anchor
+          $('html, body').animate({ 
+                  scrollTop: $("#portfolio").offset().top - 70
+              }, 2000);
+
+          //clear the page
           divclear = "clear.html";
 
           console.log("DIV load called! The item being loaded is " + divclear + " in " + content_div);
          
-         //load the page
-        $(content_div).load(divclear);
+         //fade out the previous page
+         var fadediv = document.getElementById('portfolio__loadhook');
+          $(fadediv).fadeOut(400);
+
+         //load the clear page to collapse the div 
+
+         setTimeout(function(){ 
+          $(content_div).load(divclear);
+         }, 450);
+
 
            //debug
            console.log("I am now done loading " + divclear + " in " + content_div);
            console.log("Continuing to loadPortfolioItems");
            
-           loadPortfolioItems(); //Load an item
+           
+           setTimeout(function(){ 
+            loadPortfolioItems(); //Load an item
+           }, 650);
         });
       });
       }
@@ -650,27 +813,58 @@
    // document.getElementById("footer__form__from").onclick = function() {
     //debug
        console.log("You are accessing the load portfolio item #1 event!");
-    //set the styling
-       content_iframe = document.getElementById("section__portfolio__iframe");
-       // document.getElementById('section__portfolio__iframe').style.display = "block";
-       document.getElementById('section__portfolio__iframe').style.width = "100%";
-       document.getElementById('section__portfolio__iframe').style.height = "1000px";
+
     //define the page
-       portfolioItem1Content = "testpage.html"; 
+       portfolioItem1Content = "content/psd/index.html"; 
+       content_iframe = document.getElementById("section__portfolio__iframe");
        console.log("iframe load called! The item being loaded is " + window.portfolioItem1Content + " in " + content_iframe);
     //load the page
       content_iframe.src = portfolioItem1Content; // assign url to src property
 
-    //debug
+
+
+
+
+      //set the styling
+
+         // document.getElementById('section__portfolio__iframe').style.display = "block";
+         document.getElementById('section__portfolio__iframe').width = "100%";
+         // document.getElementById('section__portfolio__iframe').height = "0px";
+
+        
+      //debug
       console.log("I am now done loading " + window.portfolioItem1Content + " in " + content_iframe)
 
+
     }
+
+
+    //Change iframeheight based on content and slide her in
+    function iframeLoaded() {
+      var iFrameID = document.getElementById('section__portfolio__iframe');
+      // here we set the height. Delete first, then recreate it
+      if(iFrameID) {
+          iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+
+          $(section__portfolio__iframe).addClass('animated bounceInRight'); //Slide in the page
+          console.log(window.instantportfolio);
+
+          $(section__portfolio__iframe).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function(e) {
+            $(section__portfolio__iframe).removeClass('animated bounceInRight'); //cleanup
+            console.log(window.instantportfolio);
+            });
+      }   
+    }
+
 
     //Return to Portfolio onClick. Clear the iframe and then load the div with PortfolioOverview onClick.
     jQuery( document ).ready( function( $ ) {
           document.getElementById("nav__return__button").onclick = function() {
             console.log("You have now entered returnToPortfolio. I will clear the iframe and then reload the portfolio overview");
-
+            window.instantportfolio = false;
+            listenendslideout = true;
+            console.log("Listening for switch????????????????????????????? " + listenendslideout);
             loadPortfolioOverview();
           }
                 });
@@ -679,19 +873,19 @@
 //Code to support my footer form
 //[N]-Bug: Clicking outside the form collapses the form even if you have a lot of text written already.
   //Expand forms on keydown
-  $('#form__name__container').delegate( 'textarea', 'keydown', function (){
+  $('#forminner__namecontainer').delegate( 'textarea', 'keydown', function (){
       $(this).height( 0 );
       $(this).height( this.scrollHeight );
   });
-  $('#form__name__container').find( 'textarea' ).keydown();
+  $('#forminner__namecontainer').find( 'textarea' ).keydown();
 
-  $('#form__from__container').delegate( 'textarea', 'keydown', function (){
+  $('#forminner__fromcontainer').delegate( 'textarea', 'keydown', function (){
       $(this).height( "0" );
       $(this).height( this.scrollHeight );
   });
-  $('#form__from__container').find( 'textarea' ).keydown();
+  $('#forminner__fromcontainer').find( 'textarea' ).keydown();
 
-  $('#form__message__container').delegate( 'textarea', 'keydown', function (){
+  $('#forminner__messagecontainer').delegate( 'textarea', 'keydown', function (){
 
 
       if(window.ContentFormActive){ // To fix a jumping page on load of page
@@ -704,7 +898,7 @@
       }
       
   });
-  $('#form__message__container').find( 'textarea' ).keydown();
+  $('#forminner__messagecontainer').find( 'textarea' ).keydown();
 
   //Set initial height
   function formResizeInitial(){  
@@ -766,7 +960,12 @@
   ga('send', 'pageview');
 
 </script>
+
+
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <!-- endbower -->
@@ -778,8 +977,51 @@
   </body>
 </html>
 
+<!-- //Define the functions
+    //
+    //Section "what"
+    $("#section__info__what").hover(function mouseInProfilePath() {
+      if(animationProfilePathDone){
+        
+        $("#info__profileHeader").animate({
+          color: "#FFBF28"
+        }, 300 );
 
-<!--     <a href="#" class="btn btn-green">Green Button</a>
-    <a href="#" class="btn btn-blue">Blue Button</a>
-    <a href="#" class="btn btn-yellow">Yellow Button</a>
-    <a href="#" class="btn btn-red">Red Button</a> -->
+        setTimeout(function(){ 
+          $(profileWhatPathlines).animate({
+            backgroundColor: "#FFBF28"
+          }, 500 );
+                             }, 350);
+
+        setTimeout(function(){ 
+        animationProfilePathInitiated = true;
+        animationProfilePathDone = false;
+                             }, 1050);
+      } else{
+        setTimeout(mouseInProfilePath, 50); //Otherwise wait for it to finish, please keep checking
+      }
+      // $(profileWhatPathlines).css("background-color", "#FFBF28");
+      // $("#info__profileHeader").css("color", "#FFBF28");
+      
+    }, function mouseOutProfilePath() {
+      // on mouseout, reset the background colour
+      if(animationProfilePathInitiated){ //Only immediately if the animation has finished
+        $("#info__profileHeader").animate({
+        color: "black"
+        }, 300 );
+
+        $(profileWhatPathlines).animate({
+          backgroundColor: "black"
+        }, 300 );
+
+        setTimeout(function(){ 
+        animationProfilePathInitiated = false;
+        animationProfilePathDone = true;
+                           }, 300);
+      } else{ 
+        setTimeout(mouseOutProfilePath, 50); //Otherwise wait for it to finish, please keep checking
+      }
+
+      // $(profileWhatPathlines).css("background-color", "");
+      // $("#info__profileHeader").css("color", "");
+    }); -->

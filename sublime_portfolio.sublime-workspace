@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-image"
+			],
+			[
+				"info__tree__horiz",
+				"info__tree__horizontal--html"
+			],
+			[
+				"section__portfo",
+				"section__portfolio__iframe"
+			],
+			[
 				"rgb-blue",
 				"rgb-blue--light"
 			],
@@ -120,18 +132,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/styles/settings/_main.scss",
-			"settings":
-			{
-				"buffer_size": 2273,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 34929,
+				"buffer_size": 46445,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,27 +143,75 @@
 			"file": "app/portfolio.html",
 			"settings":
 			{
-				"buffer_size": 844,
+				"buffer_size": 2022,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html>\n<head>\n	<title>Dean Vaessen</title>\n	<!--<style>\n	p { line-height: 1.5;\n    margin: 0 0 1em;    }\n\n    body{ background-color: lightgray;}\n    </style>-->\n\n        <style>\n      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */\n      body {\n  font-family: 'Open Sans Condensed', sans-serif;\n  font-size: 85pt;\n  background-color: #e8e3c7;\n  text-align: center;\n  line-height: 1.2em;\n  padding-top: 70px;\n}\n\n  a {\n      text-decoration:none;\n      color: rgb(138, 99, 88);\n   }\n\n.dashed-shadow {\n  position: relative;\n  top: 8px;\n  left: 8px;\n  display: inline-block;\n  color: #ba9186;\n}\n\n.dashed-noshadow {\n  position: relative;\n  top: 0px;\n  left: 8px;\n  display: inline-block;\n  color: rgb(138, 99, 88);\n  font-size:0.2em; \n}\n\n@keyframes dash-animation {\n  0% {\n    background-position: 0 0;\n  }\n  100% {\n    background-position: 100% 0;\n  }\n}\n.dashed-shadow:before {\n  content: \" \";\n  display: block;\n  position: absolute;\n  top: -8px;\n  left: -8px;\n  bottom: -2px;\n  right: -2px;\n  z-index: 1;\n  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIxMi41JSIgc3RvcC1jb2xvcj0iI2U4ZTNjNyIvPjxzdG9wIG9mZnNldD0iMTIuNSUiIHN0b3AtY29sb3I9IiNlOGUzYzciIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIzNy41JSIgc3RvcC1jb2xvcj0iI2U4ZTNjNyIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjM3LjUlIiBzdG9wLWNvbG9yPSIjZThlM2M3Ii8+PHN0b3Agb2Zmc2V0PSI2Mi41JSIgc3RvcC1jb2xvcj0iI2U4ZTNjNyIvPjxzdG9wIG9mZnNldD0iNjIuNSUiIHN0b3AtY29sb3I9IiNlOGUzYzciIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI4Ny41JSIgc3RvcC1jb2xvcj0iI2U4ZTNjNyIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9Ijg3LjUlIiBzdG9wLWNvbG9yPSIjZThlM2M3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');\n  background-size: 100%;\n  background-image: -moz-linear-gradient(45deg, #e8e3c7 12.5%, rgba(232, 227, 199, 0) 12.5%, rgba(232, 227, 199, 0) 37.5%, #e8e3c7 37.5%, #e8e3c7 62.5%, rgba(232, 227, 199, 0) 62.5%, rgba(232, 227, 199, 0) 87.5%, #e8e3c7 87.5%);\n  background-image: -webkit-linear-gradient(45deg, #e8e3c7 12.5%, rgba(232, 227, 199, 0) 12.5%, rgba(232, 227, 199, 0) 37.5%, #e8e3c7 37.5%, #e8e3c7 62.5%, rgba(232, 227, 199, 0) 62.5%, rgba(232, 227, 199, 0) 87.5%, #e8e3c7 87.5%);\n  background-image: linear-gradient(45deg, #e8e3c7 12.5%, rgba(232, 227, 199, 0) 12.5%, rgba(232, 227, 199, 0) 37.5%, #e8e3c7 37.5%, #e8e3c7 62.5%, rgba(232, 227, 199, 0) 62.5%, rgba(232, 227, 199, 0) 87.5%, #e8e3c7 87.5%);\n  background-size: 6px 6px;\n}\n\n.dashed-shadow:hover:before {\n  animation: dash-animation 30s infinite linear;\n}\n\n.dashed-shadow:after {\n  z-index: 2;\n  content: attr(data-text);\n  position: absolute;\n  left: -8px;\n  top: -8px;\n  color: #b85b3f;\n  text-shadow: 3px 3px #e8e3c7;\n}\n\n.hello {\n  font-family: 'Cookie',cursive;\n  font-size: 140pt;\n}\n\n.sorta-block {\n  font-size: 50pt;\n  line-height: 1.1em;\n  -moz-transform: skew(0, -5deg);\n  -ms-transform: skew(0, -5deg);\n  -webkit-transform: skew(0, -5deg);\n  transform: skew(0, -5deg);\n  z-index: 3;\n  position: relative;\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\n\n.sorta {\n  border-top: 4px solid #b85b3f;\n  border-bottom: 4px solid #b85b3f;\n  text-transform: uppercase;\n  z-index: 3;\n  font-style: italic;\n}\n\n.hipsterish {\n  font-family: 'Sancreek', cursive;\n  font-size: 70pt;\n}\n\n.dashed-shadow-text {\n  font-size: 140pt;\n  line-height: 0.7em;\n}\n\n.shadow {\n  font-size: 120pt;\n  line-height: 0.8em;\n}\n\n    </style>\n\n<script>\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\n  ga('create', 'UA-37806719-1', 'auto');\n  ga('send', 'pageview');\n\n</script>\n\n</head>\n<body>\n\n    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>\n<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>\n<link href='http://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>\n\n<div class=\"sorta-block\">\n  <div data-text=\"BRB!\"class=\"dashed-shadow sorta\">BRB!</div> \n</div>\n\n\n	<div data-text=\"contact@deanvaessen.com\" class=\"dashed-noshadow\" style=\"\">\n	<a href=\"mailto:contact@deanvaessen.com\" title=\"Contact\">\n	contact@deanvaessen.com</a>\n</div>\n\n</body>\n</html>",
-			"file": "app/testpage.htm",
-			"file_size": 4963,
-			"file_write_time": 131023387206068380,
+			"contents": "  //Border radius prefixes\n  @mixin border-radius($radius) {\n    -webkit-border-radius: $radius;\n    -moz-border-radius: $radius;\n    -ms-border-radius: $radius;\n    border-radius: $radius;\n  }\n\n    // Usage:\n      // .box\n      //  +border-radius(10px)\n\n  // *Font size px to rem\n  @function calculateRem($size) {\n    $remSize: $size / 16px;\n    @return $remSize * 1rem;\n  }\n\n  @mixin font-size($size) {\n    font-size: $size;\n    font-size: calculateRem($size);\n  }\n\n    // Usage:\n      //    p {\n      //  @include font-size(14px)\n      //  } \n\n\n  //Breakpoints\n  @mixin bp-large {\n    @media only screen and (max-width: 60em) {\n      @content;\n    }\n  }\n\n  @mixin bp-medium {\n    @media only screen and (max-width: 40em) {\n      @content;\n    }\n  }\n\n  @mixin bp-small {\n    @media only screen and (max-width: 30em) {\n      @content;\n    }\n  }\n\n    //Usage:\n      // .sidebar\n      //   width: 60%\n      //   float: left\n      //   margin: 0 2% 0 0\n      //   +bp-small\n      //     width: 100%\n      //     float: none\n      //     margin: 0\n\n\n  //Animations\n  @mixin keyframes($animation-name) {\n    @-webkit-keyframes #{$animation-name} {\n      @content;\n    }\n\n    @-moz-keyframes #{$animation-name} {\n      @content;\n    }\n\n    @-ms-keyframes #{$animation-name} {\n      @content;\n    }\n\n    @-o-keyframes #{$animation-name} {\n      @content;\n    }\n\n    @keyframes #{$animation-name} {\n      @content;\n    }\n  }\n\n\n  @mixin animation($str) {\n    -webkit-animation: #{$str};\n    -moz-animation: #{$str};\n    -ms-animation: #{$str};\n    -o-animation: #{$str};\n    animation: #{$str};\n  }\n\n    //Usage:\n      // +keyframes(slide-down)\n      //   0%\n      //     opacity: 1\n      //   90%\n      //     opacity: 0\n\n      // .element\n      //   width: 100px\n      //   height: 100px\n      //   background: black\n      //   +animation(\"slide-down 5s 3\")\n\n\n  // Transitions\n  @mixin transition($args...) {\n    -webkit-transition: $args;\n    -moz-transition: $args;\n    -ms-transition: $args;\n    -o-transition: $args;\n    transition: $args;\n  }\n\n    // Usage\n      // a\n      //   color: gray\n      //   +transition(color 0.3s ease)\n      //   &:hover\n      //     color: black\n\n\n  // Cross-browser opacity\n  @mixin opacity($opacity) {\n    opacity: $opacity;\n    $opacity-ie: $opacity * 100;\n    filter: alpha(opacity = $opacity-ie);\n  }\n    //IE8\n\n    // Usage\n        // .faded-text {\n        //   @include opacity(0.8);\n        // }\n\n\n  // Clearfix\n  %clearfix {\n    *zoom: 1;\n    &:before, &:after {\n      content: \" \";\n      display: table;\n    }\n    &:after {\n      clear: both;\n    }\n  }\n\n    // Usage\n      // .container-with-floated-children {\n      //   @extend %clearfix;\n      // }\n\n  // Visually hide an element\n  %visuallyhidden {\n    margin: -1px;\n    padding: 0;\n    width: 1px;\n    height: 1px;\n    overflow: hidden;\n    clip: rect(0 0 0 0);\n    clip: rect(0, 0, 0, 0);\n    position: absolute;\n  }\n\n    // Usage\n      // HTML\n        // <button class=\"mobile-navigation-trigger\">\n        //   <b class=\"visually-hidden\">Open the navigation</b>\n        //   <img src=\"img/mobile-navigation-icon.svg\">\n        // </button>\n      // CSS\n        // .visually-hidden {\n        //   @extend %visuallyhidden;\n        //  }\n\n  // Buttons\n  @mixin button-bg($bg) {\n    background: $bg;\n    &:hover {\n      background:darken($bg,8%);\n      transition: all 0.3s ease;\n    }\n    &:active {\n      background:darken($bg,25%);\n    } \n  }\n\n    // Usage\n      // HTML\n        //  <a href=\"#\" class=\"btn btn-green\">Green Button</a>\n        //  <a href=\"#\" class=\"btn btn-blue\">Blue Button</a>\n        //  <a href=\"#\" class=\"btn btn-yellow\">Yellow Button</a>\n        //  <a href=\"#\" class=\"btn btn-red\">Red Button</a>\n      // CSS\n        // .btn {\n        //  color:white;\n        //  text-decoration:none;\n        //  padding:5px 10px;\n        //  border-radius:3px;\n        //  font-family: 'Poiret One', cursive;\n        //  font-size:2em;\n        // }\n\n        // .btn-green {\n        //    @include button-bg(#2ecc71);\n        // }\n\n        // .btn-blue {\n        //    @include button-bg(#3498db);\n        // }\n\n        // .btn-yellow{\n        //    @include button-bg(#f1c40f);\n        // }\n\n        // .btn-red {\n        //    @include button-bg(#e74c3c);\n        // }\n",
+			"file": "app/styles/tools/tools.mixins.scss",
+			"file_size": 4492,
+			"file_write_time": 131034753551893613,
 			"settings":
 			{
-				"buffer_size": 4808,
+				"buffer_size": 4273,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/tools/_tools.mixins.scss",
+			"settings":
+			{
+				"buffer_size": 4274,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/settings/_main.scss",
+			"settings":
+			{
+				"buffer_size": 2325,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "app/styles/base/_main.scss",
 			"settings":
 			{
-				"buffer_size": 5010,
+				"buffer_size": 5119,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/components/_footer.scss",
+			"settings":
+			{
+				"buffer_size": 7870,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/components/_header.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/components/_info.scss",
+			"settings":
+			{
+				"buffer_size": 7860,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/components/_nav.scss",
+			"settings":
+			{
+				"buffer_size": 4289,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -171,90 +223,34 @@
 			}
 		},
 		{
+			"file": "app/styles/components/_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 3277,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/styles/components/_cover.scss",
 			"settings":
 			{
-				"buffer_size": 2210,
+				"buffer_size": 2347,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_info.scss",
-			"settings":
-			{
-				"buffer_size": 7373,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_footer.scss",
-			"settings":
-			{
-				"buffer_size": 7730,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_nav.scss",
-			"settings":
-			{
-				"buffer_size": 4225,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/vendor/hover/effects/shadow-and-glow-transitions/_glow.scss",
-			"settings":
-			{
-				"buffer_size": 229,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "app/styles/components/_portfolio.scss",
 			"settings":
 			{
-				"buffer_size": 701,
+				"buffer_size": 4394,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/styles/components/_buttons.scss",
+			"file": "app/styles/components/_critical.scss",
 			"settings":
 			{
-				"buffer_size": 3284,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_main.scss",
-			"settings":
-			{
-				"buffer_size": 359,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/tools/tools.mixins.scss",
-			"settings":
-			{
-				"buffer_size": 4273,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/tools/_main.scss",
-			"settings":
-			{
-				"buffer_size": 243,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/vendor/fontawesome/scss/_variables.scss",
-			"settings":
-			{
-				"buffer_size": 19859,
+				"buffer_size": 224,
 				"line_ending": "Unix"
 			}
 		},
@@ -267,66 +263,18 @@
 			}
 		},
 		{
-			"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
+			"file": "app/styles/components/_main.scss",
 			"settings":
 			{
-				"buffer_size": 25762,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/vendor/_main.scss",
-			"settings":
-			{
-				"buffer_size": 351,
+				"buffer_size": 359,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/vendor/fontawesome/scss/font-awesome.scss",
+			"file": "app/styles/tools/_main.scss",
 			"settings":
 			{
-				"buffer_size": 405,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/vendor/fontawesome/scss/_icons.scss",
-			"settings":
-			{
-				"buffer_size": 44553,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/vendor/flagicon/sass/flag-icon-more.scss",
-			"settings":
-			{
-				"buffer_size": 108,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/vendor/flagicon/sass/variables.scss",
-			"settings":
-			{
-				"buffer_size": 130,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/vendor/flagicon/sass/flag-icon.scss",
-			"settings":
-			{
-				"buffer_size": 99,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/vendor/flagicon/sass/flag-icon-list.scss",
-			"settings":
-			{
-				"buffer_size": 6030,
+				"buffer_size": 243,
 				"line_ending": "Unix"
 			}
 		}
@@ -339,9 +287,17 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "",
+		"last_filter": "autop",
 		"selected_items":
 		[
+			[
+				"autop",
+				"Autoprefix CSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"sass",
 				"Set Syntax: Sass"
@@ -376,10 +332,6 @@
 			],
 			[
 				"git",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -432,25 +384,67 @@
 	},
 	"file_history":
 	[
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/objects/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/sublime_portfolio.sublime-project",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/sublime_psd.sublime-workspace",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/sublime_portfolio.sublime-workspace",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/settings/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/vendor/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_buttons.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_blog.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/base/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_critical.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_header.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_footer.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_portfolio.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_nav.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_cover.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/components/_info.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/tools/tools.mixins.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/tools/_tools.mixins.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/base/_critical.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-list.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/variables.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-more.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/fontawesome/scss/_icons.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/fontawesome/scss/font-awesome.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/fontawesome/scss/_variables.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/tools/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/components/_buttons.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/components/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/tools/tools.mixins.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/settings/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/index.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/portfolio.html",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/testpage.htm",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/hover/effects/shadow-and-glow-transitions/_glow.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/components/_nav.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/components/_footer.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/components/_info.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/base/_main.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/components/_blog.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/components/_cover.scss",
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/components/_portfolio.scss",
 		"//192.168.0.19/webstore/dev/public_html/styles/main.css",
 		"//192.168.0.19/webstore/dev/public_html/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/portfolio.htm",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Sandbox/test/app/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/Archive/1903/2/index.html",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/hover/hover.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/css/flag-icon.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-base.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-list.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/flag-icon-more.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/_flag-icon.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/flagicon/sass/variables.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/vendor/hover/effects/shadow-and-glow-transitions/_float-shadow.scss",
 		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/index.htm",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/generic/_main.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/base/_main.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/_main_old.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/app/styles/_meyer.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/src/gulpfile.babel.js",
@@ -494,7 +488,6 @@
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/_main.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/_main.sass",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/_meyer.scss",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/main.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/_var.sass",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/1600up.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/minor.scss",
@@ -511,7 +504,6 @@
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/app/styles/main.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/app/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/bower_components/leanmodal/jquery.leanModal.js",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
 		"//192.168.0.19/webstore/dev/public_html/rcs/leanmodal/jquery.leanModal.js",
 		"//192.168.0.19/webstore/dev/public_html/rcs/fontawesome/css/font-awesome.css",
 		"//192.168.0.19/webstore/dev/public_html/rcs/pure/grids-responsive.css",
@@ -519,24 +511,11 @@
 		"//192.168.0.19/webstore/dev/public_html/rcs/videojs/video.js",
 		"//192.168.0.19/webstore/dev/public_html/graveyard.htm",
 		"//192.168.0.19/webstore/dev/public_html/index.htm",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/Temp/ytmodal_old/src/sass/main.css",
-		"//192.168.0.19/webstore/dev/public_html/rcs/pure/pure.css",
-		"//192.168.0.19/webstore/dev/public_html/.htaccess",
-		"//192.168.0.19/webstore/dev/public_html/test.htaccess",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
-		"//192.168.0.19/webstore/dev/public_html/rcs/pure/grids-responsive-min.css",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/Frontdev/Challenges/1/Work files/Live/index.html",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/User/distraction_free_window.sublime-settings",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/DistractionFreeWindow/Default.sublime-keymap",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/DistractionFreeWindow/distraction_free_window.sublime-settings",
-		"/C/Users/Dean/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/Temp/ytmodal_old/src/sass/main.css"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 80.0
 	},
 	"find_in_files":
 	{
@@ -550,6 +529,103 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" \n",
+			"hover",
+			"slideOut",
+			"opacity",
+			"bouncein",
+			"slideIn",
+			"('section__portfolio__iframe').height",
+			"iframe",
+			"0px",
+			"iframe",
+			"document.getElementById('section__portfolio__iframe').style.height = \"0px\";",
+			"iframe",
+			"section__portfolio__iframe",
+			"iframe",
+			"$rgb-white",
+			"minimal",
+			"blog",
+			"font",
+			"[load portfol",
+			"section__info__how",
+			"clicked",
+			"return",
+			"profile",
+			"horizontal",
+			"maverick",
+			"timeout",
+			"listenendslideout",
+			"window.portfoliooverviewneeded",
+			"listeningforportfolioswitch",
+			"iframe load",
+			"section__portfolio__iframe",
+			"section__portfolio__iframe = document.getElementById('section__portfolio__iframe');",
+			"section__portfolio__iframe",
+			"hook1",
+			"item",
+			"portfoliooverviewneeded",
+			"portfoliooverviewloaded",
+			"loadportfolioover",
+			"loadportfolio",
+			"loadDivclear",
+			"else{",
+			"end",
+			"anima",
+			".on('click', function()",
+			"$('#nav__return__button').on('click', function()",
+			"return",
+			"portfolio item #1 event!",
+			"div load ",
+			"$(content_div).load(portfoliooverview);",
+			"content_iframe = document.getElementById(\"section__portfolio__iframe\");",
+			"content_iframe = document.getElementById(\"section__portfolio__iframe\"),",
+			"var",
+			"content_iframe = document.getElementById(\"section__portfolio__iframe\")",
+			"content_iframe",
+			"loadDivclear()",
+			"loadPortfolioItems()",
+			"You are accessing the load portfolio item #1 event!",
+			"return",
+			"fadein",
+			"window.portfoliooverviewloaded = true;",
+			"loadPortfolioItems(); ",
+			" loadPortfolioItems();",
+			"__mailto",
+			"hello@",
+			"return",
+			"offset",
+			"portfolio",
+			"hook",
+			"hello@",
+			"return",
+			"section__portfolio__iframe = document.getElementById('section__portfolio__iframe');",
+			"var section__portfolio__iframe",
+			"loadportfolioit",
+			"slideout",
+			"addClass",
+			"iframe",
+			"loaded = false",
+			"portfoliooverviewloaded",
+			"portfoliooverviewloadedw",
+			"item",
+			"you clicked the return",
+			"Return",
+			"return",
+			"button!",
+			"return",
+			"addClass",
+			"iframe",
+			"settimeout",
+			"more",
+			"over__head",
+			"more",
+			" more",
+			"getelement",
+			"loadhook",
+			"fade",
+			"loadhook",
+			"form",
 			"smile",
 			"blue",
 			"send",
@@ -580,104 +656,7 @@
 			"çover",
 			"cover",
 			"nav",
-			"height",
-			"min-height",
-			"nav",
-			"clear",
-			"loadhook",
-			"oud",
-			"$rgb-white--2",
-			"portfolio.htm",
-			"div load",
-			"ready",
-			"opacity",
-			"scroll-to",
-			"font-size: 12px;",
-			"font-size:12px;",
-			"size",
-			"#f6f1ed",
-			"loadhook",
-			"Return",
-			"return",
-			"navGrowCount",
-			"navGrowRemoveCount",
-			"addNavButtonEffect",
-			"return",
-			"testpage.htm",
-			"portfolio.htm",
-			"--active",
-			"glow",
-			"ContentFormActive",
-			"return",
-			"keydow",
-			"hideNavReturn",
-			"navButtonReturnClicked",
-			"loadport",
-			"display = ",
-			"display:",
-			"section__portfolio__iframe",
-			"'section__portfolio__iframe'",
-			"section__portfolio__iframe",
-			"'section__portfolio__iframe'",
-			"#portfolio",
-			"loadPortfolioItems",
-			"window.scrollTo",
-			"window.scrollTo(0,document.body.scrollHeight);",
-			"removeNavButtonEffect",
-			"return",
-			"window.returnbutton",
-			"nav__return__button",
-			"class",
-			"content_iframe",
-			"loaddivclear",
-			"iframeclear",
-			"about",
-			"#about",
-			"loadIFrameClear",
-			"you have now entere",
-			"loadhook_columns__hook1",
-			"loadIframeClear",
-			"Allo!",
-			"loadIframeClear",
-			"load portfolio",
-			"loadIframeGate",
-			"trigger",
-			"iframegate.htm",
-			"loadPortfolioItems",
-			"blog",
-			"section__portfolio__loadhook",
-			"section__portfolio__div",
-			"portfolio",
-			"alert",
-			"window.onload",
-			"onload",
-			"console.log",
-			"message",
-			"input",
-			"messageneveractive",
-			"about",
-			"name=",
-			"SEND",
-			"info__tree_horizo",
-			"width: 28%;",
-			"width:28%;",
-			"width:28%",
-			"width:25%",
-			"width:25%;",
-			"width: 25%;",
-			"initial",
-			"justify",
-			"msc-center-flex",
-			"form__from__container",
-			"textarea",
-			"te",
-			"textarea",
-			"input",
-			"256",
-			"name",
-			"__right",
-			"social",
-			"languages"
+			"height"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -685,6 +664,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"white",
+			"window.instantportfolio",
+			"listenendslideout",
+			"listenendslideout = false;",
+			"portfoliooverviewneeded",
+			"",
+			"section__portfolio__iframe",
 			"white",
 			"@include font-size(12px);",
 			"navGrowRemoveCount",
@@ -743,53 +729,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/styles/settings/_main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2273,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								396,
-								397
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 34929,
+						"buffer_size": 46445,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7826,
-								7872
+								20908,
+								20908
 							]
 						],
 						"settings":
@@ -799,27 +756,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2336.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "app/portfolio.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 844,
+						"buffer_size": 2022,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								844,
-								844
+								632,
+								632
 							]
 						],
 						"settings":
@@ -832,29 +789,89 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/testpage.htm",
+					"buffer": 2,
+					"file": "app/styles/tools/tools.mixins.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4808,
+						"buffer_size": 4273,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94,
-								94
+								3230,
+								2913
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2640.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/styles/tools/_tools.mixins.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/styles/settings/_main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -868,42 +885,159 @@
 			]
 		},
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "app/styles/base/_main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5010,
+						"buffer_size": 5119,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4393,
-								4393
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2386.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
+					"file": "app/styles/components/_footer.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/styles/components/_header.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/styles/components/_info.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/styles/components/_nav.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "app/styles/components/_blog.scss",
 					"semi_transient": false,
 					"settings":
@@ -915,8 +1049,66 @@
 						"selection":
 						[
 							[
-								114,
-								114
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/styles/components/_buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/styles/components/_cover.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -933,334 +1125,71 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/styles/components/_cover.scss",
+					"buffer": 13,
+					"file": "app/styles/components/_portfolio.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2210,
+						"buffer_size": 4394,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								230,
-								230
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/styles/components/_info.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7373,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6566,
-								6566
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4171.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/styles/components/_footer.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7730,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1253,
-								1253
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1006.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/styles/components/_nav.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4225,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								438,
-								442
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/styles/vendor/hover/effects/shadow-and-glow-transitions/_glow.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								223,
-								190
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "app/styles/components/_portfolio.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 701,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								323,
-								323
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 12,
-					"file": "app/styles/components/_buttons.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3284,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2073,
-								1429
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1808.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "app/styles/components/_main.scss",
+					"buffer": 14,
+					"file": "app/styles/components/_critical.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 359,
+						"buffer_size": 224,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								359,
-								359
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 8,
 					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/styles/tools/tools.mixins.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4273,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2419,
-								2397
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1742.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 15,
-					"file": "app/styles/tools/_main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								232,
-								232
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "app/styles/vendor/fontawesome/scss/_variables.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19859,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1747,
-								1747
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 635.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
 					"file": "app/styles/main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1272,131 +1201,15 @@
 						"selection":
 						[
 							[
-								1352,
-								1352
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"dfw_is_in_fs": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 3,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1047.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/1_3column/Work files/v13/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25762,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6066,
-								6076
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6350.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "app/styles/vendor/_main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 351,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "app/styles/vendor/fontawesome/scss/font-awesome.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 405,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "app/styles/vendor/fontawesome/scss/_icons.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 44553,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1406,12 +1219,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 22,
-					"file": "app/styles/vendor/flagicon/sass/flag-icon-more.scss",
+					"buffer": 16,
+					"file": "app/styles/components/_main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 108,
+						"buffer_size": 359,
 						"regions":
 						{
 						},
@@ -1430,44 +1243,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
-					"file": "app/styles/vendor/flagicon/sass/variables.scss",
+					"buffer": 17,
+					"file": "app/styles/tools/_main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 130,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "app/styles/vendor/flagicon/sass/flag-icon.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 99,
+						"buffer_size": 243,
 						"regions":
 						{
 						},
@@ -1486,35 +1271,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "app/styles/vendor/flagicon/sass/flag-icon-list.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6030,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5823,
-								5847
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3575.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1560,7 +1317,7 @@
 		"rows":
 		[
 			0.0,
-			0.946603699142,
+			0.627810446148,
 			1.0
 		]
 	},
@@ -1573,7 +1330,7 @@
 	"project": "sublime_portfolio.sublime-project",
 	"replace":
 	{
-		"height": 114.0
+		"height": 134.0
 	},
 	"save_all_on_build": true,
 	"select_file":

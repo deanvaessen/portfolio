@@ -1,5 +1,5 @@
 #section__info{
-  height:800px;
+
 
   // background: $rgb-article;
 
@@ -47,15 +47,16 @@
     
     position: relative; //Then start moving, neat
     
-    bottom:35px;
+    bottom:29px;
    
     
-    background: black;
+    background-color: black;
     background-position: 50% center;
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
     line-height: 1em;
+    z-index: 1;
   }
 
     #info__tree__vertical--smile{
@@ -78,11 +79,12 @@
   }
 
   #info__tree__vertical--html{
-    height:45px;
+    height:24px;
     width:5px;
 
     margin-left: auto; //Center first
     margin-right:auto;
+    margin-top: 21px;
     
     position: relative; //Then start moving, neat
     
@@ -116,6 +118,7 @@
     background-size: contain;
     display: block;
     line-height: 1em;
+
   }
 
   #info__tree__vertical--html--r{
@@ -137,6 +140,7 @@
     background-size: contain;
     display: block;
     line-height: 1em;
+
   }
 
   #info__tree__vertical--mobile{
@@ -158,8 +162,30 @@
     line-height: 1em;
   }
 
-  #info__tree__horizontal{
-    width:59.2%; //55.2%
+  #info__tree__horizontal--l{
+    width:29.5%; //59,2% //55.2%
+    height:5px;
+
+    margin-left: auto; //Center first
+    margin-right:auto;
+    
+    position: relative; //Then start moving, neat
+    
+    bottom:34px;
+    right: 14.9%;
+
+   
+    
+    background: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    line-height: 1em;
+  }
+
+  #info__tree__horizontal--r{
+    width:29.5%; //59,2% //55.2%
     height:5px;
 
     margin-left: auto; //Center first
@@ -168,7 +194,7 @@
     position: relative; //Then start moving, neat
     
     bottom:39px;
-   
+    left: 14.9%;
     
     background: black;
     background-position: 50% center;

@@ -44,11 +44,20 @@
       src: url("../fonts/BebasNeue Regular.otf") format("opentype");
     }
 
-    
+    input, button, submit
+    {
+    // border-radius: 300px;
+
+    }
 
     a {
       text-decoration: none;
-      color: initial;
+      color: $rgb-orange;
+      font-weight: bold;
+    }
+
+    a:target {
+      width: 300px;
     }
 
     html, body {
@@ -97,12 +106,12 @@
 
       .brdr-minimal{
         border-style: solid;
-        border-width: 1px;
+        border-width: 1.5px;
       }
 
       .brdr-minimal--bottom{
         border-bottom-style: solid;
-        border-width: 1px;
+        border-width: 1.5px;
       }
 
       .brdr-orange--top{

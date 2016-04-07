@@ -24,7 +24,7 @@
   width:100%;
 
   /* background: $rgb-document; */
-  background: #BF5F54;
+  background: $rgb-red--3;
 
 #nav__title{
   width:245px;
@@ -85,6 +85,9 @@
 
   #nav__return__button{
     display: none;
+  }
+  #nav__return__button:hover{
+    cursor: pointer;
   }
 }
 
@@ -195,6 +198,7 @@
 // /*       flex-grow: 1; */
 //     }
   }
+
 }
 
 // .fixed{
@@ -228,3 +232,4 @@
 //   -webkit-transform: scale(0.9);
 //   transform: scale(0.9);
 // }
+// 

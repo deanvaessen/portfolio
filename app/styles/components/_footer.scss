@@ -4,11 +4,9 @@
 #section__contact{
   background: $rgb-footer;
   /* min-height: 330px; */
+  margin-top: 100px;
   border-top: 20px solid $rgb-orange;
   width:100%;
-
-
-  
 
     p{
     color: white;
@@ -23,8 +21,8 @@
 #footer{
   width:100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content: space-between;
   position: relative;
   font-family: "Montserrat-Light";
   // flex-basis: auto;
@@ -40,17 +38,22 @@
   // font-family: "Vollkorn-Regular";
 }
 
-#footer__left{
+#footer__flexcontactform{
   
-  margin-top:21px; //6% (% instead of px) kills Chrome. Silly browser.
+  margin-top:40px; //6% (% instead of px) kills Chrome. Silly browser.
 
 
   display:flex;
+  position:relative;
 
   flex-direction: column;
-    width: 27%;
+  width: 40%;
+
+  margin-left: 9.63%;
   
-  margin-bottom:20px;
+  margin-bottom:150px;
+
+  border-top:2px solid $rgb-orange;
 
   // margin-left: 9.5%;
   // height:100%;
@@ -69,10 +72,15 @@
   }
 
 
+
   #contact__languages{
     display: flex;
     direction: row;
     justify-content: center;
+
+    position: absolute;
+    right:0px;
+    bottom:58px;
 
     .twk-padleftreset{
       padding-left:initial;
@@ -86,6 +94,11 @@
       padding: 3px;
     }
 
+    h2:last-of-type{
+      padding-right: 0px;
+    }
+
+
     .flag-icon{
       border: solid 1px black;
     }
@@ -96,8 +109,8 @@
       background-repeat: no-repeat;
       position: relative;
       display: inline-block;
-      width: 1.33333em; //1.59em;
-      line-height: 1.030725em;
+      width: 1.53333em; // 1.33333em; // 1.59em;
+      line-height: 1.00725em; //1.030725em;
     }
   }
 
@@ -108,74 +121,93 @@
     cursor: pointer;
   }
 
-#footer__left__contactform{
+  #flexcontactform__forminner{
+    margin-top: 9px;
+
+    #forminner__namecontainer{
+    }
+
+    #forminner__fromcontainer{
+    }
+
+    #forminner__messagecontainer{
+    }
+
+    // ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    //   text-indent: 5px;
+    // }
+
+    // ::-moz-placeholder { /* Firefox 19+ */
+    //   text-indent: 5px;
+    // }
+
+    // :-ms-input-placeholder { /* IE 10+ */
+    //   text-indent: 5px;
+    // }
+
+    // :-moz-placeholder { /* Firefox 18- */
+    //   text-indent: 5px;
+    // }
+
+    textarea {
+      text-indent: 5px;
+    }
 
 
- #form__name__container{
+    #footer__form__name{
+      margin-top:0px;
+      // width:350px; //254
+      width:99.7%;
+      resize:none;
+      overflow:hidden;
+      font-family: "Montserrat-Light";
+      @include font-size(12px);
+      // height:20px;
+      background-color: white;
+      overflow-y: hidden; /* prevents scroll bar flash */
+      padding-top: 0.5em;
+      padding-bottom: 0.5em; /* prevents text jump on Enter keypress */
+      border:none;
+    }
 
- }
 
- #form__from__container{
+    #footer__form__from{
+      margin-top:1px;
+      // width:350px;
+      width:99.7%;
+      resize:none;
+      overflow:hidden;
+      font-family: "Montserrat-Light";
+      @include font-size(12px);
+      // height:20px;
+      background-color: white;
+      overflow-y: hidden; /* prevents scroll bar flash */
+      padding-top: 0.5em;
+      padding-bottom: 0.5em; /* prevents text jump on Enter keypress */
+      border:none;
+    }
 
- }
+    #footer__form__message{
+      // min-height:30px;
+      // min-width:256px;
+      // margin-top:1px;
+      
+      margin-top:1px;
+      // width:350px;
+      width:99.7%;
+      resize:none;
+      overflow:hidden;
+      font-family: "Montserrat-Light";
+      @include font-size(12px);
+      height:30px;
+      background-color: white;
 
- #form__message__container{
-
- }
-
- 
-  #footer__form__name{
-    margin-top:20px;
-    // width:350px; //254
-    width:100%;
-    resize:none;
-    overflow:hidden;
-    font-family: "Montserrat-Light";
-    @include font-size(12px);
-    // height:20px;
-    background-color: white;
-    overflow-y: hidden; /* prevents scroll bar flash */
-    padding-top: 0.5em;
-    padding-bottom: 0.5em; /* prevents text jump on Enter keypress */
-  }
-
-  #footer__form__from{
-    margin-top:1px;
-    // width:350px;
-    width:100%;
-    resize:none;
-    overflow:hidden;
-    font-family: "Montserrat-Light";
-    @include font-size(12px);
-    // height:20px;
-    background-color: white;
-    overflow-y: hidden; /* prevents scroll bar flash */
-    padding-top: 0.5em;
-    padding-bottom: 0.5em; /* prevents text jump on Enter keypress */
-  }
-
-  #footer__form__message{
-    // min-height:30px;
-    // min-width:256px;
-    // margin-top:1px;
-    
-    margin-top:1px;
-    // width:350px;
-    width:100%;
-    resize:none;
-    overflow:hidden;
-    font-family: "Montserrat-Light";
-    @include font-size(12px);
-    height:30px;
-    background-color: white;
-
-    overflow-y: hidden; /* prevents scroll bar flash */
-    padding-top: 1.1em; /* prevents text jump on Enter keypress */
-    margin-top:20px;
-    // padding-bottom: 10px;
-    
-  }
-
+      overflow-y: hidden; /* prevents scroll bar flash */
+      padding-top: 1.1em; /* prevents text jump on Enter keypress */
+      margin-top:20px;
+      // padding-bottom: 10px;
+      border:none;
+    }
   }
 
   .btn--footer{
@@ -190,54 +222,84 @@
 
 
 
-#footer__middle{
-  margin-top:21px; //6% (% instead of px) kills Chrome. Silly browser.
 
-  // display: flex;
-  // flex-direction: column;
+#footer__flexcopyright{
 
-  
+border-top:2px solid $rgb-orange;
 
-    margin-left: 2.5%;
-    margin-right: 2.5%; //10.801%
-    width: 27%;
-    display: flex;
-    flex-direction: column;
+margin-top:40px; //6% (% instead of px) kills Chrome. Silly browser.
 
-    .footer__middle__header{
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      width:80px;
-    }
-  
+width:277px;
+display:flex;
+
+flex-direction: column;
+
+position:absolute;
+right: 9.63%;
+
+
+margin-bottom:150px;
+
+
+  #footer__socialcontainer{
+    position: relative;
+    right:0%;
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
 
   #footer__social{
     height:40px;
     margin-top: 3px; //was 40%, for left 8%
-    width:100%;
 
+    width:70px;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // margin-bottom:67.4%;
+    align-items: center;
+    align-content: center;
 
-    a{
-      margin-left:4px;
-      margin-right: 4px;
-      color: white;
-    }
 
-    a:hover{
-      color: $rgb-orange;
-    }
-    
-    a:first-child{
-      margin-left: initial;
-      margin-right: 4px;
-    }
+      a{
+        margin-left:4px;
+        margin-right: 4px;
+        color: white;
+      }
+
+      a:hover{
+        color: $rgb-orange;
+      }
+      
+      a:first-child{
+        margin-left: initial;
+        margin-right: 4px;
+      }
   }
 
+
+  #footer__copyright{
+    display: flex;
+    margin-top:20px;
+
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+
+      
+      .typo--tiny{
+       line-height: 8px;
+      }
+  }
+}
+
+
+
+/* Graveyard */
   #footer__rocket{
         display: flex;
 
@@ -259,192 +321,3 @@
         @include opacity(1);
       }
   }
-
-  #footer__copyright{
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    position:absolute;
-        bottom:1.5%; //was 10.5%
-        width: 27%;
-
-
-    // margin-top:76.8%;
-
-
-    
-    // position: relative;
-
-
-      .typo--tiny{
-       line-height: 8px;
-      }
-  }
-}
-
-#footer__right{
-  overflow: hidden;
-  // width:261px;
-
-  margin-top:21px; //6% (% instead of px) kills Chrome. Silly browser.
-
-  display: flex;
-  flex-direction: column;
-  align-content: flex-end;
-  align-items: flex-end;
-
-  position: relative;
-  // width:261px;
-  width: 27%;
-
-  // p:first-child{
-  //   margin-top:2%;
-  // }
-
-  #footer__travel{
-    width: 261px;
-    // margin-top:10%;
-    
-    // 
-  #travel__title{
-    display: flex;
-    position: relative;
-
-
-    p:first-child{
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-    
-
-    .brdr-orange--top{
-      @include font-size(14px)
-    }
-
-    #contact__flags{
-      display: flex;
-      direction: row;
-      flex-wrap: wrap;
-
-      .contact__flags--margintop{
-        margin-top:1px;
-      }
-
-      
-        .flag-icon-limb{
-          background-size: contain;
-          background-position: 50%;
-          background-repeat: no-repeat;
-          position: relative;
-          display: inline-block;
-          width: 1.33333em; //1.59em;
-          line-height: 1.030725em;
-        }
-
-        .flag-icon-ba{
-          // margin-left:0.302575em;
-          // // position: relative;
-          // // right: 1px;
-        }
-
-        .flag-icon{
-          border: solid 1px black;
-        }
-
-        .flag-icon-heart{
-        background-image: url("/../images/flags/4x3/heart.svg");
-        position: relative;
-        right: 110px;
-        @include opacity(0);
-        z-index: 2;
-        }
-
-        .flag-icon-heart:hover{
-        background-image: url("/../images/flags/4x3/heart.svg");
-        position: relative;
-        right: 110px;
-        @include opacity(1);
-        z-index: 2;
-        }
-
-        .flag-icon-heart--bg{
-        background-image: initial;
-        position: relative;
-            background: black;
-        right: 135px;
-        @include opacity(0.0);
-        z-index: 1;
-        }
-
-        .flag-icon-heart--bg:hover{
-        background-image: initial;
-        background: black;
-        position: relative;
-        right: 135px;
-        @include opacity(0.5);
-        z-index: 1;
-        }
-
-        h2{
-          padding: 3px;
-          height:10px;
-          margin-bottom: 2px;
-        }
-
-        .twk-padleftreset{
-          padding-left:initial;
-        }
-
-        .twk-padrightreset{
-          padding-right:initial;
-        }
-      }
-  }
-}
-
-
-#footer__shoutout{
-    // display: 
-    width: 261px;
-    margin-top: 109.5px; //was 24px
-
-  #shoutout__title{
-  
-    }
-
-  #shoutout__links{
-    display: flex;
-    flex-direction: column;
-    align-items: flex start;
-    margin-top: 20px;
-    color: white;
-
-    a{
-      color: white;
-      @include font-size(14px);
-    }
-
-    a:hover{
-      color: $rgb-orange;
-    }
-
-    li{
-      color: $rgb-blue--light;
-    }
-
-    li:hover{
-      color: $rgb-blue;
-    }
-
-    ul {
-        list-style-type: lower-greek;
-        margin-left: 16px;
-    }
-
-  }
-}
