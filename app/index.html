@@ -25,7 +25,8 @@
     <!-- endbuild -->
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+<!--     <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script> -->
+<script src="http://malsup.github.com/jquery.form.js"></script>
   
 
   </head>
@@ -40,7 +41,7 @@
         <h1>Dean Vaessen</h1>
         <h2>MaverickMatryoshka</h2>
     </div>
-      <img id="nav__matryoshka" src="images/img_logo_small_nav.png"  alt="MaverickMatryoshka - Logo">
+      <img id="nav__matryoshka" src="images/img_logo_small_nav.png">
     </div>
 
     <div id="nav__return">
@@ -50,48 +51,53 @@
     </div>
     </div>
 
-
-
-
       <ul id="nav__menu">
         <li><a href="#about" class="btn btn--nav--2 btn--size--20">ABOUT</a></li>
         <li class="nav__menu__li--seperator"></li>
-        <li><a href="http://www.blog.deanvaessen.com" class="btn btn--nav--2 btn--size--20">BLOG</a></li>
+        <li><a href="#" id="nav__menu__blog" class="btn btn--nav--2 btn--size--20">BLOG</a></li>
         <li class="nav__menu__li--seperator"></li>
         <li><a href="#contact" class="btn btn--nav--2 btn--size--20">CONTACT</a></li> 
         <!-- Contact button should open a modal, not scroll down. E-mail at footer is additional and should also mention e-mail address again in modal. -->
       </ul>
-
   </nav>
 
   
   <main id="sections" role="main">
+  <section id="blog" class="section">
+    <div id="blog__loadingspinner"> <!--Show a loading spinner when iframe is loading-->
+         <img src="images/loading_top.png" alt="" class="animated infinite bounce"/>
+         <img src="images/loading_bottom.png" alt="">
+    </div> 
+    <iframe id="blog__iframe" onload="iFrameLoaded()"></iframe>
+  </section>
+  <section id="landingpage">
+
     <section id="cover" class="section section--highlight">
     
-      <div class="section cover__content" id="cover__content--resize">
-        <div class="cover__logo hvr-float-shadow">
-          
-          <img id="cover__matryoshka" src="images/img_logo_small_clear3.png"  alt="MaverickMatryoshka - Logo">
-          <a id="cover__more" href="#about" class="btn btn--clear btn--size--25 btn--opensans">MORE</a>
-        </div>
-
-
-        <h1 class="cover__headers">Clean, responsive web solutions</h1>
-        <h2 class="cover__headers">
-          <ul class="cover__products">
+      <div id="cover__content--resize" class="section cover__content cover__plate">
+        <h1 class="cover__headers">Clean, responsive <span class="spacer"></span>web solutions</h1>
+        <h2 class="cover__headers" id="test">
+          <ul class="cover__products" id="test">
           <li>Company websites</li>
           <li>Personal websites</li>
           <li>WordPress blogs</li>
           </ul>
         </h2>
+
+
+        <div id="cover__logo" class="hvr-float-shadow">
+          
+          <img id="cover__matryoshka" src="images/img_logo_small_clear3.png">
+          <a id="cover__more" href="#about" class="btn btn--clear btn--size--25 btn--opensans">MORE</a>
+        </div>
       </div>
 
-      <div id="cover__overlay--resize" class="section cover__overlay"></div>
-      <div id="cover__bg--resize" class="section cover__bg"></div>
+      <div id="cover__overlay--resize" class="section cover__overlay cover__plate"></div>
+      <div id="cover__bg--resize" class="section cover__bg cover__plate"></div>
 
     </section>
     <a name="about"></a><!--About scroll target -->
-    </main> 
+    
     <section id="section__info" class="section section--white" >
       <article id="article__info">
 
@@ -111,22 +117,22 @@
          
           <div id="info__smile">
             
-            <img src="images/img_smile.png"  alt="Dean!">
+            <img src="images/face.jpg"  alt="Salutations">
 <!--             <span id="info__tree__horizontal"></span> -->
             <!-- <span id="info__tree__horizontal--smilebridge"></span> -->
             <span id="info__tree__vertical--smile"></span>
             <!-- <span id="info__tree__horizontal"></span> -->
-            <h2 id="info__smile__dutch">Hallo!</h2>
-            <h2 id="info__smile__english">Hi!</h2>
-            <h2 id="info__smile__russian">Привет!</h2>
+<!--             <h2 id="info__smile__dutch">Hallo!</h2>
+<h2 id="info__smile__english">Hi!</h2>
+<h2 id="info__smile__russian">Привет!</h2> -->
           </div>
           
 
           <span class="brdr-orange--top typo--bold msc-block"></span>
             <br /><br />
-            <p id="info__heading--lead" class="info__heading--lead typo--bold msc-flex-center"><span  id="info__heading--lead">I'm Dean, a Dutch national based in Budapest.  <!-- <span class="typo--light typo--temp">[WEGHALEN INDIEN ONZEKERHEID TAXES]</span> --> I have a passion for digital art and neat technology.</span></p>
+            <p id="info__heading--lead" class="typo--bold msc-flex-center">I'm Dean, a Dutch national living in Budapest. I have a passion for digital art and neat technology.</p>
             <br /><br />
-            <p class="typo--light">MaverickMatryoshka is the name under which I provide creative services. I am  currently available for work in the area of frontend development. <br /> <br /> If you would like to speak to me, hit the contact button and I'll get back to you in a jiffy.</p>
+            <p class="typo--light">Through my UK based firm MaverickMatryoshka I provide creative services. I am  currently available for work in the areas of frontend development and general web design. <br /> <br /> If you would like to speak to me, hit the contact button and I'll get back to you in a jiffy.</p>
           
 
         </div>
@@ -144,10 +150,10 @@
           </div>
           <span class="brdr-orange--top typo--bold msc-block"></span>
             <br /><br />
-            <p id="info__heading--child" class="info__heading--lead typo--bold msc-flex-center">Whether you're looking for a personal website, blog or a frontend for your business; I can help.</p>
+            <p class="info__heading--child typo--bold msc-flex-center">Whether you're looking for a personal website, blog or a frontend for your business; I can help.</p>
             <br /><br />
             <p class="typo--light"> If there's something you would like to have built, I would love to work with you and provide something tailored to your liking. 
-            <br /> <br />I pay special attention to delivering cleanly written solutions that bring easier maintenance and longer operational capacity to the table. This means less time wasted and a greater audience reached.</p>
+            <br /> <br />I pay special attention to delivering cleanly written solutions that result in easier maintenance, more flexibility and less headaches. This means you waste less time going forward and reach a bigger, happier audience.</p>
             <br /><br />
           
         </div>
@@ -163,10 +169,10 @@
           <span class="brdr-orange--top typo--bold msc-block"></span>
               <!-- <span class="typo--temp">Hoe bied ik het aan? (clean code, taalvermogen etc)</span> -->
               <br /><br />
-              <p id="info__heading--child2" class="info__heading--lead typo--bold msc-flex-center">Optimised for every screen.</p>
+            <span id="info__deloadIframeTrigger"></span>
+              <p class="info__heading--child typo--bold msc-flex-center">Optimised for every screen.</p>
               <br /><br />
               <p class="typo--light">Considering the growing importance of mobile devices, I design my work with these devices firmly in mind. Playing into their strenghts and mitigating the impact of their limitations is key to getting your message heard to the largest amount of people, most effectively.</p>
-
         </div>
       </div>
       </article>
@@ -175,7 +181,16 @@
     <section id="section__portfolio" class="section">
     <!-- Portfolio should have a quick "collapse currently expanded page button" -->
       <span id="portfolio"></span> <!--hook for border remove-->
-      <iframe id="section__portfolio__iframe" onload="iframeLoaded()"></iframe>
+
+      <div id="section__portfolio__loadingspinner"> <!--Show a loading spinner when iframe is loading-->
+           <img src="images/loading_top.png" alt="" class="animated infinite bounce"/>
+           <img src="images/loading_bottom.png" alt="">
+      </div> 
+
+      
+      <iframe id="section__portfolio__iframe" onload="iFrameLoaded()"></iframe>
+      
+
     <div id="portfolio__loadhook">
 
 
@@ -188,39 +203,48 @@
 
 
 
+    </section>
 <section id="section__contact">
     <footer id="footer"  class="section" role="contentinfo">
       
       <div id="footer__flexcontactform">
 
         <div id="flexcontactform__forminner">
+        <div id="forminner__statusmessage">
+        </div>
+        <form method="post" action="mailer.php" id="footer__form">
           <div id="forminner__namecontainer">
            <textarea id="footer__form__name"  type="text" name="name" placeholder="What's your name?"></textarea>
           <br />
           </div>
 
-
           <div id="forminner__fromcontainer">
-             <textarea id="footer__form__from" type="text" name="from" placeholder="Please include your e-mail address"></textarea>
-            <br />
+           <textarea id="footer__form__from" type="text" name="mailadres" placeholder="Please include your e-mail address"></textarea>
+          <br />
+          </div>
+
+          <div id="forminner__subjectcontainer">
+            <textarea id="footer__form__subject" type="text" name="subject" placeholder="Could you tell me the subject?"></textarea>
           </div>
 
           <div id="forminner__messagecontainer">
             <textarea id="footer__form__message" type="text" name="message" placeholder="You can start writing here. The box will keep growing."></textarea>
           </div>
 
-          <a href="#" class="btn btn--footer" id="footer__left__send">SEND</a>
+          <input type="submit" name="submit" value="SEND" class="btn btn--footer" id="footer__left__send" />
+<!--             <a href="#" class="btn btn--footer" id="footer__left__send">SEND</a> -->
+        </form>
 
-          <div id="contact__languages">
-            <h2 class="twk-padleftreset"><span title="Say hi!" alt="" class="flag-icon flag-icon-gb"></span></h2>
-            <h2><span title="Auf Deutsch reden geht auch" class="flag-icon flag-icon-de"></span></h2>
-            <h2><span title="Nederlands kan natuurlijk ook" class="flag-icon flag-icon-nl"></span></h2>
-            <h2><span title="Ich kal gaer plat" class="flag-icon flag-icon-limb"></span></h2>
-          </div>
+        <div id="contact__languages">
+          <h2 class="twk-padleftreset"><span title="Say hi!" alt="" class="flag-icon flag-icon-gb"></span></h2>
+          <h2><span title="Auf Deutsch reden geht auch" class="flag-icon flag-icon-de"></span></h2>
+          <h2><span title="Nederlands kan natuurlijk ook" class="flag-icon flag-icon-nl"></span></h2>
+          <h2><span title="Ich kal gaer plat" class="flag-icon flag-icon-limb"></span></h2>
+        </div>
 
 
-          <br /><p class="typo--small ">Or the good old fashioned way: <br /><a id="footer__mailto"><span class="typo--bold typo--accent fx-underline--orange">hello@deanvaessen.com</span></a></p>
-          </div>
+        <br /><p class="typo--small ">Or the good old fashioned way: <br /><a id="footer__mailto"><span class="typo--bold typo--accent fx-underline--orange">hello@deanvaessen.com</span></a></p>
+        </div>
       </div>
 
 
@@ -247,7 +271,7 @@
     </div>
 <a name="contact"></a> <!-- Anchor -->
     </footer>
-    </section>
+  </section>
   </main>
 
 <script>
@@ -277,19 +301,1043 @@ function myPluginLoadEvent(func) {
  
 // pass the function you want to call at 'window.onload', in the function defined above
 myPluginLoadEvent(function(){
-    window.instantportfolio = true;
+/*    window.portfoliooverviewactivation = true;
     window.ContentFormActive = false;
-    listenendslideout = false;
-    returnAnimationVirgin = true;
+    portfoliooverviewactivation = true;
+    listenEndSlideout = false;
     animationProfilePathDone = true;
     animationProfilePathInitiated = false;
     formResizeOnClick();
-    loadPortfolioOverview();
+    deLoadIframes();
     section__portfolio__iframe = document.getElementById('section__portfolio__iframe');
+    iframeactive = false;
+    portfolioiframelisten  = false;
+    blogiframelisten = false;
+    listenLoadPortfolioIFrame = false;
+    landingpageactivation = false;
+    blogactivationfromportfolio = false;
+    blogactivation = false;*/
 
+    //Initial Declarations
+    activeStatusIFrame = false;
+    activeStatusIFrameBlog = false;
+    activeStatusIFramePortfolio = false;
+    listenLoadPortfolioIFrame = false;
+    activateLoadDiv = false;
+    activateLoadBlog = false;
+    activateLoadIframe = false;
+    deActivateLoadDiv = false;
+    deActivateLoadIframe = false;
+    loadLandingPage = false;
+    returnClicked = false;
+    returnAnimationVirgin = true;
+
+    //Load PortfolioOverview on start
+    activateLoadDiv = true;
+    activeStatusPortfolioOverview = false;
+    activateLoadPortfolioOverview = true;
+
+    //Content onLoad
+    loadContentContainer("#portfolio__loadhook");
+
+    //Styling onLoad
+    resizeDynamicCover(); //On load
+    /*resizeDynamicHeadings(); //On load*/
+    window.addEventListener('resize', resizeDynamicCover);  //On window resize
+    window.addEventListener('resize', resizeDynamicHeadings);  //On window resize
+    window.addEventListener('resize', resizeIframe);  //On window resize
 });
 
-//Styling
+
+//!-- iFrame/Div loading codebase --!\\
+//!-- The code in this section is higher level and fires off into seperate functions to do the actual effect or action. This is so I have a clearer idea of what triggers what, when. Listeners, events, routing can be found here --!\\
+
+  //function eventContentContainer - Listen for events that concern the eventContentContainers [N] -Dit moet ik opschonen door hier alleen listeners te zetten die vervolgens doorschieten voor de actie naar een nieuwe functie
+  jQuery( document ).ready( function ( $ ) {
+    triggerMainHandler();
+  });
+
+  function triggerMainHandler(){
+    //Return button code, trigger
+    $('#nav__return__button').on('click', function() {
+      console.log("You clicked the return button!");
+
+      /*//Set some function variables
+      nav__return_shrinkcount = 0;
+      nav__return_clicked = 1;
+      returnAnimationVirgin = false;
+      
+      //Define the variables for the effects 
+      nav__return = document.getElementById('nav__return__button');
+      nav__return_shrinkclass = ' nav__return__button--shrink ';
+      nav__return_shrinkclass_active = ' nav__return__button--shrink--active '; */
+
+      deActivateLoadIframe = true;
+      hideContentContainer = true;
+      returnClicked = true;
+      hideIFrame = true;
+      activateLoadDiv = true;
+      activeStatusPortfolioOverview = false;
+      activateLoadPortfolioOverview = true;
+      activeStatusIFramePortfolio = false;
+
+      deactivateLoadDiv = false; //safety switch
+
+      //Set some return button function and effect variables
+      nav__return_shrinkcount = 0;
+      nav__return_clicked = 1;
+      returnAnimationVirgin = false;
+      nav__return = document.getElementById('nav__return__button');
+      nav__return_shrinkclass = ' nav__return__button--shrink ';
+      nav__return_shrinkclass_active = ' nav__return__button--shrink--active '; 
+
+      //Tell the director to start playing
+      setTimeout(function(){
+        nav__returnEffectDirector();
+      }, 1);
+
+      //deLoad the iFrame
+      setTimeout(function(){
+        deLoadContentContainer("#section__portfolio__iframe");
+      }, 1);
+    });
+
+//*
+    //onClick Portfolio hook #1
+    $('#portfolio__loadhook').off().on('click', '#loadhook__columns__hook1', function()  {
+
+      //debug
+       console.log("You are clicking the iFrame hook1 trigger!");
+
+      activateLoadPortfolioItem = true;
+      activateLoadPortfolioItem_1 = true;
+      listenLoadPortfolioIFrame = true;
+      deActivateLoadIframe = false;
+      deActivateLoadDiv = true;
+      activeStatusPortfolioOverview = false;
+      listenLoadPortfolioIFrame = true;
+
+      setTimeout(function(){
+      deLoadContentContainer("#portfolio__loadhook");
+      }, 1); 
+      
+      setTimeout(function(){
+      showLoadingMatryoshka("#section__portfolio__loadingspinner");
+      }, 1); 
+
+      //roll up first to prevent page jump
+      //document.getElementById('blog__iframe').height = "0px";
+
+
+      //Trigger the effects
+      console.log("You clicked the initiate button!");
+      initiateButtonclicked = true;
+
+      //Set some function variables
+      nav__return_directorcount = 1; //No effect yet added on this click, "1" because of "round" console.log
+      nav__return_growcount = 0;
+      nav__return_shrinkcount = 0;
+      nav__return_glowcount = 0;
+      nav__return_clicked = 0;
+      
+      setTimeout(function(){
+        //Tell the director to start playing
+        nav__returnEffectDirector();
+      }, 1); 
+    });
+
+    //onClick Portfolio hook #3
+    $('#portfolio__loadhook').on('click', '#loadhook__columns__hook3', function()  {
+
+      //debug
+       console.log("You are clicking the iFrame hook3 trigger!");
+
+      triggerBlogButton();
+    });
+
+
+//*
+    //Toggle the landing page on/off and load/unload the blog onClick BLOG/HOME button
+    document.getElementById("nav__menu__blog").onclick = function() {
+      triggerBlogButton();
+    };
+
+    function triggerBlogButton(){
+      if (activeStatusIFrameBlog){
+        $("#blog__iframe").addClass('animated--slow fadeOutLeft'); //Slide out the page
+        listenEndSlideout = true;
+
+        //Variables to deLoad something
+        deActivateLoadBlog = true;
+        deActivateLoadIframe = true;
+        deActivateLoadDiv = false;
+        hideIFrame = true;
+
+        //Stop listening for iFrame loads
+        listenLoadPortfolioIFrame = false;
+        listenLoadBlogIFrame = false;
+
+        //Variables to Load something
+        activateLoadDiv = true;
+        activeStatusPortfolioOverview = false;
+        activateLoadPortfolioOverview = true;
+
+        //Fire the Load
+        deLoadContentContainer("#blog__iframe");
+        
+        //Change the button text
+        $("#nav__menu__blog").fadeOut(700, function(){
+          document.getElementById("nav__menu__blog").textContent="BLOG";
+          $("#nav__menu__blog").fadeIn(700);
+        });
+
+      }
+      else if(activeStatusIFramePortfolio){
+        listenEndSlideout = true;
+        $("#section__portfolio__iframe").addClass('animated--slow fadeOutLeft'); //Slide out the page
+
+        //Variables to support the deLoad and Load
+        deActivateLoadIframe = true;
+        hideContentContainer = true;
+/*        returnClicked = true;*/
+        hideIFrame = true;
+        activateLoadDiv = true;
+        activeStatusIFramePortfolio = false;
+        activeStatusPortfolioOverview = false;
+        activateLoadPortfolioOverview = false;
+        activateLoadBlog = true;
+
+        deactivateLoadDiv = false; //safety switch
+
+        //Fire the deLoad
+        setTimeout(function(){
+          deLoadContentContainer("#section__portfolio__iframe");
+        }, 1);
+
+        //Set some return button function and effect variables
+        nav__return_shrinkcount = 0;
+        nav__return_clicked = 1;
+        returnAnimationVirgin = false;
+        nav__return = document.getElementById('nav__return__button');
+        nav__return_shrinkclass = ' nav__return__button--shrink ';
+        nav__return_shrinkclass_active = ' nav__return__button--shrink--active '; 
+
+        //Tell the director to start playing
+        setTimeout(function(){
+          nav__returnEffectDirector();
+        }, 1);
+      }
+      else{
+        console.log("Checking...blog not active, portfolio item not active ->  loading blog");
+        listenLoadBlogIFrame = true;
+        
+        //roll up first to prevent page jump
+        document.getElementById('blog__iframe').height = "0px";
+
+        //Parameters for the iFrame handling
+        /*                  initiateButtonclicked = true;*/ //[20-04]
+
+        document.getElementById('blog').style.display = "flex";
+
+        $("#landingpage").fadeOut(1000, function() {
+
+        //Show the loading animation
+        showLoadingMatryoshka("#blog__loadingspinner");
+        
+        //Fire off the blogLoad
+        setTimeout(function(){
+          activateLoadBlog = true;
+          activateLoadIframe = true;
+          activateLoadDiv = false;
+          loadContentContainer("#blog__iframe");
+        }, 1); 
+        
+        
+        });
+      }
+    }
+  }        
+
+//*
+    //Loading animation
+    function showLoadingMatryoshka(activeMatryoshka){
+              this.activeMatryoshka = activeMatryoshka;
+              var x = "#blog__loadingspinner"
+
+              $(activeMatryoshka).fadeIn(700);
+              /*document.getElementById(activeMatryoshka).style.display = "flex";*/
+          
+            if (activeMatryoshka === x){
+            //Fill the page
+              var r = section__contact.getBoundingClientRect();
+              var wH = window.innerHeight;
+              //console.log("Top/Left: "+r.top+" / "+r.left)
+              //console.log("Right/Bottom: "+r.right+" / "+r.bottom)  
+                    
+              var currentMarginTop = document.getElementById('section__contact').style.marginTop
+              var currentMarginTop = parseInt(currentMarginTop, 10);
+              document.getElementById('section__contact').style.marginTop =  wH - r.bottom + currentMarginTop + "px";
+            }
+    }
+
+//*
+    //iFrame deloading on scroll
+    //Start to listen for the iFrame deload scroll up when navbar hits the iframe
+    $(window).scroll(function() {
+      var nav = document.getElementById("nav"); //Define
+      var navheight = document.defaultView.getComputedStyle(document.getElementById('nav'), "").getPropertyValue("height");
+      var navheightclean = parseInt(navheight, 10);
+      var y_scroll_pos = window.pageYOffset + navheightclean; //+70 want height of cover
+
+      var p = $( "#section__portfolio__iframe" );
+      var offset = p.offset();
+      var rawtriggeroffset = offset.top; //triggerpoint is height cover
+      var rawtriggeroffset = parseInt(rawtriggeroffset);
+
+      var scroll_pos_trigger = rawtriggeroffset; //triggerpoint is height coveroffset.top; //triggerpoint is height cov
+
+      //console.log (y_scroll_pos, scroll_pos_trigger)
+
+        if(y_scroll_pos == scroll_pos_trigger && initiateButtonclicked === true) {
+        activeStatusIFrame = true;
+        }
+      });
+
+//*
+    //De-load the iFrame when scrolling up beyond the top
+    $(window).scroll(function() {
+    var y_scroll_pos = window.pageYOffset,
+    p = $( "#info__deloadIframeTrigger" ),
+    offset = p.offset(),
+    // p.html( "left: " + offset.left + ", top: " + offset.top ),
+    scroll_pos_trigger = offset.top //triggerpoint is height of hook
+
+    if(y_scroll_pos < scroll_pos_trigger && activeStatusIFrame === true) {
+
+      console.log("Deloading the iframe because of scroll!");
+      window.portfoliooverviewactivation = false;
+      listenEndSlideout = true;
+
+      //Set some return button function and effect variables
+      nav__return_shrinkcount = 0;
+      nav__return_clicked = 1;
+      returnAnimationVirgin = false;
+      nav__return = document.getElementById('nav__return__button');
+      nav__return_shrinkclass = ' nav__return__button--shrink ';
+      nav__return_shrinkclass_active = ' nav__return__button--shrink--active '; 
+
+      //Tell the director to start playing
+      setTimeout(function(){
+        nav__returnEffectDirector();
+      }, 1);
+
+      deActivateLoadIframe = true;
+      hideContentContainer = true;
+/*      returnClicked = true;*/
+      hideIFrame = true;
+      activateLoadDiv = true;
+      activeStatusPortfolioOverview = false;
+      activateLoadPortfolioOverview = true;
+
+      deactivateLoadDiv = false; //safety switch
+
+      setTimeout(function(){
+        deLoadContentContainer("#section__portfolio__iframe");
+      }, 1);
+    }
+    });
+
+//*
+  //Check if I need to deLoad the content containers (iFrame/DIV), if not, skip and go to load
+  function deLoadContentContainer(ContentContainerID){
+    console.log("You have entered deLoadContentContainer");
+    this.ContentContainerID = ContentContainerID;
+    ContentContainerActive = ContentContainerID;
+
+    if(deActivateLoadIframe){
+      console.log("deActivateLoadIframe true, firing off to deLoadIframe function")
+      listenEndSlideout = true;
+      iFrameIDActive = ContentContainerActive;
+      deLoadIframe(iFrameIDActive);
+    }
+    else if(deActivateLoadDiv){
+      console.log("deActivateLoadDiv true, firing off to deLoadDiv function")
+      listenEndSlideout = true;
+      divIDActive = ContentContainerActive;
+      deLoadDiv(divIDActive);
+    }
+  }
+
+//*
+  //Fire off into functions that load things into the content containers (iFrame/DIV)
+  function loadContentContainer(ContentContainerID){
+    console.log("You have entered loadContentContainer");
+    this.ContentContainerID = ContentContainerID;
+    ContentContainerActive = ContentContainerID;
+
+    if(activateLoadDiv){
+      activateLoadDiv = false;
+      loadDiv(ContentContainerActive);
+    }
+    else if(activateLoadIframe){
+      activateLoadIframe = false;
+      loadIframe(ContentContainerActive);
+    }
+  }
+
+//!-- The code in this section is deals with actual effects and actions, routed to by the previous section--!\\
+
+  //!-- Functions concerning the deloading of ContentContainers --!\\
+  function deLoadIframe(iFrameIDActive){
+    console.log("Welcome to deLoadIframe, I will deload something for you");
+    this.iFrameIDActive = iFrameIDActive;
+
+    //Slide out the page
+    $(iFrameIDActive).addClass('animated--slow fadeOutLeft'); 
+
+    //Wait for slide-out to be done
+    $(iFrameIDActive).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function(e) {
+        //If statement for safety
+        if(listenEndSlideout){
+          console.log("Slideout iFrame done!");
+          activeStatusIFrame = false;
+
+          //Start scrolling
+          var navheight = document.defaultView.getComputedStyle(document.getElementById('nav'), "").getPropertyValue("height");
+          var navheightclean = parseInt(navheight, 10);
+/*          $('html, body').animate({ 
+            scrollTop: $("#portfolio").offset().top - navheightclean
+          }, 2000);*/
+
+          //Clean up
+          $(iFrameIDActive).removeClass('animated--slow fadeOutLeft');
+          listenEndSlideout = false;
+          activeStatusIFrameBlog = false;
+
+          if(hideIFrame){
+            hideIFrame = false;
+            //Roll her up
+            console.log ("Done with the deload actions. You also want me to roll up the iFrame, working on it");
+            $(iFrameIDActive).height(0);
+
+            if (returnClicked){
+              returnClicked = false;
+              //Tell the director to start playing
+              nav__returnEffectDirector();
+            }
+            if (activateLoadPortfolioOverview){
+              $("#landingpage").fadeIn(1000, function() {
+                      });
+              loadContentContainer("#portfolio__loadhook");
+            }
+            if (activateLoadBlog){
+              listenLoadBlogIFrame = true;
+              
+              //roll up first to prevent page jump
+              document.getElementById('blog__iframe').height = "0px";
+
+              //Parameters for the iFrame handling
+              /*                  initiateButtonclicked = true;*/ //[20-04]
+
+              document.getElementById('blog').style.display = "flex";
+
+              $("#landingpage").fadeOut(1000, function() {
+
+              //Show the loading animation
+              showLoadingMatryoshka("#blog__loadingspinner"); 
+              
+              //Fire off the blogLoad
+              setTimeout(function(){
+                activateLoadBlog = true;
+                activateLoadIframe = true;
+                activateLoadDiv = false;
+                loadContentContainer("#blog__iframe");
+              }, 1); 
+              });
+            }
+          }
+
+          else if (returnClicked) {
+            console.log ("Done with the deload actions. You do not want me to roll up the iFrame, forwarding you to nav__returnEffectDirector because returnButton was clicked");
+            returnClicked = false;
+            //Tell the director to start playing
+            nav__returnEffectDirector();
+          }
+        }
+    });
+  }
+
+//*
+  //This is called when a div has to be deloaded. It rolls it up (height "0px") and then shows a loading spinner
+  function deLoadDiv(divIDActive){
+    console.log("You have now entered deLoadDiv. I will roll up the div and show a loading spinner");
+    this.divIDActive = divIDActive;
+
+    //Fade div, show loading
+    $(divIDActive).fadeOut(400, function() {
+       /*$(section__portfolio__loadingspinner).fadeIn(700);*/
+       document.getElementById('section__portfolio__loadingspinner').style.display = "flex";
+
+       if (activateLoadBlog){
+        loadIframe("blog__iframe"); 
+       }
+       else if (activateLoadPortfolioItem){
+         if(activateLoadPortfolioItem_1){
+           console.log("You have now entered activateLoadPortfolioItem_1");
+           //Load an item
+           loadIframe("#section__portfolio__iframe"); 
+         }
+         else if(activateLoadPortfolioItem_2){
+          //Load an item
+         }
+         else if(activateLoadPortfolioItem_3){
+          //Load an item
+         }
+       }
+     });
+  }
+
+
+//--\\
+  //!-- Functions concerning the loading of ContentContainers --!\\
+  function loadDiv(divID){
+    this.divID = divID;
+    divIDActive = divID;
+    console.log("You have now entered loadDiv()");
+
+    if (activeStatusPortfolioOverview === false && activateLoadPortfolioOverview){
+      console.log("I am activating your PortfolioOverview");
+      activateLoadPortfolioOverview = false;
+      activeStatusPortfolioOverview = true;
+      borderadded = true; //misnomer, but works
+      navBarBorder();
+
+      var divContent = "portfolio.html",
+      section__portfolio = document.getElementById('section__portfolio');
+
+      console.log("DIV load called! The item being loaded is " + divContent + " in " + divIDActive);
+
+      //load the portfolio page and fix styling
+      $(divIDActive).load(divContent, function(){
+        resizeDynamicHeadings();
+      });
+
+      //Fade her in
+      $(section__portfolio).fadeOut(0, function(){
+        $("#portfolio__loadhook").fadeIn(0); 
+        $(section__portfolio).fadeIn(1350);
+
+        //Start listening for clicks
+        triggerMainHandler();
+      });
+
+      
+      //misc
+      document.getElementById('section__contact').style.marginTop =  "300px";
+
+      //debug
+      console.log("I am now done loading " + divContent + " in " + divIDActive);
+
+    }
+    else if (loadLandingPage){
+      console.log("loadLandingPage initiated");
+      loadLandingPage = false;
+      //listenEndSlideout = true;
+      //deLoadIframes();
+
+      $(nav__menu__blog).fadeOut(700, function(){
+        document.getElementById("nav__menu__blog").textContent="BLOG";
+        $(nav__menu__blog).fadeIn(700);
+      });
+
+      //Fix the styling
+      resizeDynamicCover();
+      resizeDynamicHeadings();
+      nav.classList.remove("nav--border");
+    }
+  }
+
+//*
+  //Load items into the iFrames
+  function loadIframe(iFrameID){
+    this.iFrameID = iFrameID;
+    
+    console.log("You are accessing the loadIframe event!");
+
+    if (activateLoadBlog){
+      activateLoadBlog = false;
+      activeStatusIFrameBlog = true;
+
+      //debug
+      console.log("You are accessing the loadBlog event!");
+
+      //define the page and iFrame
+      var iFrameContent = "../blog/index.php"; /*"portfolio.html"; */
+      console.log("iFrame load called! The item being loaded is " + iFrameContent + " in " + iFrameID);
+
+      //load the page and set the styling
+      $(iFrameID).attr("src", iFrameContent);
+      $(iFrameID).width("100%");
+
+        //debug
+      console.log("I am now done loading " + iFrameContent + " in " + iFrameID)
+    }
+    else if(activateLoadPortfolioItem){
+      activateLoadPortfolioItem = false;
+
+      if (activateLoadPortfolioItem_1){
+        activateLoadPortfolioItem_1 = false;
+        activeStatusIFramePortfolio = true;
+
+        //debug
+        console.log("You are accessing the loadPortfolioItem_1 event!");
+
+        //define the page and iFrame
+        var iFrameContent =  "content/psd/index.html"; //"portfolio.html"
+        console.log("iFrame load called! The item being loaded is " + iFrameContent + " in " + iFrameID);
+
+        //load the page and set the styling
+        $(iFrameID).attr("src", iFrameContent);
+        $(iFrameID).width("100%");
+        document.getElementById('section__portfolio__iframe').height = "0px";
+
+        //debug
+        console.log("I am now done loading " + iFrameContent + " in " + iFrameID)
+      }
+      else if (activateLoadPortfolioItem_2){
+        activateLoadPortfolioItem_2 = false;
+
+      }
+      else if (activateLoadPortfolioItem_3){
+        activateLoadPortfolioItem_3 = false;
+
+      }
+    }
+  }
+
+//*
+  //This fires when the iFrame has fully loaded
+  function iFrameLoaded(){
+    console.log("An iFrame has been fully loaded!");
+
+    var iFrameID = document.getElementById('section__portfolio__iframe');
+    var iFrameID2 = document.getElementById('blog__iframe');
+    var loadingspinner = document.getElementById('section__portfolio__loadingspinner'); 
+    var loadingspinner2 = document.getElementById('blog__loadingspinner');
+
+    //Fix styling
+    resizeDynamicHeadings();
+
+    //onLoad Portfolio iFrame
+    if(listenLoadPortfolioIFrame) { 
+      listenLoadPortfolioIFrame = false;
+      activeStatusIframePortfolio = true;
+      console.log("The Portfolio iFrame load code is now being executed!");
+
+      //Hide the loading matryoshka
+      setTimeout(function(){  
+        $(loadingspinner).fadeOut(400, function(){
+          /*$(":first").removeAttr("style");*/
+          $(iFrameID).css({height: "" });
+          iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px"; // here we set the height
+          document.getElementById('section__contact').style.marginTop =  "100px";
+          $(iFrameID).addClass('animated fadeInRight'); //Slide in the page
+
+          //Scroll to the anchor
+          var navheight = document.defaultView.getComputedStyle(document.getElementById('nav'), "").getPropertyValue("height");
+          var navheightclean = parseInt(navheight, 10);
+
+          $('html, body').animate({  
+              scrollTop: $("#portfolio").offset().top - navheightclean
+
+          }, 2000, function(){
+          });
+        });
+      }, 200); //Kleine delay zodat ze eventjes in beeld is geweest en functie van de animatie (loading) duidelijk is
+
+      //Listen for the end of the animation
+      $(iFrameID).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function(e) {
+      console.log("Cleaning up after end animation slide-in portfolio item")
+      //Cleanup
+        $(iFrameID).removeClass('animated fadeInRight'); 
+        listenLoadPortfolioIFrame = false;
+      });
+    }
+
+    //onLoad Blog iFrame
+    else if(listenLoadBlogIFrame) { 
+      listenLoadBlogIFrame = false;
+      activeStatusIframePortfolio = true;
+      console.log("The Blog iFrame load code is now being executed!");
+
+      //Hide the loading matryoshka
+        $(loadingspinner2).fadeOut(400, function(){
+          $(nav__menu__blog).fadeOut(700, function(){
+            document.getElementById("nav__menu__blog").textContent="HOME";
+            $(nav__menu__blog).fadeIn(700);
+          });
+
+          //Hide the footer on the blog
+          document.getElementById('blog__iframe').contentWindow.document.getElementById('colophon').style.display = "none";
+
+          //Here we set the height
+          $(iFrameID2).css({height: "" }); //this is a hack to fix the issue. Why on earth is it getting a css height value of "0px" in the first place?
+          document.getElementById('section__contact').style.marginTop =  "100px"; // Change the the marginTop value to fit design
+          iFrameID2.height = iFrameID2.contentWindow.document.body.scrollHeight + "px";
+          $(iFrameID2).addClass('animated fadeInRight'); //Slide in the page
+        });
+
+
+      //Listen for the end of the animation
+      $(iFrameID2).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function(e) {
+        //Cleanup
+        $(iFrameID2).removeClass('animated fadeInRight'); 
+      });         
+    }
+  }
+
+
+
+
+  //--Support functions for ContentFrameLoad--\\
+    //Resize height on windowresize
+    function resizeIframe(){
+      var nav = document.getElementById("nav");
+      var iFrameID = document.getElementById('section__portfolio__iframe');
+      var navheight = document.defaultView.getComputedStyle(document.getElementById('nav'), "").getPropertyValue("height");
+      var navheightclean = parseInt(navheight, 10);
+      
+      
+      if (activeStatusIFrame){
+        var y_scroll_pos = window.pageYOffset + navheightclean; 
+        var current_scroll_pos = parseInt(y_scroll_pos);
+        var p = $( "#section__portfolio__iframe" );
+        var offset = p.offset();
+        var rawtriggeroffset = offset.top; //triggerpoint is height cover
+        var rawtriggeroffset = parseInt(rawtriggeroffset);
+
+        var scroll_pos_trigger = rawtriggeroffset; //triggerpoint is height coveroffset.top; //triggerpoint is height cov
+
+        console.log ("y_scroll_pos: " + y_scroll_pos, " scroll_pos_trigger: " + scroll_pos_trigger, " current_scroll_pos: " + current_scroll_pos);
+
+/*        var body = document.body,
+            html = document.documentElement;
+
+        var height_preresize = Math.max( body.scrollHeight, body.offsetHeight, 
+                               html.clientHeight, html.scrollHeight, html.offsetHeight );*/
+
+      iFrameID.height = "100px"; 
+      iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+
+/*      var height_postresize = Math.max( body.scrollHeight, body.offsetHeight, 
+                             html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+      var height_difference = height_preresize - height_postresize;
+      var height_difference = parseInt(height_difference);*/
+      
+      //Kick the scroll location back to the previous location BEFORE the iFrame resize to prevent deload
+        // Make the resizing of the iframe smooth and prevent it from jumping to the top because of the height resize
+        if(y_scroll_pos > scroll_pos_trigger) { 
+
+         $('html, body').animate({ 
+                 scrollTop: current_scroll_pos - navheightclean
+             }, 0);
+        }
+
+          var y_scroll_pos = window.pageYOffset + navheightclean; 
+          var current_scroll_pos = parseInt(y_scroll_pos);
+          console.log ("new current_scroll_pos: " + current_scroll_pos);
+/*          console.log ("pre: " + height_preresize, " post: " + height_postresize, " diff: " + height_difference);*/
+      
+        //Prevent deload of iframe by jumping to the iframe top edge if scroll location jumps higher than top iframe
+          if(y_scroll_pos < scroll_pos_trigger) { 
+
+                 $('html, body').animate({ 
+                         scrollTop: $("#portfolio").offset().top - navheightclean
+                     }, 0);
+
+        }
+      }
+    }
+//*
+    //Return button effects. The code is a quite expansive but the reason behind this is that I want to retain a high degree of control and make this nice and modular. I can swap things in and out easily so in effect I now have a sort of framework. The below is a handler for the effects, below that are the actual effects.
+     function nav__returnEffectDirector(){ 
+      /*console.log("Entering Effects Director..."+"the count is "+nav__return_directorcount); //This function coordinates the effects*/
+
+      //Define the variables for the effects 
+      nav__return = document.getElementById('nav__return__button');
+      nav__return_growclass = ' nav__return__button--grow ';
+      nav__return_growclass_active = ' nav__return__button--grow--active '; 
+      nav__return_shrinkclass = ' nav__return__button--shrink ';
+      nav__return_shrinkclass_active = ' nav__return__button--shrink--active '; 
+      nav__return_glowclass = ' nav__return__button--glow ';
+      nav__return_glowclass_active = ' nav__return__button--glow--active '; 
+      
+      if (nav__return_directorcount == 1){ //If not run before
+        console.log("No effect added yet this click, [placeholder]"); //I could add another effect here if I want
+        nav__return_directorcount++;
+        nav__returnEffectDirector();
+      }
+      
+      else if (nav__return_directorcount == 2){ //If not run before
+        $(nav__return).fadeIn(300);
+        $(nav__return).css({ display: "flex" }); //Make the button visible
+        nav__return_directorcount++;
+/*        console.log("Continuing with grow effect");*/
+        setTimeout(nav__returnGrow, 0);
+      }
+      
+      else {
+        if(nav__return_clicked == 1){ //Did I click the return button? If so, shrink it
+/*              console.log("Time to shrink and fade the button");*/
+              nav__return_clicked++;
+              setTimeout(nav__returnShrink, 0);
+        }
+        else if(nav__return_clicked > 1){ //I clicked, now I loop loop back into here to hide
+/*              console.log("Hiding the button and cleaning up!");*/
+              $(nav__return).fadeOut("slow");
+              setTimeout(function(){$(nav__return).css({ 
+                display: "none" }); //Hide the button
+                                   }, 1000);
+              //Now start cleaning up and resetting the stack
+              setTimeout(function(){
+                nav__return_clicked = 0;
+                $(nav__return).removeClass(nav__return_shrinkclass_active + nav__return_shrinkclass + nav__return_glowclass+nav__return_glowclass_active+ nav__return_growclass+nav__return_growclass_active);  
+                nav__return_growcount = 0;
+                nav__return_glowcount = 0;
+                nav__return_directorcount = 1;
+                nav__return_shrinkcount = 0;                      
+                                   }, 2000); //I am doing this in a timer because if I don't, the animations will still be playing and fuck up the values that I am trying to reset.
+          }
+        
+        else if (nav__return_clicked == 0) { //Run the effects only if I didn't click the return button
+/*            console.log("Back in Effects Director for round "+ nav__return_directorcount);*/
+            nav__return_directorcount++;
+                  
+            if (nav__return_growcount == 1){ //Remove grow
+/*              console.log("Time to remove the grow effect");*/
+              $(nav__return).removeClass(nav__return_growclass_active);
+              nav__return_growcount = 0; //Done with this effect, reset the counter
+              setTimeout(nav__returnEffectDirector, 500);
+            }
+            
+            else if (nav__return_glowcount == 0){ //Run the second effect, glow
+              console.log("Time to glow");
+              $(nav__return).removeClass(nav__return_growclass); //Remove the previous base effect, cleanup
+              setTimeout(nav__returnGlow, 200);
+            }
+          
+            else if (nav__return_glowcount == 1){ //Remove the second effect, Glow
+/*              console.log("Time to remove the glow");*/
+              $(nav__return).removeClass(nav__return_glowclass_active); //Remove the glow
+              nav__return_glowcount++;
+              setTimeout(nav__returnEffectDirector, 2000);
+            }
+          
+            else { //Clean up
+/*              console.log("I will clean up now")*/
+              $(nav__return).removeClass(nav__return_glowclass+nav__return_shrinkclass);
+              //Reset the whole stack
+              nav__return_growcount = 0;
+              nav__return_glowcount = 0;
+              nav__return_directorcount = 0;
+            }
+        };
+      };
+     };
+
+//*
+    //These are the actual effect functions of the return button
+      function nav__returnGrow(){
+        if(returnAnimationVirgin){
+/*          console.log("I am now growing the return button");*/
+          $(nav__return).addClass(nav__return_growclass + nav__return_growclass_active);  //Add the effect
+          nav__return_growcount++; //Count it
+          setTimeout(nav__returnEffectDirector, 1000); //Move back up to the director
+        }
+        else{
+          nav__return_growcount++; //Count it
+          nav__returnEffectDirector();
+        }
+      };
+      
+      function nav__returnGlow(){
+        if(returnAnimationVirgin){
+/*          console.log("I am now glowing the return button");*/
+          $(nav__return).addClass(nav__return_glowclass + nav__return_glowclass_active); //Add the effect
+          nav__return_glowcount++;
+          returnAnimationVirgin = false;
+          setTimeout(nav__returnEffectDirector, 2000); //Move back up to the director
+        }
+        else{
+          nav__return_glowcount++;
+          nav__returnEffectDirector();
+        }
+      };
+
+      function nav__returnShrink(){
+/*        console.log("I am now shrinking the return button");*/
+        $(nav__return).addClass(nav__return_shrinkclass + nav__return_shrinkclass_active); //Add the effect
+        nav__return_shrinkcount++;
+        setTimeout(nav__returnEffectDirector, 400); //Move back up to the director
+      };
+
+
+//!--Code to support my footer contact form--!\\
+  //Expand forms on keydown
+  $('#forminner__namecontainer').delegate( 'textarea', 'keydown', function (){
+      $(this).height( 0 );
+      $(this).height( this.scrollHeight );
+  });
+  $('#forminner__namecontainer').find( 'textarea' ).keydown();
+
+
+  $('#forminner__fromcontainer').delegate( 'textarea', 'keydown', function (){
+      $(this).height( "0" );
+      $(this).height( this.scrollHeight );
+  });
+  $('#forminner__fromcontainer').find( 'textarea' ).keydown();
+
+
+  $('#forminner__subjectcontainer').delegate( 'textarea', 'keydown', function (){
+      $(this).height( "0" );
+      $(this).height( this.scrollHeight );
+  });
+  $('#forminner__subjectcontainer').find( 'textarea' ).keydown();
+
+
+  $('#forminner__messagecontainer').delegate( 'textarea', 'keydown', function (){
+      if(window.ContentFormActive){ // To fix a jumping page on load of page
+        window.scrollTo(0,document.body.scrollHeight);
+        $(this).height( "100px" );
+        $(this).height( this.scrollHeight );
+      } else{
+        $(this).height( "100px" );
+        $(this).height( this.scrollHeight );
+      }
+      
+  });
+  $('#forminner__messagecontainer').find( 'textarea' ).keydown();
+
+  //Set initial height
+  function formResizeInitial(){  
+    document.getElementById('footer__form__name').style.height = "15px"; //20
+    document.getElementById('footer__form__from').style.height = "15px";
+    document.getElementById('footer__form__subject').style.height = "15px";
+    document.getElementById('footer__form__message').style.height = "50px";
+  };
+
+  formResizeInitial(); //On load
+
+//*
+  //Expand to larger area on click
+  function formResizeOnClick() {
+      document.getElementById("footer__form__name").onclick = function() {
+        document.getElementById('footer__form__name').style.height = "20px"; //20
+        document.getElementById("footer__form__name").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
+        document.getElementById('footer__form__from').style.height = "20px";
+        document.getElementById("footer__form__from").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
+        document.getElementById('footer__form__subject').style.height = "20px";
+        document.getElementById("footer__form__subject").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__subject").style.paddingBottom = "0.0em";
+        var messageheight = document.getElementById('footer__form__message').style.height
+        if(messageheight < 100){
+            document.getElementById('footer__form__message').style.height = "100px";
+          }
+        //window.scrollTo(0,document.body.scrollHeight);
+        window.ContentFormActive = true; 
+      }
+
+      document.getElementById("footer__form__from").onclick = function() {
+        document.getElementById('footer__form__name').style.height = "20px"; //20
+        document.getElementById("footer__form__name").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
+        document.getElementById('footer__form__from').style.height = "20px";
+        document.getElementById("footer__form__from").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
+        document.getElementById('footer__form__subject').style.height = "20px";
+        document.getElementById("footer__form__subject").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__subject").style.paddingBottom = "0.0em";
+        var messageheight = document.getElementById('footer__form__message').style.height
+        if(messageheight < 100){
+            document.getElementById('footer__form__message').style.height = "100px";
+          }
+        //window.scrollTo(0,document.body.scrollHeight);
+        window.ContentFormActive = true;
+      }
+
+      document.getElementById("footer__form__subject").onclick = function() {
+        document.getElementById('footer__form__name').style.height = "20px"; //20
+        document.getElementById("footer__form__name").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
+        document.getElementById('footer__form__from').style.height = "20px";
+        document.getElementById("footer__form__from").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
+        document.getElementById('footer__form__subject').style.height = "20px";
+        document.getElementById("footer__form__subject").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__subject").style.paddingBottom = "0.0em";
+        var messageheight = document.getElementById('footer__form__message').style.height
+        if(messageheight < 100){
+            document.getElementById('footer__form__message').style.height = "100px";
+          }
+        //window.scrollTo(0,document.body.scrollHeight);
+        window.ContentFormActive = true;
+      }
+
+      document.getElementById("footer__form__message").onclick = function() {
+        document.getElementById('footer__form__name').style.height = "20px"; //20
+        document.getElementById("footer__form__name").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
+        document.getElementById('footer__form__from').style.height = "20px";
+        document.getElementById("footer__form__from").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
+        document.getElementById('footer__form__subject').style.height = "20px";
+        document.getElementById("footer__form__subject").style.paddingTop = "1.1em";
+        document.getElementById("footer__form__subject").style.paddingBottom = "0.0em";
+        var messageheight = document.getElementById('footer__form__message').style.height
+        if(messageheight < 100){
+            document.getElementById('footer__form__message').style.height = "100px";
+          }
+        //window.scrollTo(0,document.body.scrollHeight);
+        window.ContentFormActive = true;
+      }
+
+
+  };
+
+//*
+  //Listen for form submition and failed status return button clicked
+    $(document).ready(function() { 
+        // bind form using ajaxForm 
+        $('#footer__form').ajaxForm({ 
+            // target identifies the element(s) to update with the server response 
+            target: '#forminner__statusmessage', 
+     
+            // success identifies the function to invoke when the server response 
+            // has been received; here we apply a fade-in effect to the new content 
+            success: function() { 
+            $('#post__return').on('click', function() {
+              $('#forminner__statusmessage').fadeOut(400); 
+              setTimeout(function(){
+                          $('#footer__form').fadeIn(400); 
+                                                   }, 400); //wait for the fadout to be complete
+                  });
+            $('#forminner__statusmessage').css({display: "none"});
+            $('#footer__form').fadeOut(400); 
+            setTimeout(function(){
+                        $('#forminner__statusmessage').fadeIn(400); 
+                                                 }, 400); //wait for the fadout to be complete
+            } 
+
+        }); 
+    });
+
+//!-- Styling --!\\
   //Add the mailto link back, but now without a hover popup :) 
   //Low risk to do it here and fixes styling, will not implement on other locations to prevent breaking page functionality
   $("#footer__mailto").on('click', function() {
@@ -301,14 +1349,16 @@ myPluginLoadEvent(function(){
             var cover__matryoshka = document.getElementById('cover__matryoshka'),
                 cover__headers = document.getElementsByClassName('cover__headers'),
                 cover__more = document.getElementById('cover__more');
+                documentready = true;
             
-            $(cover__headers).css({ visibility: "visible" }); //Make the headers visible
+/*            $(cover__headers).css({ visibility: "visible" }); //Make the headers visible*/
 
             setTimeout(function(){ 
             $(cover__more).fadeIn(400);
-            $(cover__more).css({ display: "block" }); //Make the more button visible
+            $(cover__headers).fadeIn(400);
+            // $(cover__more).css({ display: "block" }); //Make the more button visible
             $(cover__matryoshka).fadeIn(1350);
-            $(cover__matryoshka).css({ display: "block" }); //Make the maryoshka visible);
+            // $(cover__matryoshka).css({ display: "block" }); //Make the maryoshka visible);
             }, 600);
         });
 
@@ -320,7 +1370,8 @@ myPluginLoadEvent(function(){
       $("#nav__matryoshka").removeClass('animated tada');
     });
 
-  //Resize height of the cards to preserve layout when resizing window
+//*
+  //Resize height of the cover to preserve layout when resizing window
     function resizeDynamicCover(){
       var w = window,
         d = document,
@@ -329,10 +1380,22 @@ myPluginLoadEvent(function(){
         x = w.innerWidth || e.clientWidth || g.clientWidth,
         y = w.innerHeight|| e.clientHeight|| g.clientHeight;
       
-      if (x > 820) {
-          document.getElementById('cover__content--resize').style.height = y / 1.9 +"px";
-          document.getElementById('cover__overlay--resize').style.height = y / 1.9 +"px";
-          document.getElementById('cover__bg--resize').style.height = y / 1.9 +"px";
+      if (x >= 820) {
+          console.log("Resizing the cover");
+          document.getElementById('cover__content--resize').style.height = y / 2.1 +"px";
+          document.getElementById('cover__overlay--resize').style.height = y / 2.1 +"px";
+          document.getElementById('cover__bg--resize').style.height = y / 2.1 +"px";
+          /*document.getElementById('b').style.height = document.defaultView.getComputedStyle(document.getElementById('a'), "").getPropertyValue("height");*/
+          /*alert(y + 200);*/
+
+          /*document.getElementById('div_register').setAttribute("style","width:500px");*/
+      };
+
+      if (x < 820) {
+          console.log("Resizing the cover");
+          document.getElementById('cover__content--resize').style.height = "900px";
+          document.getElementById('cover__overlay--resize').style.height = "900px";
+          document.getElementById('cover__bg--resize').style.height = "900px";
           /*document.getElementById('b').style.height = document.defaultView.getComputedStyle(document.getElementById('a'), "").getPropertyValue("height");*/
           /*alert(y + 200);*/
 
@@ -340,49 +1403,189 @@ myPluginLoadEvent(function(){
       };
     };
 
+//*
+      //Resize height of the info and portfolio sections to ensure equal vertical spacing across all info elements and button position, respectively
+          function resizeDynamicHeadings(){
+            var w = window,
+              d = document,
+              e = d.documentElement,
+              g = d.getElementsByTagName('body')[0],
+              x = w.innerWidth || e.clientWidth || g.clientWidth,
+              y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+            
+            if (x > 760) { //breakpoint responsive design (had hier 820 staan)
+                console.log("Resizing the heading heights for info");
+                $('.info__heading--child').height($('#info__heading--lead').height());
+            };
+
+            if (x > 925) { //breakpoint responsive design
+                console.log("Resizing the heading heights for portfolio");
+                $('.portfolio__p--child').height($('#portfolio__p--lead').height());
+                $('.portfolio__h1--child').height($('#portfolio__h1--lead').height());
+
+
+                /*var textwidthleadh1portfolioitem = ($('#portfolio__h1--lead--maxlength').textWidth());*/
+                /*alert(textwidthleadh1portfolioitem);*/
+            };
+               
+          };
+
+//*
   //Add a nice border when I pass the cover
-    $(window).scroll(function() {
+    function navBarBorder (){
         var nav = document.getElementById("nav"); //Define
-            navclasses = document.getElementById("nav").className; //Save classes
-            y_scroll_pos = window.pageYOffset;
-            scroll_pos_trigger = document.getElementById('cover').offsetHeight; //triggerpoint is height cover
+        var navclasses = document.getElementById("nav").className; //Save classes
+        var navheight = document.defaultView.getComputedStyle(document.getElementById('nav'), "").getPropertyValue("height");
+        var navheightclean = parseInt(navheight, 10);
+            y_scroll_pos = window.pageYOffset + navheightclean;
+            p = $( "#article__info" );
+            offset = p.offset();
+            scroll_pos_trigger = offset.top; //triggerpoint is height cover
+            /*scroll_pos_trigger = document.getElementById("cover").offsetHeight, //triggerpoint is height cover*/
             borderadded = navclasses.indexOf("nav--border") > -1; 
 
         if(y_scroll_pos > scroll_pos_trigger && borderadded === false) {
          nav.className += " nav--border";
+         // alert(scroll_pos_trigger);
         }
       else if (y_scroll_pos < scroll_pos_trigger && borderadded === true)
       {
         nav.classList.remove("nav--border");
-        
       }
+      
+    }
+    $(window).scroll(function() {
+      navBarBorder();
     });
 
-  //Resize height of the profile heading spans to ensure equal vertical spacing across all info heading-child elements
-      function resizeDynamicHeadings(){
-        var w = window,
-          d = document,
-          e = d.documentElement,
-          g = d.getElementsByTagName('body')[0],
-          x = w.innerWidth || e.clientWidth || g.clientWidth,
-          y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-        
-        if (x > 820) {
-            document.getElementById('info__heading--child').style.height = document.defaultView.getComputedStyle(document.getElementById('info__heading--lead'), "").getPropertyValue("height");
-        };
 
-        if (x > 820) {
-            document.getElementById('info__heading--child2').style.height = document.defaultView.getComputedStyle(document.getElementById('info__heading--lead'), "").getPropertyValue("height");
-        };
-      };
+//*
+    //Slow scrolling
+      $(function() {
 
+       // scroll handler
+       var scrollToAnchor = function( id ) {
+
+         // grab the element to scroll to based on the name
+         var elem = $("a[name='"+ id +"']");
+
+         // if that didn't work, look for an element with our ID
+         if ( typeof( elem.offset() ) === "undefined" ) {
+           elem = $("#"+id);
+         }
+
+         // if the destination element exists
+         if ( typeof( elem.offset() ) !== "undefined" ) {
+
+           // do the scroll
+           $('html, body').animate({
+                   scrollTop: elem.offset().top
+           }, 1000 );
+
+         }
+       };
+
+       // bind to click event
+       $("a").click(function( event ) {
+
+         // only do this if it's an anchor link
+         if ( $(this).attr("href").match("#") ) {
+
+           // cancel default event propagation
+           event.preventDefault();
+
+           // scroll to the location
+           var href = $(this).attr('href').replace('#', '')
+           scrollToAnchor( href );
+
+         }
+
+       });
+
+      });
+</script>
+
+<!-- Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37806719-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script> -->
+<script src="http://malsup.github.com/jquery.form.js"></script>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
     
-    resizeDynamicCover(); //On load
-    resizeDynamicHeadings(); //On load
-    window.addEventListener('resize', resizeDynamicCover);  //On window resize
-    window.addEventListener('resize', resizeDynamicHeadings);  //On window resize
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
 
-  //Light up the lines and the header leading to a profile section on hover
+<!-- //Define the functions
+    //
+    //Section "what"
+    $("#section__info__what").hover(function mouseInProfilePath() {
+      if(animationProfilePathDone){
+        
+        $("#info__profileHeader").animate({
+          color: "#FFBF28"
+        }, 300 );
+
+        setTimeout(function(){ 
+          $(profileWhatPathlines).animate({
+            backgroundColor: "#FFBF28"
+          }, 500 );
+                             }, 350);
+
+        setTimeout(function(){ 
+        animationProfilePathInitiated = true;
+        animationProfilePathDone = false;
+                             }, 1050);
+      } else{
+        setTimeout(mouseInProfilePath, 50); //Otherwise wait for it to finish, please keep checking
+      }
+      // $(profileWhatPathlines).css("background-color", "#FFBF28");
+      // $("#info__profileHeader").css("color", "#FFBF28");
+      
+    }, function mouseOutProfilePath() {
+      // on mouseout, reset the background colour
+      if(animationProfilePathInitiated){ //Only immediately if the animation has finished
+        $("#info__profileHeader").animate({
+        color: "black"
+        }, 300 );
+
+        $(profileWhatPathlines).animate({
+          backgroundColor: "black"
+        }, 300 );
+
+        setTimeout(function(){ 
+        animationProfilePathInitiated = false;
+        animationProfilePathDone = true;
+                           }, 300);
+      } else{ 
+        setTimeout(mouseOutProfilePath, 50); //Otherwise wait for it to finish, please keep checking
+      }
+
+      // $(profileWhatPathlines).css("background-color", "");
+      // $("#info__profileHeader").css("color", "");
+    }); -->
+
+
+<!-- 
+    //Light up the lines and the header leading to a profile section on hover
   //[N] - This is still a bit messy. It fucks up if you hover/unhover multiple boxes quickly. I think I need to create an array or something? To store the value of the "previously highlighted" lines and then clear those out as well. So the unhover should look at what is in the array to determine on what lines it should remove the effect.
   
   // $( document ).ready(function() {
@@ -488,540 +1691,4 @@ myPluginLoadEvent(function(){
   //       setTimeout(profileHowUnHover, 50); //Otherwise wait for it to finish, please keep checking
   //     }
   //   });
-  // });
-
-  //Slow scrolling
-    $(function() {
-
-     // scroll handler
-     var scrollToAnchor = function( id ) {
-
-       // grab the element to scroll to based on the name
-       var elem = $("a[name='"+ id +"']");
-
-       // if that didn't work, look for an element with our ID
-       if ( typeof( elem.offset() ) === "undefined" ) {
-         elem = $("#"+id);
-       }
-
-       // if the destination element exists
-       if ( typeof( elem.offset() ) !== "undefined" ) {
-
-         // do the scroll
-         $('html, body').animate({
-                 scrollTop: elem.offset().top
-         }, 1000 );
-
-       }
-     };
-
-     // bind to click event
-     $("a").click(function( event ) {
-
-       // only do this if it's an anchor link
-       if ( $(this).attr("href").match("#") ) {
-
-         // cancel default event propagation
-         event.preventDefault();
-
-         // scroll to the location
-         var href = $(this).attr('href').replace('#', '')
-         scrollToAnchor( href );
-
-       }
-
-     });
-
-    });
-
-//Porfolio section. 
-  //Return button handler
-      //The code is a quite expansive but the reason behind this is that I want to retain a high degree of control and make this nice and modular. I can swap things in and out easily so in effect I now have a sort of framework.
-
-    jQuery( document ).ready( function( $ ) {
-      //console.log("Page ready! Listening for return button trigger.");
-      function nav__returnEffectDirector(){ 
-        console.log("Entering Effects Director..."+"the count is "+nav__return_directorcount); //This function coordinates the effects
-        
-        if (nav__return_directorcount == 1){ //If not run before
-          console.log("No effect added yet this click, [placeholder]"); //I could add another effect here if I want
-          nav__return_directorcount++;
-          nav__returnEffectDirector();
-        }
-        
-        else if (nav__return_directorcount == 2){ //If not run before
-          $(nav__return).fadeIn(300);
-          $(nav__return).css({ display: "flex" }); //Make the button visible
-          nav__return_directorcount++;
-          console.log("Continuing with grow effect");
-          setTimeout(nav__returnGrow, 0);
-        }
-        
-        else {
-          if(nav__return_clicked == 1){ //Did I click the return button? If so, shrink it
-                console.log("Time to shrink and fade the button");
-                nav__return_clicked++;
-                setTimeout(nav__returnShrink, 0);
-          }
-          else if(nav__return_clicked > 1){ //I clicked, now I loop loop back into here to hide
-                console.log("Hiding the button and cleaning up!");
-                $(nav__return).fadeOut("slow");
-                setTimeout(function(){$(nav__return).css({ 
-                  display: "none" }); //Hide the button
-                                     }, 1000);
-                //Now start cleaning up and resetting the stack
-                setTimeout(function(){
-                  nav__return_clicked = 0;
-                  $(nav__return).removeClass(nav__return_shrinkclass_active + nav__return_shrinkclass + nav__return_glowclass+nav__return_glowclass_active+ nav__return_growclass+nav__return_growclass_active);  
-                  nav__return_growcount = 0;
-                  nav__return_glowcount = 0;
-                  nav__return_directorcount = 1;
-                  nav__return_shrinkcount = 0;                      
-                                     }, 2000); //I am doing this in a timer because if I don't, the animations will still be playing and fuck up the values that I am trying to reset.
-            }
-          
-          else if (nav__return_clicked == 0) { //Run the effects only if I didn't click the return button
-              console.log("Back in Effects Director for round "+ nav__return_directorcount);
-              nav__return_directorcount++;
-                    
-              if (nav__return_growcount == 1){ //Remove grow
-                console.log("Time to remove the grow effect");
-                $(nav__return).removeClass(nav__return_growclass_active);
-                nav__return_growcount = 0; //Done with this effect, reset the counter
-                setTimeout(nav__returnEffectDirector, 500);
-              }
-              
-              else if (nav__return_glowcount == 0){ //Run the second effect, glow
-                console.log("Time to glow");
-                $(nav__return).removeClass(nav__return_growclass); //Remove the previous base effect, cleanup
-                setTimeout(nav__returnGlow, 200);
-              }
-            
-              else if (nav__return_glowcount == 1){ //Remove the second effect, Glow
-                console.log("Time to remove the glow");
-                $(nav__return).removeClass(nav__return_glowclass_active); //Remove the glow
-                nav__return_glowcount++;
-                setTimeout(nav__returnEffectDirector, 2000);
-              }
-            
-              else { //Clean up
-                console.log("I will clean up now")
-                $(nav__return).removeClass(nav__return_glowclass+nav__return_shrinkclass);
-                //Reset the whole stack
-                nav__return_growcount = 0;
-                nav__return_glowcount = 0;
-                nav__return_directorcount = 0;
-              }
-          };
-        };
-    };
-      
-    //These are the actual effect functions of the return button
-      function nav__returnGrow(){
-        if(returnAnimationVirgin){
-          console.log("I am now growing the return button");
-          $(nav__return).addClass(nav__return_growclass + nav__return_growclass_active);  //Add the effect
-          nav__return_growcount++; //Count it
-          setTimeout(nav__returnEffectDirector, 1000); //Move back up to the director
-        }
-        else{
-          nav__return_growcount++; //Count it
-          nav__returnEffectDirector();
-        }
-      };
-      
-      function nav__returnGlow(){
-        if(returnAnimationVirgin){
-          console.log("I am now glowing the return button");
-          $(nav__return).addClass(nav__return_glowclass + nav__return_glowclass_active); //Add the effect
-          nav__return_glowcount++;
-          returnAnimationVirgin = false;
-          setTimeout(nav__returnEffectDirector, 2000); //Move back up to the director
-        }
-        else{
-          nav__return_glowcount++;
-          nav__returnEffectDirector();
-        }
-      };
-
-      function nav__returnShrink(){
-        console.log("I am now shrinking the return button");
-        $(nav__return).addClass(nav__return_shrinkclass + nav__return_shrinkclass_active); //Add the effect
-        nav__return_shrinkcount++;
-        setTimeout(nav__returnEffectDirector, 400); //Move back up to the director
-      };
-      
-    //Let's set up the triggers
-      $('#portfolio__loadhook').on('click', '#loadhook__columns__hook1', function() {
-        console.log("You clicked the initiate button!");
-
-        //Set some function variables
-        nav__return_directorcount = 1; //No effect yet added on this click, "1" because of "round" console.log
-        nav__return_growcount = 0;
-        nav__return_shrinkcount = 0;
-        nav__return_glowcount = 0;
-        nav__return_clicked = 0;
-        
-        //Define the variables for the effects 
-        nav__return = document.getElementById('nav__return__button');
-        nav__return_growclass = ' nav__return__button--grow ';
-        nav__return_growclass_active = ' nav__return__button--grow--active '; 
-        nav__return_shrinkclass = ' nav__return__button--shrink ';
-        nav__return_shrinkclass_active = ' nav__return__button--shrink--active '; 
-        nav__return_glowclass = ' nav__return__button--glow ';
-        nav__return_glowclass_active = ' nav__return__button--glow--active '; 
-        
-        //Tell the director to start playing
-        nav__returnEffectDirector();
-        console.log(nav__return_directorcount);
-      });
-
-
-      $('#nav__return__button').on('click', function() {
-        console.log("You clicked the return button!");
-        //Set some function variables
-        nav__return_shrinkcount = 0;
-        nav__return_clicked = 1;
-        returnAnimationVirgin = false;
-        
-        //Define the variables for the effects 
-        nav__return = document.getElementById('nav__return__button');
-        nav__return_shrinkclass = ' nav__return__button--shrink ';
-        nav__return_shrinkclass_active = ' nav__return__button--shrink--active '; 
-        //Slide out the portfolio item
-        
-        $(section__portfolio__iframe).addClass('animated slideOutLeft'); //Slide out the page
-        
-
-
-        setTimeout(function(){ 
-          $(section__portfolio__iframe).removeClass('animated slideOutLeft'); //cleanup
-        }, 1500);
-        
-        //Tell the director to start playing
-        nav__returnEffectDirector();
-
-
-      }); 
-      
-    });
-
-  //Here we do the actual loading of the div/iframe
-    //Load portfolio overview into div
-    function loadPortfolioOverview(){
-          console.log("Loading your portfolio overview");
-          var content_div = document.getElementById('portfolio__loadhook'),
-              portfoliooverview = "portfolio.html",
-              content_iframe = document.getElementById("section__portfolio__iframe"),
-              section__portfolio = document.getElementById('section__portfolio'),
-              fadediv = document.getElementById('portfolio__loadhook'),
-              slideOutLeft = ' slideOutLeft ';
-
-
-          console.log("Listening for switch@@@@@@@@@@@@@@@@@@@@@@? " + listenendslideout);
-
-          //Move the iframe
-            // $(section__portfolio__iframe).addClass(slideOutLeft); //Slide out the page
-
-        console.log(window.instantportfolio);
-        if(window.instantportfolio){ //Don't do this if I still have a portfolio item loaded
-          console.log("DIV load called! The item being loaded is " + portfoliooverview + " in " + content_div);
-          //roll up the iframe
-            content_iframe = document.getElementById("section__portfolio__iframe");
-            document.getElementById('section__portfolio__iframe').width = "0px;";
-            document.getElementById('section__portfolio__iframe').height = "0px";
-            // document.getElementById('section__portfolio__iframe').style.display = "none";
-
-          // Remove the page
-            portfolioItem1Content = "clear.html"; 
-            content_iframe.src = portfolioItem1Content;
-
-         //load the portfolio page
-          $(content_div).load(portfoliooverview);
-          $(section__portfolio).fadeIn(1350);
-          $(section__portfolio).css({ display: "flex" }); //Make the overview visible
-          $(fadediv).fadeIn(700);
-          
-
-           //debug
-           console.log("I am now done loading " + portfoliooverview + " in " + content_div);
-           
-           loadDivclear();}
-
-           else{ //Wait for the animation to play out and then load the portfolio overview
-            
-            $(section__portfolio__iframe).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-              function(e) {
-                if(listenendslideout){console.log("Slideout done!");
-              document.getElementById('section__portfolio__iframe').height = "0px";
-              window.instantportfolio = true;
-              listenendslideout = false;
-              loadPortfolioOverview();}
-              });
-           }
-
-        }; 
-
-    //Load divclear into div onClick to clear space and then load the iframe
-    function loadDivclear(){
-      console.log("You have now entered loadDivclear. I will clear the div once I have a keydown pressed and then continue on to the iFrame load");
-      
-
-      jQuery( document ).ready( function( $ ) {
-        console.log("Page is ready, I am going to start listening for hook1 now");
-  console.log("Listening for switch????????????????????????????? " + listenendslideout);
-        $('#portfolio__loadhook').off().on('click', '#loadhook__columns__hook1', function()  {
-         //debug
-          console.log("You are clicking the iframe gate trigger!");
-          var content_div = document.getElementById('portfolio__loadhook');
-
-          //Scroll to the anchor
-          $('html, body').animate({ 
-                  scrollTop: $("#portfolio").offset().top - 70
-              }, 2000);
-
-          //clear the page
-          divclear = "clear.html";
-
-          console.log("DIV load called! The item being loaded is " + divclear + " in " + content_div);
-         
-         //fade out the previous page
-         var fadediv = document.getElementById('portfolio__loadhook');
-          $(fadediv).fadeOut(400);
-
-         //load the clear page to collapse the div 
-
-         setTimeout(function(){ 
-          $(content_div).load(divclear);
-         }, 450);
-
-
-           //debug
-           console.log("I am now done loading " + divclear + " in " + content_div);
-           console.log("Continuing to loadPortfolioItems");
-           
-           
-           setTimeout(function(){ 
-            loadPortfolioItems(); //Load an item
-           }, 650);
-        });
-      });
-      }
-
-    //Load item (currently: #1) into iframe //I need to change this to a combination of all the load events and have loadDivclear load the right frame for the right moment
-   function loadPortfolioItems(){
-   // document.getElementById("footer__form__from").onclick = function() {
-    //debug
-       console.log("You are accessing the load portfolio item #1 event!");
-
-    //define the page
-       portfolioItem1Content = "content/psd/index.html"; 
-       content_iframe = document.getElementById("section__portfolio__iframe");
-       console.log("iframe load called! The item being loaded is " + window.portfolioItem1Content + " in " + content_iframe);
-    //load the page
-      content_iframe.src = portfolioItem1Content; // assign url to src property
-
-
-
-
-
-      //set the styling
-
-         // document.getElementById('section__portfolio__iframe').style.display = "block";
-         document.getElementById('section__portfolio__iframe').width = "100%";
-         // document.getElementById('section__portfolio__iframe').height = "0px";
-
-        
-      //debug
-      console.log("I am now done loading " + window.portfolioItem1Content + " in " + content_iframe)
-
-
-    }
-
-
-    //Change iframeheight based on content and slide her in
-    function iframeLoaded() {
-      var iFrameID = document.getElementById('section__portfolio__iframe');
-      // here we set the height. Delete first, then recreate it
-      if(iFrameID) {
-          iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-
-          $(section__portfolio__iframe).addClass('animated bounceInRight'); //Slide in the page
-          console.log(window.instantportfolio);
-
-          $(section__portfolio__iframe).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-            function(e) {
-            $(section__portfolio__iframe).removeClass('animated bounceInRight'); //cleanup
-            console.log(window.instantportfolio);
-            });
-      }   
-    }
-
-
-    //Return to Portfolio onClick. Clear the iframe and then load the div with PortfolioOverview onClick.
-    jQuery( document ).ready( function( $ ) {
-          document.getElementById("nav__return__button").onclick = function() {
-            console.log("You have now entered returnToPortfolio. I will clear the iframe and then reload the portfolio overview");
-            window.instantportfolio = false;
-            listenendslideout = true;
-            console.log("Listening for switch????????????????????????????? " + listenendslideout);
-            loadPortfolioOverview();
-          }
-                });
-
-
-//Code to support my footer form
-//[N]-Bug: Clicking outside the form collapses the form even if you have a lot of text written already.
-  //Expand forms on keydown
-  $('#forminner__namecontainer').delegate( 'textarea', 'keydown', function (){
-      $(this).height( 0 );
-      $(this).height( this.scrollHeight );
-  });
-  $('#forminner__namecontainer').find( 'textarea' ).keydown();
-
-  $('#forminner__fromcontainer').delegate( 'textarea', 'keydown', function (){
-      $(this).height( "0" );
-      $(this).height( this.scrollHeight );
-  });
-  $('#forminner__fromcontainer').find( 'textarea' ).keydown();
-
-  $('#forminner__messagecontainer').delegate( 'textarea', 'keydown', function (){
-
-
-      if(window.ContentFormActive){ // To fix a jumping page on load of page
-        window.scrollTo(0,document.body.scrollHeight);
-        $(this).height( "100px" );
-        $(this).height( this.scrollHeight );
-      } else{
-        $(this).height( "100px" );
-        $(this).height( this.scrollHeight );
-      }
-      
-  });
-  $('#forminner__messagecontainer').find( 'textarea' ).keydown();
-
-  //Set initial height
-  function formResizeInitial(){  
-    document.getElementById('footer__form__name').style.height = "15px"; //20
-    document.getElementById('footer__form__from').style.height = "15px";
-    document.getElementById('footer__form__message').style.height = "50px";
-  };
-
-  formResizeInitial(); //On load
-
-  //Expand to larger area on click
-  function formResizeOnClick() {
-      document.getElementById("footer__form__name").onclick = function() {
-        document.getElementById('footer__form__name').style.height = "20px"; //20
-        document.getElementById("footer__form__name").style.paddingTop = "1.1em";
-        document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
-        document.getElementById('footer__form__from').style.height = "20px";
-        document.getElementById("footer__form__from").style.paddingTop = "1.1em";
-        document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
-        document.getElementById('footer__form__message').style.height = "100px";
-        window.scrollTo(0,document.body.scrollHeight);
-        window.ContentFormActive = true; 
-      }
-
-      document.getElementById("footer__form__from").onclick = function() {
-        document.getElementById('footer__form__name').style.height = "20px"; //20
-        document.getElementById("footer__form__name").style.paddingTop = "1.1em";
-        document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
-        document.getElementById('footer__form__from').style.height = "20px";
-        document.getElementById("footer__form__from").style.paddingTop = "1.1em";
-        document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
-        document.getElementById('footer__form__message').style.height = "100px";
-        window.scrollTo(0,document.body.scrollHeight);
-        window.ContentFormActive = true;
-      }
-
-      document.getElementById("footer__form__message").onclick = function() {
-        document.getElementById('footer__form__name').style.height = "20px"; //20
-        document.getElementById("footer__form__name").style.paddingTop = "1.1em";
-        document.getElementById("footer__form__name").style.paddingBottom = "0.0em";
-        document.getElementById('footer__form__from').style.height = "20px";
-        document.getElementById("footer__form__from").style.paddingTop = "1.1em";
-        document.getElementById("footer__form__from").style.paddingBottom = "0.0em";
-        document.getElementById('footer__form__message').style.height = "100px";
-        window.scrollTo(0,document.body.scrollHeight);
-        window.ContentFormActive = true;
-      }
-  };
-</script>
-
-<!-- Google Analytics-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-37806719-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
-
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
-</html>
-
-<!-- //Define the functions
-    //
-    //Section "what"
-    $("#section__info__what").hover(function mouseInProfilePath() {
-      if(animationProfilePathDone){
-        
-        $("#info__profileHeader").animate({
-          color: "#FFBF28"
-        }, 300 );
-
-        setTimeout(function(){ 
-          $(profileWhatPathlines).animate({
-            backgroundColor: "#FFBF28"
-          }, 500 );
-                             }, 350);
-
-        setTimeout(function(){ 
-        animationProfilePathInitiated = true;
-        animationProfilePathDone = false;
-                             }, 1050);
-      } else{
-        setTimeout(mouseInProfilePath, 50); //Otherwise wait for it to finish, please keep checking
-      }
-      // $(profileWhatPathlines).css("background-color", "#FFBF28");
-      // $("#info__profileHeader").css("color", "#FFBF28");
-      
-    }, function mouseOutProfilePath() {
-      // on mouseout, reset the background colour
-      if(animationProfilePathInitiated){ //Only immediately if the animation has finished
-        $("#info__profileHeader").animate({
-        color: "black"
-        }, 300 );
-
-        $(profileWhatPathlines).animate({
-          backgroundColor: "black"
-        }, 300 );
-
-        setTimeout(function(){ 
-        animationProfilePathInitiated = false;
-        animationProfilePathDone = true;
-                           }, 300);
-      } else{ 
-        setTimeout(mouseOutProfilePath, 50); //Otherwise wait for it to finish, please keep checking
-      }
-
-      // $(profileWhatPathlines).css("background-color", "");
-      // $("#info__profileHeader").css("color", "");
-    }); -->
+  // }); -->

@@ -70,7 +70,7 @@
 
       // font-family: "Vollkorn-Regular", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-family: "Montserrat-Regular", sans-serif;
-      background: $rgb-document;
+      background: $rgb-document--2;
 
       p{
         font-family: "Montserrat-Light";
@@ -79,9 +79,6 @@
       }
     }
 
-    #sections {
-    margin-top:70px;
-    }
 
     article{
       width:100%;
@@ -95,7 +92,11 @@
       flex-direction: row;
     }
 
-
+/*     iframe {
+     background-image: url("http://jimpunk.net/Loading/wp-content/uploads/loading2.gif");   
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    } */
     /* Project specific variables */
     /* I should consider making a "typography document" and a "borders document" or just one big "project specific variables document"*/
 

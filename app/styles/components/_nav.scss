@@ -6,7 +6,9 @@
 
 }
 
-
+#sections {
+margin-top:70px; //compensate for the nav
+}
 
 
 
@@ -232,4 +234,150 @@
 //   -webkit-transform: scale(0.9);
 //   transform: scale(0.9);
 // }
-// 
+
+// !---Media Calls--! \\
+
+@media all and (max-width: 1075px) and (min-width: 750px) {
+
+  #nav{
+
+  }
+
+  #nav > #nav__menu{
+    display: fixed;
+    right: 10px;
+
+    li{
+
+    }
+    
+    li:first-of-type{
+
+     }
+
+     li:nth-of-type(3){
+
+     }
+
+     li:nth-of-type(5){
+
+     }
+
+     .nav__menu__li--seperator{
+      width: 10px;
+     }
+  }
+
+    #nav__return__button{
+
+    }
+
+    #nav > #nav__title{
+      display: fixed;
+      left: 10px;
+
+    }
+
+}
+
+@media all and (max-width: 870px) and (min-width: 410px) {
+  #nav{
+  height: 130px;
+  }
+
+  #nav > #nav__menu{
+    top: 70px;
+    li{
+      position: fixed;
+      top: 85px;
+    }
+    
+    li:first-of-type{
+      position: fixed;
+      left: 10px;
+      top: 85px;
+     }
+
+     li:nth-of-type(3){
+      right: 10px;
+      top: 40px;
+     }
+
+     li:nth-of-type(5){
+      right: 10px;
+     }
+
+     .nav__menu__li--seperator{
+      display:none;
+     }
+  }
+
+    #nav__return__button{
+      position: fixed;
+      left: auto;
+      right: auto;
+      top: 82px;
+    }
+
+    #nav > #nav__title{
+      left: 10px;
+    }
+
+}
+
+@media all and (max-width: 820px) and (min-width: 410px) {
+  #sections {
+  margin-top:10px; //compensate for the nav but shorten value to move the text up a bit, more efficient use of screen space
+  }
+}
+
+
+@media all and (max-width: 410px) and (min-width: 0px) {
+
+  #sections {
+  margin-top:80px; //compensate for the nav but shorten value to move the text up a bit, more efficient use of screen space
+  }
+
+
+  #nav{
+  height: 220px;
+  }
+
+  #nav > #nav__menu{
+    top: 70px;
+    li{
+      position: fixed;
+      top: 85px;
+    }
+    
+    li:first-of-type{
+      position: fixed;
+      left: 10px;
+      top: 130px;
+     }
+
+     li:nth-of-type(3){
+      left: 10px;
+      top: 85px;
+     }
+
+     li:nth-of-type(5){
+      left: 10px;
+      top: 175px;
+     }
+
+     .nav__menu__li--seperator{
+      display:none;
+     }
+  }
+
+    #nav__return__button{
+      position: fixed;
+      right: 10px;
+      top: 172px;
+    }
+
+    #nav > #nav__title{
+      left: 10px;
+    }
+}
