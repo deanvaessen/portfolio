@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"activate",
+				"activateLoadBlog"
+			],
+			[
+				"show",
+				"showLoadingMatryoshka"
+			],
+			[
 				"info__heading",
 				"info__heading--lead"
 			],
@@ -167,7 +175,7 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 61848,
+				"buffer_size": 67347,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,15 +183,7 @@
 			"file": "app/portfolio.html",
 			"settings":
 			{
-				"buffer_size": 1870,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Dean/Downloads/index.html",
-			"settings":
-			{
-				"buffer_size": 64786,
+				"buffer_size": 1871,
 				"line_ending": "Windows"
 			}
 		},
@@ -215,10 +215,18 @@
 			}
 		},
 		{
+			"file": "app/styles/components/_blog.scss",
+			"settings":
+			{
+				"buffer_size": 888,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/styles/components/_portfolio.scss",
 			"settings":
 			{
-				"buffer_size": 6755,
+				"buffer_size": 6838,
 				"line_ending": "Windows"
 			}
 		},
@@ -231,13 +239,13 @@
 			}
 		},
 		{
-			"contents": "#cover{\n  display: initial;\n\n}\n\n.spacer{\n  display:none;\n}\n\n.cover__headers{\n  visibility: hidden;\n}\n\n#cover__content--resize{\n  // @extend .fx-vignette;\n  position:absolute;\n\n  z-index: 1;\n\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  align-items: center;\n  \n  \n  width:100%;\n  min-height: 750px;\n  @extend .brdr-groove--bottom;\n\n\n\n  h1{\n    @include font-size(40px)\n    position:relative;\n    bottom:23%;\n\n    color: white;\n    text-shadow: 1px 1px 0px #B2B2B2;\n  }\n\n  h2{\n    @include font-size(40px)\n    position:relative;\n    bottom:22%;\n    color: white;\n\n    .cover__products{\n      display: flex;\n      flex-direction: row;\n\n      li{\n        @include font-size(20px)\n        margin-left: 10px;\n        height:40px;\n        display:flex;\n        flex-direction: row;\n        align-items: center;\n      }\n\n        li::before {\n            content: \"·\";\n            @include font-size(40px)\n            margin-right: 10px;\n            position:relative;\n            bottom: 2px;\n        }\n\n      li:first-child{\n        margin-left: 0px;\n      }\n        li:first-child::before{\n          content: initial;\n        }\n    }\n  }\n\n  #cover__logo{\n    display:flex;\n    flex-direction: column;\n    align-items: center;\n\n    position: relative;\n\n    bottom: 3%;\n    padding: 20px;\n    height: 250px;\n\n    .btn{\n      position: relative;\n      bottom:42%; //45%\n      // left:9px;\n      display:none;\n      \n\n    }\n\n    img{\n      position:relative;\n\n      width:50px;\n      height:206px;\n      display: none;\n\n    }\n  }\n\n}\n\n.cover__overlay{\n  @extend .brdr-groove--bottom;\n  @include opacity(1);\n\n  position: absolute;\n\n  min-height: 750px;\n\n  width:100%;\n  z-index: 0;\n\n  background: $rgb-red--3; //purple\n\n  // border-bottom: 10px solid black;\n}\n\n.cover__bg{\n  @include opacity(0.50);\n\n  position: relative;\n\n\n  width:100%;\n  min-height: 750px;\n\n  // background: $rgb-orange;\n\n  // border-bottom: 10px solid black;\n}\n\n\n// !---Media Calls--! \\\\\n@media all and (max-width: 820px) and (min-width: 0px) {\n.cover__plate{\n   height: 900px;\n }\n}\n\n@media all and (max-width: 750px) and (min-width: 410px) {\n\n //  #cover__content--resize{\n //   height: 900px;\n\n //  }\n\n //  #cover{\n //    height: 900px;\n //  }  \n\n // .cover__overlay{\n //    height: 900px;\n //  }\n\n  #cover__content--resize{\n    h1{\n      width: 80%;\n      text-align: center;\n      position:relative;\n      margin-bottom: 40px;\n      bottom: 13%;\n    }\n\n    h2{\n      @include font-size(40px);\n      bottom: 13%;\n    }\n\n\n  }\n  #cover__content--resize > #cover__logo{\n\n\n    .btn{\n    }\n\n    img{\n      \n    }\n  }\n}\n\n@media all and (max-width: 410px) and (min-width: 0px) {\n  #cover__content--resize{\n\n    h1{\n      bottom: 12%;\n      width: 70%;\n      text-align: center;\n      position:relative;\n    }\n\n    h2{\n      bottom: 8%;\n    }\n  }\n}\n\n\n/* Custom fixes */\n@media all and (max-width: 615px) and (min-width: 0px) {\n  #cover > #cover__content--resize{\n    ul{\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      align-content: center;\n\n    }\n\n      li{\n        @include font-size(20px)\n        margin-left: 0px;\n        text-align: center;\n      }\n\n      li:nth-child(2){\n        margin-top: 10px;\n        margin-bottom: 10px;\n      } \n\n      li:nth-child(2)::before{\n        content: \"·\";\n        @include font-size(40px)\n        position:relative;\n        left:46%;\n        bottom: 60%;\n      }\n\n      li:nth-child(2)::after{\n        content: \"·\";\n        @include font-size(40px)\n        position:relative;\n        right:49%;\n        top: 50%;\n      }\n\n        li::before {\n          content: initial;\n            margin-right: 0px;\n        }\n    }\n  }\n\n@media all and (max-width: 410px) and (min-width: 0px) {\n  #cover__content--resize{\n    .spacer{\n      display:block;\n      height: 2px;\n      width: 20px;\n      background-color: white;\n      margin-top: 15px;\n      margin-bottom: 5px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n  }\n}",
+			"contents": "#cover{\n  display: initial;\n\n}\n\n.spacer{\n  display:none;\n}\n\n.cover__headers{\n  /* visibility: hidden; */\n  display:none;\n}\n\n#cover__content--resize{\n  // @extend .fx-vignette;\n  position:absolute;\n\n  z-index: 1;\n\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  align-items: center;\n  \n  \n  width:100%;\n  min-height: 750px;\n  @extend .brdr-groove--bottom;\n\n\n\n  h1{\n    @include font-size(40px)\n    position:relative;\n    bottom:23%;\n\n    color: white;\n    text-shadow: 1px 1px 0px #B2B2B2;\n  }\n\n  h2{\n    @include font-size(40px)\n    position:relative;\n    bottom:22%;\n    color: white;\n\n    .cover__products{\n      display: flex;\n      flex-direction: row;\n\n      li{\n        @include font-size(20px)\n        margin-left: 10px;\n        height:40px;\n        display:flex;\n        flex-direction: row;\n        align-items: center;\n      }\n\n        li::before {\n            content: \"·\";\n            @include font-size(40px)\n            margin-right: 10px;\n            position:relative;\n            bottom: 2px;\n        }\n\n      li:first-child{\n        margin-left: 0px;\n      }\n        li:first-child::before{\n          content: initial;\n        }\n    }\n  }\n\n  #cover__logo{\n    display:flex;\n    flex-direction: column;\n    align-items: center;\n\n    position: relative;\n\n    bottom: 3%;\n    padding: 20px;\n    height: 250px;\n\n    .btn{\n      position: relative;\n      bottom:42%; //45%\n      // left:9px;\n      display:none;\n      \n\n    }\n\n    img{\n      position:relative;\n\n      width:50px;\n      height:206px;\n      display: none;\n\n    }\n  }\n\n}\n\n.cover__overlay{\n  @extend .brdr-groove--bottom;\n  @include opacity(1);\n\n  position: absolute;\n\n  min-height: 750px;\n\n  width:100%;\n  z-index: 0;\n\n  background: $rgb-red--3; //purple\n\n  // border-bottom: 10px solid black;\n}\n\n.cover__bg{\n  @include opacity(0.50);\n\n  position: relative;\n\n\n  width:100%;\n  min-height: 750px;\n\n  // background: $rgb-orange;\n\n  // border-bottom: 10px solid black;\n}\n\n\n// !---Media Calls--! \\\\\n@media all and (max-width: 820px) and (min-width: 0px) {\n.cover__plate{\n   height: 900px;\n }\n}\n\n@media all and (max-width: 750px) and (min-width: 410px) {\n\n //  #cover__content--resize{\n //   height: 900px;\n\n //  }\n\n //  #cover{\n //    height: 900px;\n //  }  \n\n // .cover__overlay{\n //    height: 900px;\n //  }\n\n  #cover__content--resize{\n    h1{\n      width: 80%;\n      text-align: center;\n      position:relative;\n      margin-bottom: 40px;\n      bottom: 13%;\n    }\n\n    h2{\n      @include font-size(40px);\n      bottom: 13%;\n    }\n\n\n  }\n  #cover__content--resize > #cover__logo{\n\n\n    .btn{\n    }\n\n    img{\n      \n    }\n  }\n}\n\n@media all and (max-width: 410px) and (min-width: 0px) {\n  #cover__content--resize{\n\n    h1{\n      bottom: 12%;\n      width: 70%;\n      text-align: center;\n      position:relative;\n    }\n\n    h2{\n      bottom: 8%;\n    }\n  }\n}\n\n\n/* Custom fixes */\n@media all and (max-width: 615px) and (min-width: 0px) {\n  #cover > #cover__content--resize{\n    ul{\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      align-content: center;\n\n    }\n\n      li{\n        @include font-size(20px)\n        margin-left: 0px;\n        text-align: center;\n      }\n\n      li:nth-child(2){\n        margin-top: 10px;\n        margin-bottom: 10px;\n      } \n\n      li:nth-child(2)::before{\n        content: \"·\";\n        @include font-size(40px)\n        position:relative;\n        left:46%;\n        bottom: 60%;\n      }\n\n      li:nth-child(2)::after{\n        content: \"·\";\n        @include font-size(40px)\n        position:relative;\n        right:49%;\n        top: 50%;\n      }\n\n        li::before {\n          content: initial;\n            margin-right: 0px;\n        }\n    }\n  }\n\n@media all and (max-width: 410px) and (min-width: 0px) {\n  #cover__content--resize{\n    .spacer{\n      display:block;\n      height: 2px;\n      width: 20px;\n      background-color: white;\n      margin-top: 15px;\n      margin-bottom: 5px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n  }\n}",
 			"file": "app/styles/components/_cover.scss",
-			"file_size": 4301,
-			"file_write_time": 131053170026140849,
+			"file_size": 4274,
+			"file_write_time": 131059718257573240,
 			"settings":
 			{
-				"buffer_size": 4012,
+				"buffer_size": 4034,
 				"line_ending": "Windows"
 			}
 		},
@@ -271,14 +279,6 @@
 			{
 				"buffer_size": 5301,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/components/_blog.scss",
-			"settings":
-			{
-				"buffer_size": 843,
-				"line_ending": "Windows"
 			}
 		},
 		{
@@ -324,10 +324,13 @@
 			}
 		},
 		{
+			"contents": "function xx(){\n//--oude code hierbeneden !WIP!\n    var content_div = document.getElementById('portfolio__loadhook'),\n    portfoliooverview = \"portfolio.html\",\n    content_iframe = document.getElementById(\"section__portfolio__iframe\"),\n    section__portfolio = document.getElementById('section__portfolio'),\n    fadediv = document.getElementById('portfolio__loadhook'),\n    fadeOutLeft = ' fadeOutLeft ';\n\n    if(window.portfoliooverviewactivation){ \n      //Don't do this if I still have a portfolio item active, but do do it on initial pageload (state is true on load)\n      //roll up the iframe\n      content_iframe = document.getElementById(\"section__portfolio__iframe\");\n      document.getElementById('section__portfolio__iframe').height = \"0px\";\n      document.getElementById('blog__iframe').height = \"0px\"; //also roll this one up on initial load\n\n      // Remove the page\n      var portfolioiframecontent = \"clear.html\"; \n      content_iframe.src = portfolioiframecontent;\n      activatePreIframeLoadState(); //continue to load the portfolio overview\n    }\n    else if (landingpageactivation){ .\n      //Do I want to activate the landing page?\n\n      //roll up the iframe\n      content_iframe = document.getElementById(\"blog__iframe\");\n      document.getElementById('blog__iframe').height = \"0px\";\n\n      // Remove the page\n      var blogiframecontent = \"clear.html\"; \n      content_iframe.src = blogiframecontent;\n      activatePreIframeLoadState(); //continue to load the landing page\n\n    }\n    else if(blogactivation){\n      blogactivation = false;\n      //roll up the iframe\n      var content_iframe = document.getElementById(\"section__portfolio__iframe\");\n      document.getElementById('section__portfolio__iframe').height = \"0px\";\n\n      // Remove the previous page\n      var portfolioiframecontent = \"clear.html\"; \n      content_iframe.src = portfolioiframecontent;\n      document.getElementById('blog__iframe').height = \"0px\"; //roll up first to prevent page jump\n      //Parameters for the iFrame handling\n      /*                  initiateButtonclicked = true;*/ //[20-04]\n      listenforiframeloaded = true;\n      blogiframelisten = true;\n      portfolioiframelisten = false;\n\n      document.getElementById('blog').style.display = \"flex\";\n\n      $(\"#landingpage\").fadeOut(1000, function() {\n      $(blog__loadingspinner).fadeIn(700, function(){\n\n      loadBlog();\n      });\n\n      document.getElementById('blog__loadingspinner').style.display = \"flex\";\n      });\n    }\n    else{ \n      //Instead, if I still have an item loaded, wait for the animation to play out, go back and deload the iFrame and then load what you need (like portfolio overview)\n      $('.iframe').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',\n      function(e) {\n        if(listenendslideout){\n          console.log(\"Slideout done!\");\n          document.getElementById('section__portfolio__iframe').height = \"0px\";\n\n\n          if (blogactivationfromportfolio){ \n            //Comes in here when the portfolio item is active and I click on blog\n            window.portfoliooverviewactivation = false;\n            listenendslideout = false;\n            portfolioiframeactive = false;\n            blogactivation = true;\n            deLoadIframes();\n          }\n\n          else if(portfolioiframeactive){\n            window.portfoliooverviewactivation = true;\n            listenendslideout = false;\n            portfolioiframeactive = false;\n            deLoadIframes();\n          }\n\n          else if (blogiframeactive){\n            $(\"#blog__iframe\").removeClass('animated--slow fadeOutLeft');\n            blogiframeactive = false;\n            listenendslideout = false;\n            landingpageactivation = true;\n            deLoadIframes();\n          }\n        } \n      });\n    }\n  }\n\n\n\n  \n\n//temp\n     setTimeout(function(){\n     }, 400); \n\n    margin-top: 100px;\n\n            deActivateLoadBlog = true;\n        deActivateLoadIframe = true;\n        deActivateLoadDiv = false;\n\n        $(iFrameIDActive).addClass('animated--slow fadeOutLeft'); ",
 			"file": "app/verwerken.js",
+			"file_size": 3971,
+			"file_write_time": 131057341389827128,
 			"settings":
 			{
-				"buffer_size": 3867,
+				"buffer_size": 4071,
 				"line_ending": "Windows"
 			}
 		},
@@ -469,6 +472,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Dean/Downloads/index.html",
 		"/C/Users/Dean/AppData/Local/Temp/7zE87B5BC84/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/Archive/19_04/app/index.html",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Personal website/hold/fouter_travelnshoutout.scss",
@@ -595,8 +599,7 @@
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/psd/src/app/styles/320up.sass",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/app/styles/main.scss",
 		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/app/index.html",
-		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/bower_components/leanmodal/jquery.leanModal.js",
-		"//192.168.0.19/webstore/dev/public_html/rcs/leanmodal/jquery.leanModal.js"
+		"/D/1 - CORTANA/3 - Projects/18 - Coding/src/Web/Challenges/ytmodal/bower_components/leanmodal/jquery.leanModal.js"
 	],
 	"find":
 	{
@@ -615,6 +618,98 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"content",
+			"blogload",
+			"triggerb",
+			"return",
+			"showLoadingMatryoshka",
+			"deLoadContentContainer",
+			"loadingspinner",
+			"loadingspinner2",
+			"blog__loadingspinner",
+			"showLoadingMatryoshka",
+			"showLoadingMatryoshka(",
+			"showLoadingMatryoshka(\"blog__loadingspinner\");",
+			"showLoadingMatryoshka",
+			"blogbutton",
+			"deLoadContentContainer(\"#section__portfolio__iframe\");",
+			"Cleaning up after end animation slide-in portfolio item",
+			"loadiframe",
+			"director",
+			"activateLoadDiv",
+			" activateLoadDiv = false",
+			" activateLoadDiv = true",
+			"activateLoadDiv",
+			"loadcontentcontainer(",
+			"      activateLoadDiv = true;\n      activeStatusPortfolioOverview = false;\n      activateLoadPortfolioOverview = true;",
+			"fadeout",
+			"loadhook",
+			"none",
+			"display",
+			"portfolio__loadhook",
+			"activeStatusPortfolioOverview",
+			"loadContentContainer(",
+			"loadContentContainer",
+			"$(iFrameIDActive).addClass('animated--slow fadeOutLeft'); ",
+			"deLoadIframe(",
+			"deLoadContentContainer(",
+			"deLoadContentContainer",
+			"deloadiframe(",
+			"deloadiframe()",
+			"hiding",
+			"style.marginTop =",
+			"3",
+			"style.marginTop =",
+			"section__portfolio__iframe",
+			"onload",
+			"listenLoadBlogIFrame",
+			"now done loading",
+			"borderadded",
+			"loadLandingPage",
+			"->",
+			"document.getElementById('section__contact').style.marginTop =",
+			"document.getElementById('section__contact').style.marginTop",
+			"fadein",
+			"blog__loadingspinner",
+			"fadein",
+			"show",
+			"document.getElementById('section__contact').style.marginTop =  \"400px\";",
+			"document.getElementById('section__contact').style.marginTop =  \"200px\";",
+			"document.getElementById('section__contact').style.marginTop =  \"100px\";",
+			"activateDeLoadIframe",
+			"activateDeLoadDiv",
+			"deloadiframe",
+			"showLoadingMatryoshka();",
+			"DeLoadDiv =",
+			"deLoadIframe =",
+			"deLoadIframe=",
+			"deLoadDiv",
+			"have",
+			"initiateButtonclicked",
+			"deLoadContentContainer",
+			"$('html, body').animate({ ",
+			"scroll",
+			"landingpage",
+			"portfolioover",
+			"borderadded",
+			"navbar",
+			"returnAnimationVirgin ",
+			"nav__return_growclass",
+			"nav__return_growclass = ' nav__return__button--grow ';",
+			"loadhook__columns__hook3",
+			"deloadcontent",
+			"You clicked the in",
+			"loadcontentcontainer",
+			"loadcontent",
+			"document.getElementById('section__contact').style.marginTop =  \"100px\";",
+			"margin",
+			"loading",
+			"$(section__portfolio).fadeOut(1, function(){",
+			"           $(section__portfolio).fadeOut(1, function(){\n        $(section__portfolio).fadeIn(1350)\n      });",
+			"resizeDynamicHeadings()",
+			"resizeDynamicHeadings();",
+			"resizedyn",
+			"listenLoadPortfolioIFrame",
 			"i am being called",
 			"iFrame fully loaded!",
 			"fully loaded",
@@ -650,99 +745,7 @@
 			"rgb",
 			"article",
 			"document.getElementById('section__portfolio__iframe').style.display = \"none\";",
-			"display",
-			"iframeloaded",
-			"blogload",
-			"$('#portfolio__loadhook').on('click', '#loadhook__columns__hook1', function() {",
-			"hook",
-			"marginTop",
-			"margintop",
-			"loadBlog",
-			"iframeloaded",
-			"slideOutLeft",
-			"out",
-			"Out",
-			"fadeInRightBig",
-			"bounceInRight",
-			"blog",
-			"width",
-			"portfolioiframelisten ",
-			"portfolio__iframe",
-			"blog__iframe",
-			"style.display =",
-			"nav__menu__blog",
-			"blog",
-			"blogiframelisten",
-			"listenforiframeloaded ",
-			"flex",
-			"display: \"flex\"",
-			"section__portfolio__iframe",
-			"document.getElementById('section__portfolio__iframe').style.display = \"none\";",
-			"section__portfolio__iframe",
-			"portfolio__iframe",
-			"blog__iframe",
-			"iframeLoaded",
-			"portfolioiframelisten",
-			"listenforiframeloaded",
-			"portfolioiframelisten",
-			"listenforiframeloaded",
-			"listenforiframe",
-			"portfolioiframelisten",
-			"listenforiframeloaded",
-			"iframeloaded",
-			"blog",
-			"iframePortfolioLoaded",
-			"iframe",
-			"loadings",
-			"blog__loadingspinner",
-			"section__portfolio__loadingspinner",
-			"section__portfolio_loadingspinner",
-			"loadingspinner",
-			"section__portfolio_loadingspinner",
-			"iframe",
-			"iframeLoaded",
-			"blog",
-			"click",
-			"keydown",
-			"click",
-			"display: \"none",
-			"footer__form",
-			"click",
-			"send",
-			"footer__flexcontactform",
-			"footer__form",
-			"#footer__form",
-			"clear",
-			"ajax",
-			"ready",
-			"subject",
-			"forminner__fromcontainer",
-			"forminner__subjectcontainer",
-			"forminner__fromcontainer",
-			"forminner__subjectcontainer",
-			"footer__form__from",
-			"container",
-			"subjectcontainer",
-			"forminner__fromcontainer",
-			"font-size",
-			"forminner__messagecontainer",
-			";\n",
-			"#portfolio",
-			"loadingspinn",
-			"loadingspin",
-			"loadingspinner",
-			"load",
-			"fadein",
-			"loading",
-			"fade in ",
-			"slideoutleft",
-			"- navheightclean",
-			"navheightclean",
-			"return button",
-			"return",
-			"#portfolio",
-			"alt=\"MaverickMatryoshka - Logo\"",
-			"margin-top"
+			"display"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -750,6 +753,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"document.getElementById('section__contact').style.marginTop =  \"300px\";",
+			"document.getElementById('section__contact').style.marginTop =  \"400px\";",
+			"document.getElementById('section__contact').style.marginTop =  \"200px\";",
+			"deActivateLoadIframe",
+			"activateDeLoadIframe",
+			"deActivateLoadIframe",
+			"deActivateLoadDiv",
+			"activateDeLoadDiv =",
+			"activateDeLoadIframe =",
 			"portfoliooverviewactivation",
 			"portfoliooverviewactive",
 			"deLoadIframes();",
@@ -842,15 +854,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 61848,
+						"buffer_size": 67347,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14022,
-								14022
+								34698,
+								34698
 							]
 						],
 						"settings":
@@ -861,10 +873,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10546.0,
+						"translation.y": 13189.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -873,15 +885,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1870,
+						"buffer_size": 1871,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1099,
-								1099
+								1305,
+								1285
 							]
 						],
 						"settings":
@@ -895,42 +907,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/Dean/Downloads/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 64786,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11770,
-								64786
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 21061.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/styles/tools/tools.mixins.scss",
 					"semi_transient": false,
 					"settings":
@@ -961,7 +942,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "app/styles/tools/_tools.mixins.scss",
 					"semi_transient": false,
 					"settings":
@@ -992,7 +973,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "app/styles/settings/_main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1019,13 +1000,13 @@
 						"translation.y": 336.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1034,15 +1015,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 61848,
+						"buffer_size": 67347,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								20639,
+								20639
 							]
 						],
 						"settings":
@@ -1053,10 +1034,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 16431.0,
+						"translation.y": 7222.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/styles/components/_blog.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								197
+							]
+						],
+						"settings":
+						{
+							"dfw_is_in_fs": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1065,15 +1075,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6755,
+						"buffer_size": 6838,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4719,
-								4719
+								252,
+								229
 							]
 						],
 						"settings":
@@ -1084,10 +1094,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3075.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1118,7 +1128,7 @@
 						"translation.y": 4430.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1127,15 +1137,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4012,
+						"buffer_size": 4034,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								98,
-								98
+								313,
+								313
 							]
 						],
 						"settings":
@@ -1146,10 +1156,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2344.0,
+						"translation.y": 2553.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1211,7 +1221,7 @@
 						"translation.y": 148.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1273,40 +1283,11 @@
 						"translation.y": 604.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 13,
-					"file": "app/styles/components/_blog.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 843,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								843,
-								843
-							]
-						],
-						"settings":
-						{
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1330,11 +1311,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 14,
 					"file": "app/styles/vendor/animate/animate.scss",
 					"semi_transient": false,
 					"settings":
@@ -1361,11 +1342,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 15,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1389,11 +1370,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 16,
 					"file": "app/styles/components/_buttons.scss",
 					"semi_transient": false,
 					"settings":
@@ -1420,11 +1401,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 17,
 					"file": "app/styles/components/_critical.scss",
 					"semi_transient": false,
 					"settings":
@@ -1449,13 +1430,13 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
+					"stack_index": 24,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1464,15 +1445,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 61848,
+						"buffer_size": 67347,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								21380,
+								21380
 							]
 						],
 						"settings":
@@ -1483,27 +1464,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7978.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 18,
 					"file": "app/verwerken.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3867,
+						"buffer_size": 4071,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								853,
-								853
+								3867,
+								3825
 							]
 						],
 						"settings":
@@ -1514,14 +1495,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1204.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 19,
 					"file": "app/styles/main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1548,11 +1529,11 @@
 						"translation.y": 84.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 20,
 					"file": "app/styles/tools/_main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1577,11 +1558,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 21,
 					"file": "app/styles/components/_main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1606,11 +1587,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 22,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1634,7 +1615,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -1680,7 +1661,7 @@
 		"rows":
 		[
 			0.0,
-			0.460553272051,
+			0.601525494273,
 			1.0
 		]
 	},
@@ -1723,7 +1704,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
