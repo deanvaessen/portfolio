@@ -52,7 +52,7 @@
     </div>
 
       <ul id="nav__menu">
-        <li><a href="#about" class="btn btn--nav--2 btn--size--20">ABOUT</a></li>
+        <li><a href="#about" class="btn btn--nav--2 btn--size--20" id="nav__menu__about">ABOUT</a></li>
         <li class="nav__menu__li--seperator"></li>
         <li><a href="#" id="nav__menu__blog" class="btn btn--nav--2 btn--size--20">BLOG</a></li>
         <li class="nav__menu__li--seperator"></li>
@@ -374,7 +374,6 @@ myPluginLoadEvent(function(){
 
       deActivateLoadIframe = true;
       hideContentContainer = true;
-      returnClicked = true;
       hideIFrame = true;
       activateLoadDiv = true;
       activeStatusPortfolioOverview = false;
@@ -384,6 +383,7 @@ myPluginLoadEvent(function(){
       deactivateLoadDiv = false; //safety switch
 
       //Set some return button function and effect variables
+      returnClicked = true;
       nav__return_shrinkcount = 0;
       nav__return_clicked = 1;
       returnAnimationVirgin = false;
@@ -489,6 +489,7 @@ myPluginLoadEvent(function(){
         $("#nav__menu__blog").fadeOut(700, function(){
           document.getElementById("nav__menu__blog").textContent="BLOG";
           $("#nav__menu__blog").fadeIn(700);
+          $('#nav__menu__about').fadeTo(600, 1);
         });
 
       }
@@ -619,6 +620,7 @@ myPluginLoadEvent(function(){
       listenEndSlideout = true;
 
       //Set some return button function and effect variables
+      returnClicked = true;
       nav__return_shrinkcount = 0;
       nav__return_clicked = 1;
       returnAnimationVirgin = false;
@@ -638,6 +640,7 @@ myPluginLoadEvent(function(){
       activateLoadDiv = true;
       activeStatusPortfolioOverview = false;
       activateLoadPortfolioOverview = true;
+      activeStatusIFramePortfolio = false;
 
       deactivateLoadDiv = false; //safety switch
 
@@ -848,7 +851,7 @@ myPluginLoadEvent(function(){
 
       $(nav__menu__blog).fadeOut(700, function(){
         document.getElementById("nav__menu__blog").textContent="BLOG";
-        $(nav__menu__blog).fadeIn(700);
+        $("#nav__menu__blog").fadeIn(700);
       });
 
       //Fix the styling
@@ -975,6 +978,7 @@ myPluginLoadEvent(function(){
       //Hide the loading matryoshka
         $(loadingspinner2).fadeOut(400, function(){
           $(nav__menu__blog).fadeOut(700, function(){
+            $('#nav__menu__about').fadeTo(600, 0);
             document.getElementById("nav__menu__blog").textContent="HOME";
             $(nav__menu__blog).fadeIn(700);
           });
