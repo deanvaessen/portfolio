@@ -1,7 +1,7 @@
 <?php
 require("scripts/sendgrid-php/sendgrid-php.php");
   
-$sendgrid = new SendGrid('removedandrenewed');
+$sendgrid = new SendGrid('removed, renewed as variable');
 
 $name = $_POST['name'];
 $mailadres = $_POST['mailadres'];
