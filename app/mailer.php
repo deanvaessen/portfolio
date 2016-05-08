@@ -1,7 +1,7 @@
 <?php
 require("scripts/sendgrid-php/sendgrid-php.php");
   
-$sendgrid = new SendGrid('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');
+$sendgrid = new SendGrid('removedandrenewed');
 
 $name = $_POST['name'];
 $mailadres = $_POST['mailadres'];
