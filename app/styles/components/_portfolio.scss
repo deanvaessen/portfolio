@@ -73,7 +73,7 @@
 
   button{
     margin-bottom:20px;
-    background-color: $rgb-red--3;
+    background: none;
     border-style: solid;
     border-width: 1.5px;
     font-family: "Montserrat-Regular";
@@ -84,8 +84,9 @@
   }
 
   button:hover{
-    background-color: $rgb-red--light;
+/*     background-color: $rgb-red--light; */
     cursor: pointer;
+    border-color: $rgb-orange
   }
 }
 
@@ -111,7 +112,7 @@
 
 #loadhook__columns__1:after {
     background-image: url("/../images/portfolio_preview_psd.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 
 #loadhook__columns__1:hover:before {
@@ -248,8 +249,8 @@
 }
 
 #loadhook__columns__3:after {
-    background-image: url("/../images/portfolio_preview_psd.jpg");
-    background-size: contain;
+    background-image: url("/../images/portfolio_preview_gibbernaut.png");
+    background-size: cover;
 }
 
 #loadhook__columns__3:hover:before {

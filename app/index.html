@@ -122,17 +122,17 @@
             <!-- <span id="info__tree__horizontal--smilebridge"></span> -->
             <span id="info__tree__vertical--smile"></span>
             <!-- <span id="info__tree__horizontal"></span> -->
-<!--             <h2 id="info__smile__dutch">Hallo!</h2>
-<h2 id="info__smile__english">Hi!</h2>
-<h2 id="info__smile__russian">Привет!</h2> -->
+<!-- <h2 id="info__smile__dutch">Hallo!</h2>
+<h2 id="info__smile__english">Hi!</h2> -->
+<h2 id="info__smile__russian">Hello!<!-- Привет! --></h2>
           </div>
           
 
           <span class="brdr-orange--top typo--bold msc-block"></span>
             <br /><br />
-            <p id="info__heading--lead" class="typo--bold msc-flex-center">I'm Dean, a Dutch national living in Budapest. I have a passion for digital art and neat technology.</p>
+            <p id="info__heading--lead" class="typo--bold msc-flex-center">I'm Dean. I'm a developer with a passion for digital art and neat technology.</p>
             <br /><br />
-            <p class="typo--light">Through my UK based firm MaverickMatryoshka I provide creative services. I am  currently available for work in the areas of frontend development and general web design. <br /> <br /> If you would like to speak to me, hit the contact button and I'll get back to you in a jiffy.</p>
+    <p class="typo--light">I'm currently available exploring the area of web development. <br /> <br /> If you would like to speak to me, hit the contact button and I'll get back to you in a jiffy.</p>
           
 
         </div>
@@ -152,8 +152,8 @@
             <br /><br />
             <p class="info__heading--child typo--bold msc-flex-center">Whether you're looking for a personal website, blog or a frontend for your business; I can help.</p>
             <br /><br />
-            <p class="typo--light"> If there's something you would like to have built, I would love to work with you and provide something tailored to your liking. 
-            <br /> <br />I pay special attention to delivering cleanly written solutions that result in easier maintenance, more flexibility and less headaches. This means you waste less time going forward and reach a bigger, happier audience.</p>
+            <p class="typo--light">If there's something you would like to have built, I would love to work with you and provide something tailored to your liking. 
+            <br /> <br />For client projects I pay special attention to delivering cleanly written solutions that result in easier maintenance, more flexibility and less headaches. This means you waste less time going forward and reach a bigger, happier audience.</p>
             <br /><br />
           
         </div>
@@ -274,11 +274,23 @@
   </section>
   </main>
 
+
+
+<!-- Google Analytics-->
 <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37806719-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script>
 
 //Pre-flight checks and system setup
   // $( document ).ready(function() {
-  //         console.log( "Page ready!" );
+  //         //console.log( "Page ready!" );
   //     });
 
 
@@ -360,7 +372,7 @@ myPluginLoadEvent(function(){
   function triggerMainHandler(){
     //Return button code, trigger
     $('#nav__return__button').on('click', function() {
-      console.log("You clicked the return button!");
+      //console.log("You clicked the return button!");
 
       /*//Set some function variables
       nav__return_shrinkcount = 0;
@@ -407,7 +419,7 @@ myPluginLoadEvent(function(){
     $('#portfolio__loadhook').off().on('click', '#loadhook__columns__hook1', function()  {
 
       //debug
-       console.log("You are clicking the iFrame hook1 trigger!");
+       //console.log("You are clicking the iFrame hook1 trigger!");
 
       activateLoadPortfolioItem = true;
       activateLoadPortfolioItem_1 = true;
@@ -430,7 +442,7 @@ myPluginLoadEvent(function(){
 
 
       //Trigger the effects
-      console.log("You clicked the initiate button!");
+      //console.log("You clicked the initiate button!");
       initiateButtonclicked = true;
 
       //Set some function variables
@@ -450,9 +462,9 @@ myPluginLoadEvent(function(){
     $('#portfolio__loadhook').on('click', '#loadhook__columns__hook3', function()  {
 
       //debug
-       console.log("You are clicking the iFrame hook3 trigger!");
+       //console.log("You are clicking the iFrame hook3 trigger!");
 
-      triggerBlogButton();
+     window.open('http://www.gibbernaut.com', '_blank');
     });
 
 
@@ -529,7 +541,7 @@ myPluginLoadEvent(function(){
         }, 1);
       }
       else{
-        console.log("Checking...blog not active, portfolio item not active ->  loading blog");
+        //console.log("Checking...blog not active, portfolio item not active ->  loading blog");
         listenLoadBlogIFrame = true;
         
         //roll up first to prevent page jump
@@ -572,8 +584,8 @@ myPluginLoadEvent(function(){
             //Fill the page
               var r = section__contact.getBoundingClientRect();
               var wH = window.innerHeight;
-              //console.log("Top/Left: "+r.top+" / "+r.left)
-              //console.log("Right/Bottom: "+r.right+" / "+r.bottom)  
+              ////console.log("Top/Left: "+r.top+" / "+r.left)
+              ////console.log("Right/Bottom: "+r.right+" / "+r.bottom)  
                     
               var currentMarginTop = document.getElementById('section__contact').style.marginTop
               var currentMarginTop = parseInt(currentMarginTop, 10);
@@ -615,7 +627,7 @@ myPluginLoadEvent(function(){
 
     if(y_scroll_pos < scroll_pos_trigger && activeStatusIFrame === true) {
 
-      console.log("Deloading the iframe because of scroll!");
+      //console.log("Deloading the iframe because of scroll!");
       window.portfoliooverviewactivation = false;
       listenEndSlideout = true;
 
@@ -653,18 +665,18 @@ myPluginLoadEvent(function(){
 //*
   //Check if I need to deLoad the content containers (iFrame/DIV), if not, skip and go to load
   function deLoadContentContainer(ContentContainerID){
-    console.log("You have entered deLoadContentContainer");
+    //console.log("You have entered deLoadContentContainer");
     this.ContentContainerID = ContentContainerID;
     ContentContainerActive = ContentContainerID;
 
     if(deActivateLoadIframe){
-      console.log("deActivateLoadIframe true, firing off to deLoadIframe function")
+      //console.log("deActivateLoadIframe true, firing off to deLoadIframe function")
       listenEndSlideout = true;
       iFrameIDActive = ContentContainerActive;
       deLoadIframe(iFrameIDActive);
     }
     else if(deActivateLoadDiv){
-      console.log("deActivateLoadDiv true, firing off to deLoadDiv function")
+      //console.log("deActivateLoadDiv true, firing off to deLoadDiv function")
       listenEndSlideout = true;
       divIDActive = ContentContainerActive;
       deLoadDiv(divIDActive);
@@ -674,7 +686,7 @@ myPluginLoadEvent(function(){
 //*
   //Fire off into functions that load things into the content containers (iFrame/DIV)
   function loadContentContainer(ContentContainerID){
-    console.log("You have entered loadContentContainer");
+    //console.log("You have entered loadContentContainer");
     this.ContentContainerID = ContentContainerID;
     ContentContainerActive = ContentContainerID;
 
@@ -692,7 +704,7 @@ myPluginLoadEvent(function(){
 
   //!-- Functions concerning the deloading of ContentContainers --!\\
   function deLoadIframe(iFrameIDActive){
-    console.log("Welcome to deLoadIframe, I will deload something for you");
+    //console.log("Welcome to deLoadIframe, I will deload something for you");
     this.iFrameIDActive = iFrameIDActive;
 
     //Slide out the page
@@ -703,7 +715,7 @@ myPluginLoadEvent(function(){
       function(e) {
         //If statement for safety
         if(listenEndSlideout){
-          console.log("Slideout iFrame done!");
+          //console.log("Slideout iFrame done!");
           activeStatusIFrame = false;
 
           //Start scrolling
@@ -774,7 +786,7 @@ myPluginLoadEvent(function(){
 //*
   //This is called when a div has to be deloaded. It rolls it up (height "0px") and then shows a loading spinner
   function deLoadDiv(divIDActive){
-    console.log("You have now entered deLoadDiv. I will roll up the div and show a loading spinner");
+    //console.log("You have now entered deLoadDiv. I will roll up the div and show a loading spinner");
     this.divIDActive = divIDActive;
 
     //Fade div, show loading
@@ -787,7 +799,7 @@ myPluginLoadEvent(function(){
        }
        else if (activateLoadPortfolioItem){
          if(activateLoadPortfolioItem_1){
-           console.log("You have now entered activateLoadPortfolioItem_1");
+           //console.log("You have now entered activateLoadPortfolioItem_1");
            //Load an item
            loadIframe("#section__portfolio__iframe"); 
          }
@@ -807,10 +819,10 @@ myPluginLoadEvent(function(){
   function loadDiv(divID){
     this.divID = divID;
     divIDActive = divID;
-    console.log("You have now entered loadDiv()");
+    //console.log("You have now entered loadDiv()");
 
     if (activeStatusPortfolioOverview === false && activateLoadPortfolioOverview){
-      console.log("I am activating your PortfolioOverview");
+      //console.log("I am activating your PortfolioOverview");
       activateLoadPortfolioOverview = false;
       activeStatusPortfolioOverview = true;
       borderadded = true; //misnomer, but works
@@ -819,7 +831,7 @@ myPluginLoadEvent(function(){
       var divContent = "portfolio.html",
       section__portfolio = document.getElementById('section__portfolio');
 
-      console.log("DIV load called! The item being loaded is " + divContent + " in " + divIDActive);
+      //console.log("DIV load called! The item being loaded is " + divContent + " in " + divIDActive);
 
       //load the portfolio page and fix styling
       $(divIDActive).load(divContent, function(){
@@ -840,11 +852,11 @@ myPluginLoadEvent(function(){
       document.getElementById('section__contact').style.marginTop =  "300px";
 
       //debug
-      console.log("I am now done loading " + divContent + " in " + divIDActive);
+      //console.log("I am now done loading " + divContent + " in " + divIDActive);
 
     }
     else if (loadLandingPage){
-      console.log("loadLandingPage initiated");
+      //console.log("loadLandingPage initiated");
       loadLandingPage = false;
       //listenEndSlideout = true;
       //deLoadIframes();
@@ -866,25 +878,25 @@ myPluginLoadEvent(function(){
   function loadIframe(iFrameID){
     this.iFrameID = iFrameID;
     
-    console.log("You are accessing the loadIframe event!");
+    //console.log("You are accessing the loadIframe event!");
 
     if (activateLoadBlog){
       activateLoadBlog = false;
       activeStatusIFrameBlog = true;
 
       //debug
-      console.log("You are accessing the loadBlog event!");
+      //console.log("You are accessing the loadBlog event!");
 
       //define the page and iFrame
       var iFrameContent = "../blog/index.php"; /*"portfolio.html"; */
-      console.log("iFrame load called! The item being loaded is " + iFrameContent + " in " + iFrameID);
+      //console.log("iFrame load called! The item being loaded is " + iFrameContent + " in " + iFrameID);
 
       //load the page and set the styling
       $(iFrameID).attr("src", iFrameContent);
       $(iFrameID).width("100%");
 
         //debug
-      console.log("I am now done loading " + iFrameContent + " in " + iFrameID)
+      //console.log("I am now done loading " + iFrameContent + " in " + iFrameID)
     }
     else if(activateLoadPortfolioItem){
       activateLoadPortfolioItem = false;
@@ -894,11 +906,11 @@ myPluginLoadEvent(function(){
         activeStatusIFramePortfolio = true;
 
         //debug
-        console.log("You are accessing the loadPortfolioItem_1 event!");
+        //console.log("You are accessing the loadPortfolioItem_1 event!");
 
         //define the page and iFrame
         var iFrameContent =  "content/psd/index.html"; //"portfolio.html"
-        console.log("iFrame load called! The item being loaded is " + iFrameContent + " in " + iFrameID);
+        //console.log("iFrame load called! The item being loaded is " + iFrameContent + " in " + iFrameID);
 
         //load the page and set the styling
         $(iFrameID).attr("src", iFrameContent);
@@ -906,7 +918,7 @@ myPluginLoadEvent(function(){
         document.getElementById('section__portfolio__iframe').height = "0px";
 
         //debug
-        console.log("I am now done loading " + iFrameContent + " in " + iFrameID)
+        //console.log("I am now done loading " + iFrameContent + " in " + iFrameID)
       }
       else if (activateLoadPortfolioItem_2){
         activateLoadPortfolioItem_2 = false;
@@ -922,7 +934,7 @@ myPluginLoadEvent(function(){
 //*
   //This fires when the iFrame has fully loaded
   function iFrameLoaded(){
-    console.log("An iFrame has been fully loaded!");
+    //console.log("An iFrame has been fully loaded!");
 
     var iFrameID = document.getElementById('section__portfolio__iframe');
     var iFrameID2 = document.getElementById('blog__iframe');
@@ -936,7 +948,7 @@ myPluginLoadEvent(function(){
     if(listenLoadPortfolioIFrame) { 
       listenLoadPortfolioIFrame = false;
       activeStatusIframePortfolio = true;
-      console.log("The Portfolio iFrame load code is now being executed!");
+      //console.log("The Portfolio iFrame load code is now being executed!");
 
       //Hide the loading matryoshka
       setTimeout(function(){  
@@ -962,7 +974,7 @@ myPluginLoadEvent(function(){
       //Listen for the end of the animation
       $(iFrameID).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
       function(e) {
-      console.log("Cleaning up after end animation slide-in portfolio item")
+      //console.log("Cleaning up after end animation slide-in portfolio item")
       //Cleanup
         $(iFrameID).removeClass('animated fadeInRight'); 
         listenLoadPortfolioIFrame = false;
@@ -973,7 +985,7 @@ myPluginLoadEvent(function(){
     else if(listenLoadBlogIFrame) { 
       listenLoadBlogIFrame = false;
       activeStatusIframePortfolio = true;
-      console.log("The Blog iFrame load code is now being executed!");
+      //console.log("The Blog iFrame load code is now being executed!");
 
       //Hide the loading matryoshka
         $(loadingspinner2).fadeOut(400, function(){
@@ -1069,7 +1081,7 @@ myPluginLoadEvent(function(){
 //*
     //Return button effects. The code is a quite expansive but the reason behind this is that I want to retain a high degree of control and make this nice and modular. I can swap things in and out easily so in effect I now have a sort of framework. The below is a handler for the effects, below that are the actual effects.
      function nav__returnEffectDirector(){ 
-      /*console.log("Entering Effects Director..."+"the count is "+nav__return_directorcount); //This function coordinates the effects*/
+      /*//console.log("Entering Effects Director..."+"the count is "+nav__return_directorcount); //This function coordinates the effects*/
 
       //Define the variables for the effects 
       nav__return = document.getElementById('nav__return__button');
@@ -1081,7 +1093,7 @@ myPluginLoadEvent(function(){
       nav__return_glowclass_active = ' nav__return__button--glow--active '; 
       
       if (nav__return_directorcount == 1){ //If not run before
-        console.log("No effect added yet this click, [placeholder]"); //I could add another effect here if I want
+        //console.log("No effect added yet this click, [placeholder]"); //I could add another effect here if I want
         nav__return_directorcount++;
         nav__returnEffectDirector();
       }
@@ -1090,18 +1102,18 @@ myPluginLoadEvent(function(){
         $(nav__return).fadeIn(300);
         $(nav__return).css({ display: "flex" }); //Make the button visible
         nav__return_directorcount++;
-/*        console.log("Continuing with grow effect");*/
+/*        //console.log("Continuing with grow effect");*/
         setTimeout(nav__returnGrow, 0);
       }
       
       else {
         if(nav__return_clicked == 1){ //Did I click the return button? If so, shrink it
-/*              console.log("Time to shrink and fade the button");*/
+/*              //console.log("Time to shrink and fade the button");*/
               nav__return_clicked++;
               setTimeout(nav__returnShrink, 0);
         }
         else if(nav__return_clicked > 1){ //I clicked, now I loop loop back into here to hide
-/*              console.log("Hiding the button and cleaning up!");*/
+/*              //console.log("Hiding the button and cleaning up!");*/
               $(nav__return).fadeOut("slow");
               setTimeout(function(){$(nav__return).css({ 
                 display: "none" }); //Hide the button
@@ -1118,31 +1130,31 @@ myPluginLoadEvent(function(){
           }
         
         else if (nav__return_clicked == 0) { //Run the effects only if I didn't click the return button
-/*            console.log("Back in Effects Director for round "+ nav__return_directorcount);*/
+/*            //console.log("Back in Effects Director for round "+ nav__return_directorcount);*/
             nav__return_directorcount++;
                   
             if (nav__return_growcount == 1){ //Remove grow
-/*              console.log("Time to remove the grow effect");*/
+/*              //console.log("Time to remove the grow effect");*/
               $(nav__return).removeClass(nav__return_growclass_active);
               nav__return_growcount = 0; //Done with this effect, reset the counter
               setTimeout(nav__returnEffectDirector, 500);
             }
             
             else if (nav__return_glowcount == 0){ //Run the second effect, glow
-              console.log("Time to glow");
+              //console.log("Time to glow");
               $(nav__return).removeClass(nav__return_growclass); //Remove the previous base effect, cleanup
               setTimeout(nav__returnGlow, 200);
             }
           
             else if (nav__return_glowcount == 1){ //Remove the second effect, Glow
-/*              console.log("Time to remove the glow");*/
+/*              //console.log("Time to remove the glow");*/
               $(nav__return).removeClass(nav__return_glowclass_active); //Remove the glow
               nav__return_glowcount++;
               setTimeout(nav__returnEffectDirector, 2000);
             }
           
             else { //Clean up
-/*              console.log("I will clean up now")*/
+/*              //console.log("I will clean up now")*/
               $(nav__return).removeClass(nav__return_glowclass+nav__return_shrinkclass);
               //Reset the whole stack
               nav__return_growcount = 0;
@@ -1157,7 +1169,7 @@ myPluginLoadEvent(function(){
     //These are the actual effect functions of the return button
       function nav__returnGrow(){
         if(returnAnimationVirgin){
-/*          console.log("I am now growing the return button");*/
+/*          //console.log("I am now growing the return button");*/
           $(nav__return).addClass(nav__return_growclass + nav__return_growclass_active);  //Add the effect
           nav__return_growcount++; //Count it
           setTimeout(nav__returnEffectDirector, 1000); //Move back up to the director
@@ -1170,7 +1182,7 @@ myPluginLoadEvent(function(){
       
       function nav__returnGlow(){
         if(returnAnimationVirgin){
-/*          console.log("I am now glowing the return button");*/
+/*          //console.log("I am now glowing the return button");*/
           $(nav__return).addClass(nav__return_glowclass + nav__return_glowclass_active); //Add the effect
           nav__return_glowcount++;
           returnAnimationVirgin = false;
@@ -1183,7 +1195,7 @@ myPluginLoadEvent(function(){
       };
 
       function nav__returnShrink(){
-/*        console.log("I am now shrinking the return button");*/
+/*        //console.log("I am now shrinking the return button");*/
         $(nav__return).addClass(nav__return_shrinkclass + nav__return_shrinkclass_active); //Add the effect
         nav__return_shrinkcount++;
         setTimeout(nav__returnEffectDirector, 400); //Move back up to the director
@@ -1385,7 +1397,7 @@ myPluginLoadEvent(function(){
         y = w.innerHeight|| e.clientHeight|| g.clientHeight;
       
       if (x >= 820) {
-          console.log("Resizing the cover");
+          //console.log("Resizing the cover");
           document.getElementById('cover__content--resize').style.height = y / 2.1 +"px";
           document.getElementById('cover__overlay--resize').style.height = y / 2.1 +"px";
           document.getElementById('cover__bg--resize').style.height = y / 2.1 +"px";
@@ -1396,7 +1408,7 @@ myPluginLoadEvent(function(){
       };
 
       if (x < 820) {
-          console.log("Resizing the cover");
+          //console.log("Resizing the cover");
           document.getElementById('cover__content--resize').style.height = "900px";
           document.getElementById('cover__overlay--resize').style.height = "900px";
           document.getElementById('cover__bg--resize').style.height = "900px";
@@ -1418,12 +1430,12 @@ myPluginLoadEvent(function(){
               y = w.innerHeight|| e.clientHeight|| g.clientHeight;
             
             if (x > 760) { //breakpoint responsive design (had hier 820 staan)
-                console.log("Resizing the heading heights for info");
+                //console.log("Resizing the heading heights for info");
                 $('.info__heading--child').height($('#info__heading--lead').height());
             };
 
             if (x > 925) { //breakpoint responsive design
-                console.log("Resizing the heading heights for portfolio");
+                //console.log("Resizing the heading heights for portfolio");
                 $('.portfolio__p--child').height($('#portfolio__p--lead').height());
                 $('.portfolio__h1--child').height($('#portfolio__h1--lead').height());
 
@@ -1509,21 +1521,8 @@ myPluginLoadEvent(function(){
       });
 </script>
 
-<!-- Google Analytics-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-37806719-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script> -->
+
 <script src="http://malsup.github.com/jquery.form.js"></script>
 
 
@@ -1538,161 +1537,3 @@ myPluginLoadEvent(function(){
   </body>
 </html>
 
-<!-- //Define the functions
-    //
-    //Section "what"
-    $("#section__info__what").hover(function mouseInProfilePath() {
-      if(animationProfilePathDone){
-        
-        $("#info__profileHeader").animate({
-          color: "#FFBF28"
-        }, 300 );
-
-        setTimeout(function(){ 
-          $(profileWhatPathlines).animate({
-            backgroundColor: "#FFBF28"
-          }, 500 );
-                             }, 350);
-
-        setTimeout(function(){ 
-        animationProfilePathInitiated = true;
-        animationProfilePathDone = false;
-                             }, 1050);
-      } else{
-        setTimeout(mouseInProfilePath, 50); //Otherwise wait for it to finish, please keep checking
-      }
-      // $(profileWhatPathlines).css("background-color", "#FFBF28");
-      // $("#info__profileHeader").css("color", "#FFBF28");
-      
-    }, function mouseOutProfilePath() {
-      // on mouseout, reset the background colour
-      if(animationProfilePathInitiated){ //Only immediately if the animation has finished
-        $("#info__profileHeader").animate({
-        color: "black"
-        }, 300 );
-
-        $(profileWhatPathlines).animate({
-          backgroundColor: "black"
-        }, 300 );
-
-        setTimeout(function(){ 
-        animationProfilePathInitiated = false;
-        animationProfilePathDone = true;
-                           }, 300);
-      } else{ 
-        setTimeout(mouseOutProfilePath, 50); //Otherwise wait for it to finish, please keep checking
-      }
-
-      // $(profileWhatPathlines).css("background-color", "");
-      // $("#info__profileHeader").css("color", "");
-    }); -->
-
-
-<!-- 
-    //Light up the lines and the header leading to a profile section on hover
-  //[N] - This is still a bit messy. It fucks up if you hover/unhover multiple boxes quickly. I think I need to create an array or something? To store the value of the "previously highlighted" lines and then clear those out as well. So the unhover should look at what is in the array to determine on what lines it should remove the effect.
-  
-  // $( document ).ready(function() {
-  //       var verticalParent = "#info__tree__vertical",
-  //           verticalHTML = "#info__tree__vertical--html",
-  //           horizontalHTML = "#info__tree__horizontal--html",
-  //           verticalHTMLLeft = "#info__tree__vertical--html--l",
-  //           verticalHTMLRight = "#info__tree__vertical--html--r",
-  //           profileWhatPathlines = verticalParent + ',' + verticalHTML + ',' + horizontalHTML + ',' + verticalHTMLLeft + ',' + verticalHTMLRight,
-  //           verticalSmile = "#info__tree__vertical--smile",
-  //           horizontalLeft = "#info__tree__horizontal--l",
-  //           profileWhoPathlines = verticalParent + ',' + verticalSmile + ',' + horizontalLeft,
-  //           verticalMobile = "#info__tree__vertical--mobile",
-  //           horizontalRight = "#info__tree__horizontal--r",
-  //           profileHowPathlines = verticalParent + ',' + verticalMobile + ',' + horizontalRight;
-
-
-  //   //Define the functions
-  //   function mouseInProfilePath() {
-  //     $("#info__profileHeader").animate({
-  //       color: "#FFBF28"
-  //     }, 300 );
-
-  //     setTimeout(function(){ 
-  //       $(profilePathLinesActive).animate({
-  //         backgroundColor: "#FFBF28"
-  //       }, 500 );
-  //                          }, 350);
-
-  //     setTimeout(function(){ 
-  //     animationProfilePathInitiated = true;
-  //     animationProfilePathDone = false;
-  //                          }, 1050);
-  //   }
-
-  //   function mouseOutProfilePath() {
-  //     $("#info__profileHeader").animate({
-  //     color: "black"
-  //     }, 300 );
-
-  //     $(profilePathLinesActive).animate({
-  //       backgroundColor: "black"
-  //     }, 300 );
-
-  //     setTimeout(function(){ 
-  //     animationProfilePathInitiated = false;
-  //     animationProfilePathDone = true;
-  //                        }, 300);
-  //   }
-
-  //   //Listen for hover section "what"
-  //   $("#section__info__what").hover(function profileWhatHover() {
-  //     if(animationProfilePathDone){
-  //       profilePathLinesActive = profileWhatPathlines; //Which do I light?
-  //       mouseInProfilePath();
-  //     } else{
-  //       setTimeout(profileWhatHover, 50); //Otherwise wait for it to finish, please keep checking
-  //     }
-      
-  //   }, function profileWhatUnHover() {
-  //     // on mouseout, reset the background colour
-  //     if(animationProfilePathInitiated){ //Only immediately if the animation has finished
-  //       mouseOutProfilePath();
-  //     } else{ 
-  //       setTimeout(profileWhatUnHover, 50); //Otherwise wait for it to finish, please keep checking
-  //     }
-  //   });
-
-
-  //   //Listen for hover section "who"
-  //   $("#section__info__who").hover(function profileWhoHover() {
-  //     if(animationProfilePathDone){
-  //       profilePathLinesActive = profileWhoPathlines; //Which do I light?
-  //       mouseInProfilePath();
-  //     } else{
-  //       setTimeout(profileWhoHover, 50); //Otherwise wait for it to finish, please keep checking
-  //     }
-      
-  //   }, function profileWhoUnHover() {
-  //     // on mouseout, reset the background colour
-  //     if(animationProfilePathInitiated){ //Only immediately if the animation has finished
-  //       mouseOutProfilePath();
-  //     } else{ 
-  //       setTimeout(profileWhoUnHover, 50); //Otherwise wait for it to finish, please keep checking
-  //     }
-  //   });
-
-
-  //   //Listen for hover section "how"
-  //   $("#section__info__how").hover(function profileHowHover() {
-  //     if(animationProfilePathDone){
-  //       profilePathLinesActive = profileHowPathlines; //Which do I light?
-  //       mouseInProfilePath();
-  //     } else{
-  //       setTimeout(profileHowHover, 50); //Otherwise wait for it to finish, please keep checking
-  //     }
-      
-  //   }, function profileHowUnHover() {
-  //     // on mouseout, reset the background colour
-  //     if(animationProfilePathInitiated){ //Only immediately if the animation has finished
-  //       mouseOutProfilePath();
-  //     } else{ 
-  //       setTimeout(profileHowUnHover, 50); //Otherwise wait for it to finish, please keep checking
-  //     }
-  //   });
-  // }); -->
