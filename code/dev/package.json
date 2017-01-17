@@ -1,17 +1,14 @@
 {
   "name": "deanvaessen-portfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Portfolio website Dean Vaessen",
   "keywords": [
-    "vue.js",
-    "vue.js router",
-    "vue.js resource"
   ],
   "author": "Dean Vaessen <hello@deanvaessen.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:villeristi/vue.js-starter-template.git"
+    "url": "git@github.com:deanvaessen/portfolio.git"
   },
   "config": {
     "port": 3000

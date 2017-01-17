@@ -1,0 +1,75 @@
+@import "./../../styles/helpers/mixins";
+
+.heroContainer {
+
+	.ss_divider {
+		@include rem('max-width', 900px);
+	}
+}
+
+.heroContainer__headshot {
+	margin: 0 auto;
+	width: 320px;
+	display: block;
+	background-image: url("~assets/images/branding/me.png");
+	height: 320px;
+	background-size: 320px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	border-radius: 50%;
+	//border: 1.5px solid #000000;
+	box-shadow: 0px 0px 69px 3px rgba(0,0,0,0.11);
+}
+
+.heroContainer__logo {
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	height: 50px;
+}
+
+.heroContainer__splash {
+	display: block;
+}
+
+.heroContainer__splashTitle {
+	text-align: center;
+	padding: 5% 0% 0% 0%;
+	text-shadow: 1px 1px 0 #b2b2b2;
+	font-family: nexa-bold;
+}
+
+.heroContainer__splashUnderscore {
+	text-align: center;
+	padding: 0% 0% 0% 0%;
+
+}
+
+
+//Move below to shared _global.scss
+
+.articleContainer {
+	text-align: left;
+	padding: 2%;
+}
+
+.articleContent {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.ss_divider {
+	height: 5px;
+	background-color: #FFBF28;
+	width: 100%;
+	margin: 2% auto;
+}
+
+.ss_headline {
+	@include rem('font-size', 40px);
+}
+
+.ss_underscore {
+	@include rem('font-size', 25px);
+}
