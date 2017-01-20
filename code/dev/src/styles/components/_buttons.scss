@@ -1,0 +1,35 @@
+@import "./../helpers/mixins";
+
+.btn-clear {
+	margin-bottom: 20px;
+	background: none;
+	border-style: solid;
+	border-width: 2.5px;
+	border-color: #5A5A5A;
+	vertical-align: bottom;
+	text-decoration: none;
+
+	display: inline-block;
+
+	@include rem('padding', 8px);
+
+	a, p {
+		text-decoration: none;
+		color: #5A5A5A;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.btn-clear:hover{
+	border-color: #FFCC52;
+	transition:  linear 0.2s;
+	cursor: pointer;
+	text-decoration: none;
+
+	a, p {
+		text-decoration: none;
+		color: #ffbf28;
+		transition:  linear 0.2s;
+	}
+}

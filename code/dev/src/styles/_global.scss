@@ -38,6 +38,10 @@ body {
 	font-family: nexa-light;
 }
 
+a {
+	font-family: nexa-bold;
+}
+
 // base settings for reusable components
 
 .contentContainer {
@@ -48,4 +52,8 @@ body {
 	width: 100%;
 	//background: #EC3636;
 	padding-top: 10%;
+}
+
+.nav-link:hover {
+	cursor: pointer;
 }
