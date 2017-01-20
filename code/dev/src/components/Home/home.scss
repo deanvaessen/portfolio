@@ -126,7 +126,9 @@
 
 
 .articleContainer--centerpiece {
-	@include rem(margin, 100px 0px);
+	@include rem(margin, 100px auto);
+
+	max-width:1400px;
 
 	.ss-categoryTitle, .ss-underscore {
 		text-align:center;

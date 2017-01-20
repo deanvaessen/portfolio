@@ -1,3 +1,5 @@
+@import "helpers/mixins";
+
 @font-face {
     font-family: nexa-bold;
     src: url(~assets/fonts/nexa-bold.otf);
@@ -51,9 +53,13 @@ a {
 .heroContainer {
 	width: 100%;
 	//background: #EC3636;
-	padding-top: 10%;
+	@include rem(padding, 150px 0px 0px 0px);
 }
 
 .nav-link:hover {
 	cursor: pointer;
+}
+
+.nav-link {
+	margin-bottom: 0;
 }
