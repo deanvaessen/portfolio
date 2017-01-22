@@ -1,3 +1,4 @@
 11/01 : 0.0.0 - Project base stable
 20/01 : 0.0.1 - Put up some thought into the homepage. Added headshot and intro. Added projects.
-20/01 : 0.1.0 - Fixed layout a little, resized headsot image, cleaned up nav bar. Initial version that goes online.
+20/01 : 0.1.0 - Fixed layout a little, resized headshot image, cleaned up nav bar. Initial version that went online.
+22/01 : 0.1.1 - Updated CSS for featured items to be mobile first and fixed the CSS to work better on smaller screens in general.
