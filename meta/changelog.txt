@@ -4,3 +4,4 @@
 22/01/2017 : 0.1.1 - Updated CSS for featured items to be mobile first and fixed the CSS to work better on smaller screens in general.
 23/02/2017 : 0.2.0 - Updated swarm project on homepage.
 24/02/2017 : 0.2.1 - Misc grammar/spelling fixes of content.
+14/04/2017 : 0.3.0 - Spelling mistakes, removed Overlay Magician
